@@ -7,12 +7,12 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 // Page Imports
-import Homepage from './components/Homepage';
-import NbaAllStar from './components/NbaAllStar';
+import Homepage from './pages/Homepage';
+import NbaAllStar from './pages/NbaAllStar';
 
 // Establish connection to back end server graphql endpoint
 const httpLink = createHttpLink({
-  uri: 'http://localhost:3001/graphql',
+  uri: '/graphql',
 });
 
 const client = new ApolloClient({

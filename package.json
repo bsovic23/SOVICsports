@@ -1,0 +1,25 @@
+{
+  "name": "sovicsports",
+  "version": "1.0.0",
+  "description": "My friends and I enjoy watching sports and all the major special sports events such as the NBA All Star Game, College Football Bowl Season, NFL Playoffs, and more. I created individual event challenges to use my SAS coding skills and allow us to have a fun competition to see who could score the most \"challenge points\" in each event. These challenges were started back in 2016 and run via excel templates and constantly re running SAS coding scripts to provide updates.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsovic23/SOVICsports.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bsovic23/SOVICsports/issues"
+  },
+  "homepage": "https://github.com/bsovic23/SOVICsports#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
