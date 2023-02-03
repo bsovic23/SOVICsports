@@ -1,6 +1,7 @@
 // Imports
 import React from 'react';
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Main Components Imports
 import Header from './components/Header';
@@ -25,7 +26,7 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <div>
+      <main>
         <Header />
 
         <div class="container">
@@ -33,7 +34,7 @@ function App() {
         </div>
 
         <Footer />
-      </div>
+      </main>
     </ApolloProvider>
   );
 }

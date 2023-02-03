@@ -2,8 +2,8 @@ import React from 'react';
 
 function Header() {
     return(
-        <section>
-            HEADER SECTION
+        <section class="header">
+            <h1>SOVICSports</h1>
         </section>
     )
 };
