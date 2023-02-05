@@ -3,13 +3,17 @@ import React from 'react';
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Main Components Imports
+// Components Imports
 import Header from './components/Header';
 import Footer from './components/Footer';
 
 // Page Imports
 import Homepage from './pages/Homepage';
 import NbaAllStar from './pages/NbaAllStar';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import Profile from './pages/Profile';
+import Error from './pages/Error';
 
 // Establish connection to back end server graphql endpoint
 const httpLink = createHttpLink({
@@ -21,20 +25,45 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-// App 
+// Application
 
 function App() {
   return (
     <ApolloProvider client={client}>
-      <main>
-        <Header />
-
-        <div class="container">
-            <Homepage />
+      <Router>
+        <div>
+          <Header />
+            <div>
+              <Routes>
+                <Route
+                path="/"
+                element={<Homepage />}
+                />
+                <Route
+                path="/login"
+                element={<Login />}
+                />
+                <Route
+                path="/signup"
+                element={<Signup />}
+                />
+                <Route
+                path="/profile"
+                element={<Profile />}
+                />
+                <Route
+                path="/nbaAllStar"
+                element={<NbaAllStar />}
+                />
+                <Route
+                path="*"
+                element={<Error />}
+                />
+              </Routes>
+            </div>
+          <Footer />
         </div>
-
-        <Footer />
-      </main>
+      </Router>
     </ApolloProvider>
   );
 }

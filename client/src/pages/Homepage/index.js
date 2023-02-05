@@ -1,29 +1,34 @@
 import React from 'react';
 
-import { useQuery } from '@apollo/client';
-import { QUERY_ALL_NBAALLSTAR } from '../../utils/queries';
+import { Link } from 'react-router-dom';
 
-import NbaAllStarEntries from '../../components/NbaAllStarEntries';
-
-const Homepage = () => {
-
-    const { loading, data } = useQuery(QUERY_ALL_NBAALLSTAR);
-
-    const allNbaAllStar = data?.allNbaAllStar || [];
-
-    console.log(allNbaAllStar);
-    
+function Homepage() {
     return(
         <section>
-            <div className="col-12 mb-3">
-                {loading ? (
-                    <div>Loading...</div>
-                ) : (
-                    <NbaAllStarEntries allNbaAllStar={allNbaAllStar} />
-                )}
+            What would you like to do:
+            <div>
+                <button>
+                    <Link to="/nbaAllStar">NBA All Star Weekend</Link>
+                </button>
+                <button>
+                    COMING SOON: NFL Playoffs Create A Team
+                </button>
+                <button>
+                    COMING SOON: College Football Bowl Challenge
+                </button>
+                <button>
+                    COMING SOON: NBA Playoffs Create A Team
+                </button>
+                <button>
+                    COMING SOON: Pickhoops March Madness
+                </button>
+                <button>
+                    COMING SOON: NFL Weekly Player Survivor Pickem
+                </button>
             </div>
         </section>
     )
 };
+
 
 export default Homepage;
