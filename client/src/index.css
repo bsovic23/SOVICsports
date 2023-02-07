@@ -1,21 +1,71 @@
+* {
+  margin: 1px;
+  padding: 1px;
+  font-weight: 600;
+}
+
 /* Root Variables */
+:root {
+  --main: #5B616A;
+  --title: #275DAD;
+  --background: #DDC67B;
+}
 
+/* Homepage */
+.homepage {
+  background-color: var(--background);
+}
 
-/* Main */
-main {
-  background-color: beige;
+.homepage div button {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: black solid 2px;
+  border-radius: 5px;
+  background-color: #44BBA4;
+}
+
+.homepage div button:hover {
+  border: red solid 2px;
+}
+
+.homepage h2 {
+  background-color: var(--title);
+  padding: 20px;
 }
 
 /* Components =========================================================== */
 
 /* Header -------------------------------------------------------------- */
 .header h1 {
-  background-color: blue;
+  background-color: var(--main);
+  padding: 30px;
 }
 
-/* Footer -------------------------------------------------------------- */
-.footer h1 {
-  background-color: aqua;
+/* Footer */
+.footer {
+  background-color: var(--main);
+  padding: 10px;
+}
+
+.footer .footer-instructions, .footer .footer-section-links,
+.footer .footer-instructions a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer .icon {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer #github-icon{
+  color: black;
+}
+
+.footer #linkedin-icon{
+  color: blue;
 }
 
 /* NbaAllStarEntries (card) -------------------------------------------------------------- */
