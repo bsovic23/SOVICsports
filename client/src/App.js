@@ -9,11 +9,14 @@ import Footer from './components/Footer';
 
 // Page Imports
 import Homepage from './pages/Homepage';
-import NbaAllStar from './pages/NbaAllStar';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Profile from './pages/Profile';
 import Error from './pages/Error';
+
+// NBA Page Imports
+import NbaAllStar from './pages/NbaAllStar';
+import NbaEntries from './components/NbaAllStar/NbaAllStarEntries';
 
 // Establish connection to back end server graphql endpoint
 const httpLink = createHttpLink({
@@ -54,6 +57,10 @@ function App() {
                 <Route
                 path="/nbaAllStar"
                 element={<NbaAllStar />}
+                />
+                <Route
+                path="/nbaEntries"
+                element={<NbaEntries />}
                 />
                 <Route
                 path="*"
