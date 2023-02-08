@@ -1,7 +1,8 @@
 const {
     nbaAllStar,
     bowlPickem,
-    User
+    User,
+    history
 } = require('../models');
 
 const { AuthenticationError } = require('apollo-server-express');
@@ -39,6 +40,12 @@ const resolvers = {
         user: async (parent, { username }) => {
             return User.findOne({ username })
                 .select('-__v -password');
+        },
+
+        // Get All History
+        // 
+        allHistory: async () => {
+            return history.find()
         }
 
 
@@ -102,6 +109,12 @@ const resolvers = {
             }
 
             throw new AuthenticationError('You need to be logged in!');
+        },
+
+        addHistory: async(parent, args) => {
+            const historyEntry = await history.create(args);
+
+            return historyEntry;
         }
     }
 };

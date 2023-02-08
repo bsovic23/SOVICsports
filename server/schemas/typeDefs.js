@@ -40,6 +40,16 @@ const typeDefs = gql`
         game3: String
     }
 
+    type history {
+        _id: ID
+        username: String
+        year: String
+        challenge: String
+        score: String
+        place: String
+        totalpx: String
+    }
+
     type Auth {
         token: ID!
         user: User
@@ -50,6 +60,7 @@ const typeDefs = gql`
         users: [User]
         user(username: String): User
         allNbaAllStar(username: String): [nbaAllStar]
+        allHistory: [history]
     }
 
     type Mutation {
@@ -57,6 +68,7 @@ const typeDefs = gql`
         addUser(username: String, firstname: String, lastname: String, password: String, favoriteSport: String, favoriteTeam: String): Auth
         addNbaAllStar(starterOne: String, starterTwo: String, starterThree: String, starterFour: String, benchOne: String, benchTwo: String, benchThree: String, benchFour: String, skillsChamp: String, threeChamp: String, dunkChamp: String, challengeCaptain: String): nbaAllStar
         addBowlPickem(year: String, game1: String, game2: String, game3: String): bowlPickem
+        addHistory(username: String, year: String, challenge: String, score: String, place: String, totalpx: String): history
     }
 `;
 
