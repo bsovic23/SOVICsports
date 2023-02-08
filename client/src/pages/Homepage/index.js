@@ -27,6 +27,13 @@ function Homepage() {
                     COMING SOON: NFL Weekly Player Survivor Pickem
                 </button>
             </div>
+            <div>
+                <h2>SOVICsports Standings History</h2>
+                <p>Click the button below to check the history of any SOVICsports challenge</p>
+                <button>
+                    <Link to="/history">SOVICsports Challenge History</Link>
+                </button>
+            </div>
             <div class="homepage">
                 <h2>About SOVICsports</h2>
                 <p>
@@ -46,20 +53,6 @@ function Homepage() {
                     <br />
                     <br />
                 </p>
-            <div class="homepage">
-                <h2>SOVICsports Tabs</h2>
-                <p>
-                    Below gives a brief description about where you can find the information/challenge you are looking for
-                </p>
-                <ul>
-                    <p>SOVICsports challenges</p>
-                    <li>Tabs that will redirect you to the challenge pages</li>
-                    <p>SOVICsports challenges</p>
-                    <li>Tabs that will redirect you to the challenge pages</li>
-                    <p>SOVICsports challenges</p>
-                    <li>Tabs that will redirect you to the challenge pages</li>
-                </ul>
-            </div>
             <div class="homepage">
                 <h2>Support SOVICsports</h2>
                 <p>

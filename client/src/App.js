@@ -18,6 +18,9 @@ import Error from './pages/Error';
 import NbaAllStar from './pages/NbaAllStar';
 import NbaEntries from './components/NbaAllStar/NbaAllStarEntries';
 
+// History Imports
+import History from './components/History';
+
 // Establish connection to back end server graphql endpoint
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -61,6 +64,10 @@ function App() {
                 <Route
                 path="/nbaEntries"
                 element={<NbaEntries />}
+                />
+                 <Route
+                path="/history"
+                element={<History />}
                 />
                 <Route
                 path="*"

@@ -19,7 +19,7 @@ const NbaEntries = () => {
             <div>
                 <NbaNavbar />
             </div>
-            <div className="col-12 mb-3">
+            <div>
                 {loading ? (
                     <div>Loading...</div>
                 ) : (

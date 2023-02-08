@@ -67,6 +67,15 @@
 .footer #linkedin-icon{
   color: blue;
 }
+/* NbaAllStar Page -------------------------------------------------------------- */
+.nba-all-star-page {
+  background-color: var(--background);
+}
+
+.nba-all-star-page h1 {
+  background-color: var(--title);
+  padding: 10px;
+}
 
 /* NbaAllStarEntries (card) -------------------------------------------------------------- */
 .nba-entries .nba-entry-card {
@@ -85,7 +94,19 @@
   flex-wrap: wrap;
 }
 
+/* History (card) -------------------------------------------------------------- */
+.history-card-section {
+  background-color: var(--background);
+}
 
+.history-card-section h3 {
+  background-color: var(--title);
+  padding: 20px;
+}
+
+.history-card h4 {
+  background-color: #A6808C;
+}
 
 /* Pages =========================================================== */
 

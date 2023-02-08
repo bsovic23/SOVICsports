@@ -3,7 +3,7 @@ import NbaNavbar from '../../components/Navbar/nbaNavbar';
 
 const NbaAllStar = () => {
     return(
-        <section>
+        <section class="nba-all-star-page">
             <div>
                 <NbaNavbar />
             </div>
