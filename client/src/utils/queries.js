@@ -21,3 +21,17 @@ query AllNbaAllStar($username: String) {
     }
   }
 `;
+
+export const QUERY_ALL_HISTORY = gql`
+query Query {
+  allHistory {
+    _id
+    username
+    year
+    challenge
+    score
+    place
+    totalpx
+  }
+}
+`;
