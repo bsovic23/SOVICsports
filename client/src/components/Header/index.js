@@ -6,7 +6,7 @@ function Header() {
     return(
         <section class="header">
             <div>
-                <Link to="/">
+                <Link to="/" className="header-link">
                     <h1>SOVICsports</h1>
                 </Link>
             </div>

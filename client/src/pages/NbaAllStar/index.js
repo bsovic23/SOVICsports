@@ -36,6 +36,8 @@ const NbaAllStar = () => {
                 <li>You receive 10 points if you choose the Skills Challenge winner</li>
                 <li>You receive 10 points if you choose the Dunk Challenge winner</li>
                 <li>You receive 10 points if you choose the 3-Point Contest winner</li>
+            </div>
+            <div>
                 <h2>Bonus Points</h2>
                 <li>If you choose a player on the winning All Star Game team you receive an extra 5 points per player you chose on the winning team</li>
             </div>

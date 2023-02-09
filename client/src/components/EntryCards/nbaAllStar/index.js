@@ -19,23 +19,20 @@ const NbaAllStarEntries = ({ allNbaAllStar }) => {
                   <p>Captain: {nbaEntry.challengeCaptain}</p>
                 </div>
                 <div>
-                  <ul>
-                    <h5>Lineup</h5>
-                  <li>starter: {nbaEntry.starterOne}</li>
-                  <li>starter: {nbaEntry.starterTwo}</li>
-                  <li>starter: {nbaEntry.starterThree}</li>
-                  <li>starter: {nbaEntry.starterFour}</li>
-                  <li>bench: {nbaEntry.benchOne}</li>
-                  <li>bench: {nbaEntry.benchTwo}</li>
-                  <li>bench: {nbaEntry.benchThree}</li>
-                  <li>bench: {nbaEntry.benchFour}</li>
-                  </ul>
-                  <ul>
+                    <h5>Starters</h5>
+                  <li>{nbaEntry.starterOne}</li>
+                  <li>{nbaEntry.starterTwo}</li>
+                  <li>{nbaEntry.starterThree}</li>
+                  <li>{nbaEntry.starterFour}</li>
+                    <h5>Bench</h5>
+                  <li>{nbaEntry.benchOne}</li>
+                  <li>{nbaEntry.benchTwo}</li>
+                  <li>{nbaEntry.benchThree}</li>
+                  <li>{nbaEntry.benchFour}</li>
                     <h5>Challenges</h5>
                     <li>Skills: {nbaEntry.skillsChamp}</li>
                     <li>Dunk: {nbaEntry.dunkChamp}</li>
                     <li>Three: {nbaEntry.threeChamp}</li>
-                  </ul>
                 </div>
               </div>
           ))}

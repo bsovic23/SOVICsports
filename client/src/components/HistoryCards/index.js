@@ -7,17 +7,15 @@ const AllHistoryCards = ({ allHistory }) => {
 
     return (
         <section class="history-card-section">
-            <h3>HISTORY</h3>
+            <h3>All SOVICsports Challenge HISTORY</h3>
             <div class="history-cards-container">
                 {allHistory 
                 && allHistory.map(history=> (
                     <div key={history.username} class="history-card">
                         <h4>{history.username}</h4>
-                        <p>Year: {history.year}</p>
-                        <p>Challenge: {history.challenge}</p>
+                        <p>{history.year} {history.challenge} Challenge</p>
+                        <p>Placed {history.place} out of {history.totalpx}</p>
                         <p>Score: {history.score}</p>
-                        <p>Place: {history.place}</p>
-                        <p>Total Participants: {history.totalpx}</p>
                     </div>
                 ))}
             </div>

@@ -6,14 +6,15 @@
 
 /* Root Variables */
 :root {
-  --main: #5B616A;
-  --title: #275DAD;
-  --background: #DDC67B;
+  --main: #CDD6D0;
+  --header: #4281A4;
+  --background: #97A7B3;
+  --title: linear-gradient(to bottom, rgb(0, 187, 255), #97A7B3);
 }
 
 /* Homepage */
 .homepage {
-  background-color: var(--background);
+  background: var(--background);
 }
 
 .homepage div button {
@@ -26,11 +27,11 @@
 }
 
 .homepage div button:hover {
-  border: red solid 2px;
+  border: yellow solid 2px;
 }
 
 .homepage h2 {
-  background-color: var(--title);
+  background-color: var(--header);
   padding: 20px;
 }
 
@@ -38,13 +39,20 @@
 
 /* Header -------------------------------------------------------------- */
 .header h1 {
-  background-color: var(--main);
+  background: var(--title);
   padding: 30px;
+  text-align: center;
+}
+
+.header-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 /* Footer */
 .footer {
-  background-color: var(--main);
+  background: var(--title);
   padding: 10px;
 }
 
@@ -60,12 +68,16 @@
   margin: 10px;
 }
 
-.footer #github-icon{
+.footer #github-icon {
   color: black;
 }
 
-.footer #linkedin-icon{
+.footer #linkedin-icon {
   color: blue;
+}
+
+.footer #linkedin-icon:hover, .footer #github-icon:hover {
+  color: yellow;
 }
 /* NbaAllStar Page -------------------------------------------------------------- */
 .nba-all-star-page {
@@ -73,7 +85,7 @@
 }
 
 .nba-all-star-page h1 {
-  background-color: var(--title);
+  background-color: var(--header);
   padding: 10px;
 }
 
@@ -86,7 +98,7 @@
 }
 
 .nba-entries h4 {
-  background-color: pink;
+  background-color: var(--background);
 }
 
 .nba-entries-container {
@@ -100,15 +112,17 @@
 }
 
 .history-card-section h3 {
-  background-color: var(--title);
+  background-color: var(--header);
   padding: 20px;
 }
 
 .history-card h4 {
-  background-color: #A6808C;
+  background-color: #93E1D8;
 }
 
 /* Pages =========================================================== */
 
-
-
+/* NBA ALL STAR (card) -------------------------------------------------------------- */
+.nba-all-star-page div {
+  padding: 20px;
+}
