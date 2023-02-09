@@ -35,17 +35,3 @@ query Query {
   }
 }
 `;
-
-export const QUERY_HISTORY_FIRSTPLACE = gql`
-query {
-  historyPlace(place: "1") {
-    _id
-    username
-    year
-    challenge
-    score
-    place
-    totalpx
-  }
-}
-`

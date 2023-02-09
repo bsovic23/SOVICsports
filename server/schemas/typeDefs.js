@@ -61,9 +61,6 @@ const typeDefs = gql`
         user(username: String): User
         allNbaAllStar(username: String): [nbaAllStar]
         allHistory: [history]
-        historyUsername(username: String): [history]
-        historyChallenge(challenge: String): [history]
-        historyPlace(place: String): [history]
     }
 
     type Mutation {
