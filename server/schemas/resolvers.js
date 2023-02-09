@@ -46,6 +46,22 @@ const resolvers = {
         // 
         allHistory: async () => {
             return history.find()
+        },
+
+        // Get history by username
+        //
+        historyUsername: async (parent, { username }) => {
+            return history.find({ username });
+        },
+
+        // Get history by challenge
+        //
+        historyChallenge: async (parent, { challenge }) => {
+            return history.find({ challenge }).sort({year: -1});
+        },
+
+        historyFirstPlace: async (parent, { place }) => {
+            return history.find({ place });
         }
     },
 
