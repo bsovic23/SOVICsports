@@ -4,6 +4,9 @@ function NbaEntry() {
     return(
         <section>
             NBA ALL STAR CREATE ENTRY
+            <form>
+
+            </form>
         </section>
     )
 };
