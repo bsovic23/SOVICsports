@@ -17,6 +17,7 @@ import Error from './pages/Error';
 // NBA Page Imports
 import NbaAllStar from './pages/NbaAllStar';
 import NbaEntries from './components/NbaAllStar/NbaAllStarEntries';
+import NbaEntry from './components/NbaAllStar/NbaAllStarCreateEntry';
 
 // History Imports
 import History from './components/History';
@@ -64,6 +65,10 @@ function App() {
                 <Route
                 path="/nbaEntries"
                 element={<NbaEntries />}
+                />
+                <Route
+                path="/nbaEntry"
+                element={<NbaEntry />}
                 />
                  <Route
                 path="/history"

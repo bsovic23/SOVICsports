@@ -7,6 +7,9 @@ function Homepage() {
         <section class="homepage">
             <h2>SOVICsports Challenges</h2>
             <div>
+                <div>
+                <Link to="/login">Login</Link>
+                </div>
             <p>Which challenge would you like to access:</p>
                 <button>
                     <Link to="/nbaAllStar">NBA All Star Weekend</Link>

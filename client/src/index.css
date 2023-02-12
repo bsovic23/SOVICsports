@@ -79,6 +79,14 @@
 .footer #linkedin-icon:hover, .footer #github-icon:hover {
   color: yellow;
 }
+
+/* NbaAllStar Navbar -------------------------------------------------------------- */
+.navbar button {
+  background-color: yellow;
+  padding: 5px;
+  margin-left: 15px;
+}
+
 /* NbaAllStar Page -------------------------------------------------------------- */
 .nba-all-star-page {
   background-color: var(--background);
@@ -106,6 +114,11 @@
   flex-wrap: wrap;
 }
 
+/* NBA ALL STAR (card) -------------------------------------------------------------- */
+.nba-all-star-page div {
+  padding: 10px;
+}
+
 /* History (card) -------------------------------------------------------------- */
 .history-card-section {
   background-color: var(--background);
@@ -122,7 +135,4 @@
 
 /* Pages =========================================================== */
 
-/* NBA ALL STAR (card) -------------------------------------------------------------- */
-.nba-all-star-page div {
-  padding: 10px;
-}
+

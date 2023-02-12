@@ -6,10 +6,10 @@ const NbaNavbar = () => {
     return(
         <section class="navbar">
              <button>
-                <Link to="/nbaAllStar">Challenge Scoring</Link>
+                <Link to="/nbaAllStar">CHALLENGE INSTRUCTIONS</Link>
             </button>
             <button>
-                CREATE ENTRY
+                <Link to="/nbaEntry">CREATE ENTRY</Link>
             </button>
             <button>
                 <Link to="/nbaEntries">ALL ENTRIES</Link>
