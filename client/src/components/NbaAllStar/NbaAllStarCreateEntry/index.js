@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
+import React, { useState } from "react";
 import { MUTATION_NBA_ALLSTAR } from "../../../utils/mutations";
 
 import NbaNavbar from '../../Navbar/nbaNavbar';
@@ -19,7 +19,7 @@ function NbaEntry() {
         dunkChamp: "",
         challengeCaptain: "",
     });
-    const [nbaAllStar] = useMutation(MUTATION_NBA_ALLSTAR, {
+    const NbaEntry = useMutation(MUTATION_NBA_ALLSTAR, {
         variables: {
             starterOne: formState.starterOne,
             starterTwo: formState.starterTwo,
