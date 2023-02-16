@@ -4,6 +4,10 @@
   font-weight: 600;
 }
 
+body {
+  background-color: rgb(98, 20, 206);
+}
+
 /* Root Variables */
 :root {
   --main: #CDD6D0;
