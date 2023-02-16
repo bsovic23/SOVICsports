@@ -13,7 +13,7 @@ const NbaAllStarEntries = ({ allNbaAllStar }) => {
             allNbaAllStar.map(nbaEntry => (
               <div key={nbaEntry._id} class="nba-entry-card">
                 <h4>
-                  Entry by: {nbaEntry.username}
+                  Entry by: {nbaEntry.entryName}
                 </h4>
                 <div>
                   <p>Captain: {nbaEntry.challengeCaptain}</p>

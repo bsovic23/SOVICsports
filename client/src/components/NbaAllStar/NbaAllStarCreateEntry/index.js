@@ -36,19 +36,26 @@ function NbaEntry() {
         },
     });
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-    
-        setFormState({
-          ...formState,
-          [name]: value,
-        });
-      };
+    const [addNbaAllStar] = useMutation(MUTATION_NBA_ALLSTAR);
 
-    const submitHandler = (e) => {
-        e.preventDefault();
-        NbaEntry();
-    };
+    const handleChange = event => {
+            emptyForm(event.target.value);
+      };
+    
+    const submitHandler = async event => {
+            event.preventDefault();
+            
+            try {
+                await addNbaAllStar({
+                    variables: { starterOne, starterTwo },
+            });   
+
+            emptyForm('');
+
+            } catch (e) {
+                console.error(e);
+            }
+        }
 
     return(
         <section class="form-section">
@@ -58,17 +65,22 @@ function NbaEntry() {
             NBA ALL STAR CREATE ENTRY
             <form onSubmit={submitHandler}>
                 <div>
-                <label htmlFor="starterOne">Starter One:</label>
                 <input
-                    type="string"
-                    name="starterOne"
-                    id="starterOne"
+                    placeholder="Enter starter One"
+                    value={starterOne}
                     onChange={handleChange}
-                />
+                    >
+                </input >
+                <input
+                    placeholder="Enter starter Two"
+                    value={starterTwo}
+                    onChange={handleChange}
+                    >
+                </input >
                 </div>
 
                 <div>
-                    <input type="submit" value="Create Entry" />
+                    <input type="submit"/>
                 </div>
             </form>
         </section>

@@ -9,8 +9,6 @@ import Footer from './components/Footer';
 
 // Page Imports
 import Homepage from './pages/Homepage';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
 import Profile from './pages/Profile';
 import Error from './pages/Error';
 
@@ -45,14 +43,6 @@ function App() {
                 <Route
                 path="/"
                 element={<Homepage />}
-                />
-                <Route
-                path="/login"
-                element={<Login />}
-                />
-                <Route
-                path="/signup"
-                element={<Signup />}
                 />
                 <Route
                 path="/profile"

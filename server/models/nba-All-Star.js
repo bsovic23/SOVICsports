@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 
 const nbaAllStarSchema = new Schema(
     {
-        username: {
+        entryName: {
             type: String
         },
         enteredAt: {
