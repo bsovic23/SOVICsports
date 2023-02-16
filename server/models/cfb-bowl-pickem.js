@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 
 const bowlPickemSchema = new Schema(
     {
-        username: {
+        entryName: {
             type: String
         },
         enteredAt:{

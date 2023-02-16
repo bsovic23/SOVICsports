@@ -1,20 +1,15 @@
 const {
     nbaAllStar,
     bowlPickem,
-    User,
     history
 } = require('../models');
-
-const { AuthenticationError } = require('apollo-server-express');
-const { signToken } = require('../utils/auth');
 
 const resolvers = {
 
     Query: {
         // [X] Query works in apollo studio
         // Get All All star Entries
-        allNbaAllStar: async (parent, { username }) => {
-            const params = username ? { username } : {};
+        allNbaAllStar: async () => {
             return nbaAllStar.find().sort({ enteredAt: -1 });
         },
         // Get All History
@@ -25,8 +20,8 @@ const resolvers = {
 
         // Get history by username
         //
-        historyUsername: async (parent, { username }) => {
-            return history.find({ username });
+        historyUsername: async (parent, { entryName }) => {
+            return history.find({ entryName });
         },
 
         // Get history by challenge
