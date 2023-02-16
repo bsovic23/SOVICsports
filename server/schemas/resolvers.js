@@ -20,8 +20,8 @@ const resolvers = {
 
         // Get history by username
         //
-        historyUsername: async (parent, { entryName }) => {
-            return history.find({ entryName });
+        historyUsername: async (parent, { username }) => {
+            return history.find({ username });
         },
 
         // Get history by challenge

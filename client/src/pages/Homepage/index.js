@@ -48,7 +48,7 @@ function Homepage() {
                     <br />
                     This site will be the home to many of the sports challenges that occur over the course of the year. And hopefully add an 
                     increased user experience. I envision the application growing with many features as this is just the beta version. The 
-                    application allows users to enter their information, and access standings through the applicaiton. Other functions such as
+                    application allows users to enter their information, and access standings through the application. Other functions such as
                     user history for all sports challenges are included in this application.
                     <br />
                     <br />

@@ -26,7 +26,7 @@ export const QUERY_ALL_HISTORY = gql`
 query Query {
   allHistory {
     _id
-    entryName
+    username
     year
     challenge
     score

@@ -32,7 +32,7 @@ const typeDefs = gql`
 
     type history {
         _id: ID
-        entryName: String
+        username: String
         year: String
         challenge: String
         score: String
@@ -43,7 +43,7 @@ const typeDefs = gql`
     type Query {
         allNbaAllStar(entryName: String): [nbaAllStar]
         allHistory: [history]
-        historyUsername(entryName: String): [history]
+        historyUsername(username: String): [history]
         historyChallenge(challenge: String): [history]
         historyFirstPlace(place: String): [history]
     }

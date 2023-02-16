@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 
 const historySchema = new Schema(
     {
-        entryName: {
+        username: {
             type: String
         },
         year: {
