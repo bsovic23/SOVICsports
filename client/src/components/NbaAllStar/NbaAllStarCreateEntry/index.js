@@ -67,116 +67,126 @@ function NbaEntry() {
             <div>
                 <NbaNavbar />
             </div>
-            NBA ALL STAR CREATE ENTRY
-            <form onSubmit={submitHandler}>
-                <div>
-                    <input
-                        placeholder="What is your entry name"
-                        value={entryName}
-                        onChange={(e) => setEntry(e.target.value)}
-                        >
-                    </input >
-                </div>
-                <div>
-                    <input
-                        placeholder="Enter starter One"
-                        value={starterOne}
-                        onChange={(e) => setStarterOne(e.target.value)}
-                        >
-                    </input >
-                </div>
-                <div>
-                    <input
-                        placeholder="Enter starter Two"
-                        value={starterTwo}
-                        onChange={(e) => setStarterTwo(e.target.value)}
-                        >
-                    </input >
-                </div>
-                <div>
-                    <input
-                        placeholder="Enter starter Three"
-                        value={starterThree}
-                        onChange={(e) => setStarterThree(e.target.value)}
-                        >
-                    </input >
-                </div>
-                <div>
-                    <input
-                        placeholder="Enter starter Four"
-                        value={starterFour}
-                        onChange={(e) => setStarterFour(e.target.value)}
-                        >
-                    </input >
-                </div>
-                <div>
-                    <input
-                        placeholder="Enter bench One"
-                        value={benchOne}
-                        onChange={(e) => setBenchOne(e.target.value)}
-                        >
-                    </input >
-                </div>
-                <div>
-                    <input
-                        placeholder="Enter bench two"
-                        value={benchTwo}
-                        onChange={(e) => setBenchTwo(e.target.value)}
-                        >
-                    </input >
-                </div>
-                <div>
-                    <input
-                        placeholder="Enter bench three"
-                        value={benchThree}
-                        onChange={(e) => setBenchThree(e.target.value)}
-                        >
-                    </input >
-                </div>
-                <div>
-                    <input
-                        placeholder="Enter bench four"
-                        value={benchFour}
-                        onChange={(e) => setBenchFour(e.target.value)}
-                        >
-                    </input >
-                </div>
-                <div>
-                    <input
-                        placeholder="Enter skills champ"
-                        value={skillsChamp}
-                        onChange={(e) => setSkills(e.target.value)}
-                        >
-                    </input >
-                </div>
-                <div>
-                    <input
-                        placeholder="Enter Three champ"
-                        value={threeChamp}
-                        onChange={(e) => setThree(e.target.value)}
-                        >
-                    </input >
-                </div>
-                <div>
-                    <input
-                        placeholder="Enter dunk champ"
-                        value={dunkChamp}
-                        onChange={(e) => setDunk(e.target.value)}
-                        >
-                    </input >
-                </div>
-                <div>
-                    <input
-                        placeholder="Enter captain"
-                        value={challengeCaptain}
-                        onChange={(e) => setCaptain(e.target.value)}
-                        >
-                    </input >
-                </div>
-                <div>
-                    <input type="submit"/>
-                </div>
-            </form>
+            <h1>NBA ALL STAR CREATE ENTRY</h1>
+            <div class="form-div">
+                <form onSubmit={submitHandler}>
+                    <p>Enter your entry name below:</p>
+                    <div class="form-input">
+                        <input
+                            placeholder="Entry Name"
+                            value={entryName}
+                            onChange={(e) => setEntry(e.target.value)}
+                            >
+                        </input >
+                    </div>
+                    <p>Enter your four Starting All Star Players:</p>
+                    <div class="form-input">
+                        <input
+                            placeholder="Starter One"
+                            value={starterOne}
+                            onChange={(e) => setStarterOne(e.target.value)}
+                            >
+                        </input >
+                    </div>
+                    <div class="form-input">
+                        <input
+                            placeholder="Starter Two"
+                            value={starterTwo}
+                            onChange={(e) => setStarterTwo(e.target.value)}
+                            >
+                        </input >
+                    </div>
+                    <div class="form-input">
+                        <input
+                            id="Starter-Three"
+                            placeholder="Starter Three"
+                            value={starterThree}
+                            onChange={(e) => setStarterThree(e.target.value)}
+                            >
+                        </input >
+                    </div>
+                    <div class="form-input">
+                        <input
+                            placeholder="Starter Four"
+                            value={starterFour}
+                            onChange={(e) => setStarterFour(e.target.value)}
+                            >
+                        </input >
+                    </div>
+                    <p>Enter your four Bench All Star Players:</p>
+                    <div class="form-input">
+                        <input
+                            placeholder="Bench One"
+                            value={benchOne}
+                            onChange={(e) => setBenchOne(e.target.value)}
+                            >
+                        </input >
+                    </div>
+                    <div class="form-input">
+                        <input
+                            placeholder="Bench Two"
+                            value={benchTwo}
+                            onChange={(e) => setBenchTwo(e.target.value)}
+                            >
+                        </input >
+                    </div>
+                    <div class="form-input">
+                        <input
+                            placeholder="Bench Three"
+                            value={benchThree}
+                            onChange={(e) => setBenchThree(e.target.value)}
+                            >
+                        </input >
+                    </div>
+                    <div class="form-input">
+                        <input
+                            placeholder="Bench Four"
+                            value={benchFour}
+                            onChange={(e) => setBenchFour(e.target.value)}
+                            >
+                        </input >
+                    </div>
+                    <p>Enter your Skills Contest Champion:</p>
+                    <div class="form-input">
+                        <input
+                            placeholder="Skills Champ"
+                            value={skillsChamp}
+                            onChange={(e) => setSkills(e.target.value)}
+                            >
+                        </input >
+                    </div>
+                    <p>Enter your Three Point Contest Champion:</p>
+                    <div class="form-input">
+                        <input
+                            placeholder="Three Pointer Champ"
+                            value={threeChamp}
+                            onChange={(e) => setThree(e.target.value)}
+                            >
+                        </input >
+                    </div>
+                    <p>Enter your Dunk Contest Champion:</p>
+                    <div class="form-input">
+                        <input
+                            placeholder="Dunk Contest Champ"
+                            value={dunkChamp}
+                            onChange={(e) => setDunk(e.target.value)}
+                            >
+                        </input >
+                    </div>
+                    <p>Who is your Captain from all players you selected above:</p>
+                    <div class="form-input">
+                        <input
+                            placeholder="Team Captain"
+                            value={challengeCaptain}
+                            onChange={(e) => setCaptain(e.target.value)}
+                            >
+                        </input >
+                    </div>
+                    <div class="form-submit-button">
+                        <input type="submit"/>
+                    </div>
+                </form>
+            </div>
         </section>
     )
 };

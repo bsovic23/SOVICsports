@@ -2,10 +2,11 @@
   margin: 1px;
   padding: 1px;
   font-weight: 600;
+  font-family: "Gill Sans", sans-serif;
 }
 
 body {
-  background-color: rgb(98, 20, 206);
+  background: linear-gradient(to top, #2a6898, rgb(98, 20, 206));
 }
 
 /* Root Variables */
@@ -46,6 +47,7 @@ body {
   background: var(--title);
   padding: 30px;
   text-align: center;
+  font-size: 50px;
 }
 
 .header-link {
@@ -86,9 +88,13 @@ body {
 
 /* NbaAllStar Navbar -------------------------------------------------------------- */
 .navbar button {
-  background-color: yellow;
+  background-color: #44BBA4;
   padding: 5px;
   margin-left: 15px;
+}
+
+.navbar button:hover {
+  background-color: yellow;
 }
 
 /* NbaAllStar Page -------------------------------------------------------------- */
@@ -101,12 +107,25 @@ body {
   padding: 10px;
 }
 
+.nba-all-star-page div {
+  padding: 10px;
+}
+
+
 /* NbaAllStarEntries (card) -------------------------------------------------------------- */
 .nba-entries .nba-entry-card {
   border: solid black 2px;
   border-radius: 10px;
-  margin: 5px;
+  margin: 4px;
   background-color: aqua;
+}
+
+.nba-entries p {
+  background-color: gold;
+}
+
+.nba-entries h3 {
+  background-color: var(--background);
 }
 
 .nba-entries h4 {
@@ -118,10 +137,45 @@ body {
   flex-wrap: wrap;
 }
 
-/* NBA ALL STAR (card) -------------------------------------------------------------- */
-.nba-all-star-page div {
+
+/* NBA ALL STAR Entries (page) -------------------------------------------------------------- */
+.nba-entries {
+  background-color: var(--background);
+}
+
+.nba-entries h1 {
+  background-color: var(--header);
   padding: 10px;
 }
+
+.nba-entries div {
+  padding: 10px;
+}
+
+
+/* NBA ALL STAR Entry Form ----------------------- */
+.form-section {
+  background-color: var(--background);
+}
+
+.form-section h1 {
+  background-color: var(--header);
+  padding: 10px;
+}
+
+.form-section div {
+  padding: 10px;
+}
+
+.form-section .form-input input {
+  border: black solid 2px;
+  margin: 5px;
+}
+
+.form-section .form-input input:hover {
+  border: yellow solid 2px;
+}
+
 
 /* History (card) -------------------------------------------------------------- */
 .history-card-section {

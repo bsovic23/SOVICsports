@@ -10,6 +10,9 @@ function Header() {
                     <h1>SOVICsports</h1>
                 </Link>
             </div>
+            <div>
+                Version 1.0 | Updated: 2/16/2023
+            </div>
         </section>
     )
 };

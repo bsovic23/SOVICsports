@@ -15,10 +15,11 @@ const NbaEntries = () => {
     console.log(allNbaAllStar);
     
     return(
-        <section>
+        <section class="nba-entries">
             <div>
                 <NbaNavbar />
             </div>
+            <h1>ALL NBA ALL STAR ENTRIES</h1>
             <div>
                 {loading ? (
                     <div>Loading...</div>

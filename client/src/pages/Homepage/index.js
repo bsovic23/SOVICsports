@@ -9,7 +9,7 @@ function Homepage() {
             <div>
             <p>Which challenge would you like to access:</p>
                 <button>
-                    <Link to="/nbaAllStar">NBA All Star Weekend</Link>
+                    <Link to="/nbaAllStar" style={{textDecoration: 'none', color: 'black'}}>NBA All Star Weekend</Link>
                 </button>
                 <button>
                     COMING SOON: NFL Playoffs Create A Team
@@ -31,7 +31,7 @@ function Homepage() {
                 <h2>SOVICsports Standings History</h2>
                 <p>Click the button below to check the history of any SOVICsports challenge</p>
                 <button>
-                    <Link to="/history">SOVICsports Challenge History</Link>
+                    <Link to="/history" style={{textDecoration: 'none', color: 'black'}}>SOVICsports Challenge History</Link>
                 </button>
             </div>
             <div class="homepage">
