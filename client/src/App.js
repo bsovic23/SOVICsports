@@ -11,14 +11,14 @@ import Footer from './components/Footer';
 import Homepage from './pages/Homepage';
 import Profile from './pages/Profile';
 import Error from './pages/Error';
+import History from './pages/History';
 
 // NBA Page Imports
 import NbaAllStar from './pages/NbaAllStar';
 import NbaEntries from './components/NbaAllStar/NbaAllStarEntries';
 import NbaEntry from './components/NbaAllStar/NbaAllStarCreateEntry';
 
-// History Imports
-import History from './components/History';
+
 
 // Establish connection to back end server graphql endpoint
 const httpLink = createHttpLink({
