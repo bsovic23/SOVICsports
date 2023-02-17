@@ -6,18 +6,16 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Components Imports
 import Header from './components/Header';
 import Footer from './components/Footer';
+import NbaEntries from './components/NbaAllStar/NbaAllStarEntries';
+import NbaEntry from './components/NbaAllStar/NbaAllStarCreateEntry';
 
 // Page Imports
 import Homepage from './pages/Homepage';
 import Profile from './pages/Profile';
 import Error from './pages/Error';
 import History from './pages/History';
-
-// NBA Page Imports
 import NbaAllStar from './pages/NbaAllStar';
-import NbaEntries from './components/NbaAllStar/NbaAllStarEntries';
-import NbaEntry from './components/NbaAllStar/NbaAllStarCreateEntry';
-
+import NbaPlayoffs from './pages/NbaPlayoffs';
 
 
 // Establish connection to back end server graphql endpoint
@@ -64,6 +62,10 @@ function App() {
                  <Route
                 path="/history"
                 element={<History />}
+                />
+                <Route
+                path="/nbaplayoffs"
+                element={<NbaPlayoffs />}
                 />
                 <Route
                 path="*"

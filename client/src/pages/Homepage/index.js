@@ -18,7 +18,7 @@ function Homepage() {
                     COMING SOON: College Football Bowl Challenge
                 </button>
                 <button>
-                    COMING SOON: NBA Playoffs Create A Team
+                <Link to="/nbaplayoffs" style={{textDecoration: 'none', color: 'black'}}>NBA Playoffs Create A Team</Link>
                 </button>
                 <button>
                     COMING SOON: Pickhoops March Madness
@@ -41,7 +41,7 @@ function Homepage() {
                     my friends and I would love watching the different sporting events, special weekends, and bowl seasons.
                     <br />
                     <br />
-                    Until 2023, I always took individual emails with entries, and manually coded the results. I would update the groupchats
+                    Until January 2023, I always took individual emails with entries, and manually coded the results. I would update the groupchats
                     with standings periodically. With the different fun pool groups growing, I decided to make an application that would cut
                     out the middle man, myself, and allow a better user experience with the pools.
                     <br />

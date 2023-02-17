@@ -117,7 +117,7 @@ body {
   border: solid black 2px;
   border-radius: 10px;
   margin: 4px;
-  background-color: aqua;
+  background-color: #44BBA4;
 }
 
 .nba-entries p {
@@ -176,6 +176,19 @@ body {
   border: yellow solid 2px;
 }
 
+/* Nba Playoffs Page -------------------------------------------------------------- */
+.nba-playoffs-page {
+  background-color: var(--background);
+}
+
+.nba-playoffs-page h1 {
+  background-color: var(--header);
+  padding: 10px;
+}
+
+.nba-playoffs-page div {
+  padding: 10px;
+}
 
 /* History (card) -------------------------------------------------------------- */
 .history-card-section {
