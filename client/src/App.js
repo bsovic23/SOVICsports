@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import NbaEntries from './components/NbaAllStar/NbaAllStarEntries';
 import NbaEntry from './components/NbaAllStar/NbaAllStarCreateEntry';
+import NbaPlayoffsEntry from './components/NbaPlayoffs/NbaPlayoffsCreateEntry';
 
 // Page Imports
 import Homepage from './pages/Homepage';
@@ -66,6 +67,10 @@ function App() {
                 <Route
                 path="/nbaplayoffs"
                 element={<NbaPlayoffs />}
+                />
+                <Route
+                path="/nbaplayoffsentry"
+                element={<NbaPlayoffsEntry />}
                 />
                 <Route
                 path="*"
