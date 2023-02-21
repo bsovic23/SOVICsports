@@ -22,6 +22,25 @@ mutation AddNbaAllStar($entryName: String, $starterOne: String, $starterTwo: Str
   }
 `;
 
+export const MUTATION_NBA_PLAYOFFS = gql`
+mutation Mutation($entryName: String, $starterOne: String, $starterTwo: String, $starterThree: String, $starterFour: String, $starterFive: String, $starterSix: String, $starterSeven: String, $benchOne: String, $benchTwo: String, $benchThree: String) {
+  addNbaPlayoffs(entryName: $entryName, starterOne: $starterOne, starterTwo: $starterTwo, starterThree: $starterThree, starterFour: $starterFour, starterFive: $starterFive, starterSix: $starterSix, starterSeven: $starterSeven, benchOne: $benchOne, benchTwo: $benchTwo, benchThree: $benchThree) {
+    _id
+    entryName
+    starterOne
+    starterTwo
+    starterThree
+    starterFour
+    starterFive
+    starterSix
+    starterSeven
+    benchOne
+    benchTwo
+    benchThree
+  }
+}
+`;
+
 export const MUTATION_LOGIN = gql`
 mutation Login($entryName: String, $password: String) {
   login(entryName: $entryName, password: $password) {

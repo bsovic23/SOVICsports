@@ -35,3 +35,22 @@ query Query {
   }
 }
 `;
+
+export const QUERY_ALL_NBAPLAYOFFS = gql`
+query Query {
+  allNbaPlayoffs {
+    _id
+    entryName
+    starterOne
+    starterTwo
+    starterThree
+    starterFour
+    starterFive
+    starterSix
+    starterSeven
+    benchOne
+    benchTwo
+    benchThree
+  }
+}
+`;

@@ -15,7 +15,7 @@ function NbaPlayoffs() {
                     <h3>Choose 10 players from any teams in the NBA playoffs</h3>
                     <li>7 must be starters</li>
                     <li>3 must be bench players</li>
-                    <li>You can only choose a maximum of 2 players per playoff team (Both CANNOT be starters on the same team. EX: One must be a starter and one must be a bench player)</li>
+                    <li>You can only choose a maximum of 2 players per playoff team if you want (BUT BOTH CANNOT be starters on the same team. EX: One must be a starter and one must be a bench player)</li>
                 </div>
                 <div>
                     <h3>Scoring</h3>

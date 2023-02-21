@@ -28,6 +28,16 @@ function Homepage() {
                 </button>
             </div>
             <div>
+                <h2>SOVICsports Year Standings</h2>
+                <p>
+                    For each challenge you enter, those total points will go towards your year standing. The points leader
+                    at the end of the year will win a bonus prize
+                </p>
+                <button>
+                    SOVICsports Year Standings
+                </button>
+            </div>
+            <div>
                 <h2>SOVICsports Standings History</h2>
                 <p>Click the button below to check the history of any SOVICsports challenge</p>
                 <button>

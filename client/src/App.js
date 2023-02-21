@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import NbaEntries from './components/NbaAllStar/NbaAllStarEntries';
 import NbaEntry from './components/NbaAllStar/NbaAllStarCreateEntry';
 import NbaPlayoffsEntry from './components/NbaPlayoffs/NbaPlayoffsCreateEntry';
+import NbaPlayoffsEntries from './components/NbaPlayoffs/NbaPlayoffsEntries';
 
 // Page Imports
 import Homepage from './pages/Homepage';
@@ -69,8 +70,12 @@ function App() {
                 element={<NbaPlayoffs />}
                 />
                 <Route
-                path="/nbaplayoffsentry"
+                path="/nbaplayoffsEntry"
                 element={<NbaPlayoffsEntry />}
+                />
+                <Route
+                path="/nbaplayoffsEntries"
+                element={<NbaPlayoffsEntries />}
                 />
                 <Route
                 path="*"

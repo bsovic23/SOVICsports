@@ -12,7 +12,7 @@ function NbaPlayoffsNavbar() {
                 <Link to="/nbaplayoffsEntry" style={{textDecoration: 'none', color: 'black'}}>CREATE ENTRY</Link>
             </button>
             <button>
-                All Entries
+                <Link to="/nbaplayoffsEntries" style={{textDecoration: 'none', color: 'black'}}>ALL ENTRIES</Link>
             </button>
             <button>
                 Standings
