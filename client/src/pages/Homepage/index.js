@@ -9,22 +9,22 @@ function Homepage() {
             <div>
             <p>Which challenge would you like to access:</p>
                 <button>
-                    <Link to="/nbaAllStar" style={{textDecoration: 'none', color: 'black'}}>NBA All Star Weekend</Link>
-                </button>
-                <button>
                     COMING SOON: NFL Playoffs Create A Team
                 </button>
                 <button>
-                    COMING SOON: College Football Bowl Challenge
-                </button>
-                <button>
-                <Link to="/nbaplayoffs" style={{textDecoration: 'none', color: 'black'}}>NBA Playoffs Create A Team</Link>
+                    <Link to="/nbaAllStar" style={{textDecoration: 'none', color: 'black'}}>NBA All Star Weekend</Link>
                 </button>
                 <button>
                     COMING SOON: Pickhoops March Madness
                 </button>
                 <button>
+                    <Link to="/nbaplayoffs" style={{textDecoration: 'none', color: 'black'}}>NBA Playoffs Create A Team</Link>
+                </button>
+                <button>
                     COMING SOON: NFL Weekly Player Survivor Pickem
+                </button>
+                <button>
+                    COMING SOON: College Football Bowl Challenge
                 </button>
             </div>
             <div>

@@ -4,12 +4,16 @@ import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@ap
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Components Imports
+// 0. General
 import Header from './components/Header';
 import Footer from './components/Footer';
+// 1. All Star
 import NbaEntries from './components/NbaAllStar/NbaAllStarEntries';
 import NbaEntry from './components/NbaAllStar/NbaAllStarCreateEntry';
+// 2. NBA Playoffs
 import NbaPlayoffsEntry from './components/NbaPlayoffs/NbaPlayoffsCreateEntry';
 import NbaPlayoffsEntries from './components/NbaPlayoffs/NbaPlayoffsEntries';
+import NbaPlayoffsStandings from './components/NbaPlayoffs/NbaPlayoffsStanding';
 
 // Page Imports
 import Homepage from './pages/Homepage';
@@ -66,16 +70,24 @@ function App() {
                 element={<History />}
                 />
                 <Route
-                path="/nbaplayoffs"
+                path="/nbaPlayoffs"
                 element={<NbaPlayoffs />}
                 />
                 <Route
-                path="/nbaplayoffsEntry"
+                path="/nbaPlayoffsEntry"
                 element={<NbaPlayoffsEntry />}
                 />
                 <Route
-                path="/nbaplayoffsEntries"
+                path="/nbaPlayoffsEntries"
                 element={<NbaPlayoffsEntries />}
+                />
+                <Route
+                path="/nbaPlayoffsEntries"
+                element={<NbaPlayoffsEntries />}
+                />
+                <Route
+                path="/nbaPlayoffsStandings"
+                element={<NbaPlayoffsStandings />}
                 />
                 <Route
                 path="*"
