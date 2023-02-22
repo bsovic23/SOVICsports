@@ -4,7 +4,7 @@ import NbaPlayoffsNavbar from '../../components/Navbar/nbaPlayoffsNavbar';
 
 function NbaPlayoffs() {
     return(
-        <section class="nba-playoffs-page">
+        <section class="page" id="playoffs-page">
             <div>
                 < NbaPlayoffsNavbar />
             </div>

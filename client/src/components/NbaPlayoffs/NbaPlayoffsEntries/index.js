@@ -12,7 +12,7 @@ const NbaPlayoffsEntries = () => {
     const allNbaPlayoffs = data?.allNbaPlayoffs || [];
 
     return(
-        <section class="nba-playoffs">
+        <section class="page" id="nbaplayoffs-entries">
             <div>
                 < NbaPlayoffsNavbar />
             </div>

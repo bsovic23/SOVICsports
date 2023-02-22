@@ -15,9 +15,9 @@ const NbaEntries = () => {
     console.log(allNbaAllStar);
     
     return(
-        <section class="nba-entries">
+        <section class="page" id="allstar-entries-page">
             <div>
-                <NbaNavbar />
+                < NbaNavbar />
             </div>
             <h1>ALL NBA ALL STAR ENTRIES</h1>
             <div>

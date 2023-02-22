@@ -40,8 +40,6 @@ body {
   padding: 20px;
 }
 
-/* Components =========================================================== */
-
 /* Header -------------------------------------------------------------- */
 .header h1 {
   background: var(--title);
@@ -62,7 +60,7 @@ body {
   font-weight: bold;
 }
 
-/* Footer */
+/* Footer =========================================== */
 .footer {
   background: var(--title);
   padding: 10px;
@@ -103,61 +101,31 @@ body {
   background-color: yellow;
 }
 
-/* NbaAllStar Page -------------------------------------------------------------- */
-.nba-all-star-page {
+/* General Page Layout -------------------------------------------------------------- */
+.page {
   background-color: var(--background);
 }
 
-.nba-all-star-page h1 {
+.page h1 {
   background-color: var(--header);
   padding: 10px;
 }
 
-.nba-all-star-page div {
+.page div {
   padding: 10px;
 }
 
-
 /* NbaAllStarEntries (card) -------------------------------------------------------------- */
-.nba-entries .nba-entry-card {
+.page .nba-entry-card {
   border: solid black 2px;
   border-radius: 10px;
   margin: 4px;
   background-color: #44BBA4;
 }
 
-.nba-entries p {
+#allstar-entries-page p {
   background-color: gold;
 }
-
-.nba-entries h3 {
-  background-color: var(--background);
-}
-
-.nba-entries h4 {
-  background-color: var(--background);
-}
-
-.nba-entries-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
-/* NBA ALL STAR Entries (page) -------------------------------------------------------------- */
-.nba-entries-cards {
-  background-color: var(--background);
-}
-
-.nba-entries h1 {
-  background-color: var(--header);
-  padding: 10px;
-}
-
-.nba-entries div {
-  padding: 10px;
-}
-
 
 /* NBA ALL STAR Entry Form ----------------------- */
 .form-section {
@@ -182,20 +150,6 @@ body {
   border: yellow solid 2px;
 }
 
-/* Nba Playoffs Page -------------------------------------------------------------- */
-.nba-playoffs-page {
-  background-color: var(--background);
-}
-
-.nba-playoffs-page h1 {
-  background-color: var(--header);
-  padding: 10px;
-}
-
-.nba-playoffs-page div {
-  padding: 10px;
-}
-
 /* History (card) -------------------------------------------------------------- */
 .history-card-section {
   background-color: var(--background);
@@ -209,7 +163,5 @@ body {
 .history-card h4 {
   background-color: #93E1D8;
 }
-
-/* Pages =========================================================== */
 
 

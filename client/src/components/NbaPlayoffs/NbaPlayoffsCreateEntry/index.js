@@ -40,7 +40,7 @@ const NbaPlayoffsEntry = () => {
       };
 
     return(
-        <section>
+        <section class="page" id="nbaplayoffs-create-entry">
             <div>
                 < NbaPlayoffsNavbar />
             </div>
