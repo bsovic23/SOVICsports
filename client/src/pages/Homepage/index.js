@@ -47,7 +47,7 @@ function Homepage() {
             <div class="homepage">
                 <h2>About SOVICsports</h2>
                 <p>
-                    SOVICSports was unofficially developed in 2016 while I was at Syracuse University. As an avid suporter of all sports,
+                    SOVICsports was unofficially developed in 2016 while I was at Syracuse University. As an avid suporter of all sports,
                     my friends and I would love watching the different sporting events, special weekends, and bowl seasons.
                     <br />
                     <br />
@@ -69,8 +69,8 @@ function Homepage() {
                     SOVICsports was created to provide the greatest user experience to my friends for these individual sports contests.
                     <br />
                     <br />
-                    This project took time (and will continue to take time as I continue to make improvements throughout the year), and 
-                    money to publish. If you feel like contrubuting anything, you can always venmo me.
+                    This project took time (and will continue to take time as I continue to make improvements throughout the year). If 
+                    you feel like contrubuting anything, you can always venmo me.
                 </p>
             </div>
             </div>
