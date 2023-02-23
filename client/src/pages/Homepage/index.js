@@ -34,11 +34,11 @@ function Homepage() {
                     at the end of the year will win a bonus prize
                 </p>
                 <button>
-                    SOVICsports Year Standings
+                    COMING SOON: SOVICsports Year Standings
                 </button>
             </div>
             <div>
-                <h2>SOVICsports Standings History</h2>
+                <h2>SOVICsports Challenge History</h2>
                 <p>Click the button below to check the history of any SOVICsports challenge</p>
                 <button>
                     <Link to="/history" style={{textDecoration: 'none', color: 'black'}}>SOVICsports Challenge History</Link>

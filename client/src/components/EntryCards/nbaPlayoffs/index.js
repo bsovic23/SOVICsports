@@ -24,20 +24,20 @@ const NbaPlayoffsCards = ({ allNbaPlayoffs }) => {
                 </tr>
                 {allNbaPlayoffs &&
                 allNbaPlayoffs.map(nbaEntry => (
-                <tr>
+                <tr class="entry">
                     <th key={nbaEntry._id}>
                     {nbaEntry.entryName}
                     </th>
-                    <td>Starter 1</td>
-                    <td>Starter 2</td>
-                    <td>Starter 3</td>
-                    <td>Starter 4</td>
-                    <td>Starter 5</td>
-                    <td>Starter Six</td>
-                    <td>Starter Seven</td>
-                    <td>Bench One</td>
-                    <td>Bench Two</td>
-                    <td>Bench Three</td>
+                    <td>{nbaEntry.starterOne}</td>
+                    <td>{nbaEntry.starterTwo}</td>
+                    <td>{nbaEntry.starterThree}</td>
+                    <td>{nbaEntry.starterFour}</td>
+                    <td>{nbaEntry.starterFive}</td>
+                    <td>{nbaEntry.starterSix}</td>
+                    <td>{nbaEntry.starterSeven}</td>
+                    <td>{nbaEntry.benchOne}</td>
+                    <td>{nbaEntry.benchTwo}</td>
+                    <td>{nbaEntry.benchThree}</td>
                 </tr>
                 ))}
             </table>          

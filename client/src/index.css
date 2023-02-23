@@ -90,17 +90,6 @@ body {
   color: yellow;
 }
 
-/* NbaAllStar Navbar -------------------------------------------------------------- */
-.navbar button {
-  background-color: #44BBA4;
-  padding: 5px;
-  margin-left: 15px;
-}
-
-.navbar button:hover {
-  background-color: yellow;
-}
-
 /* General Page Layout -------------------------------------------------------------- */
 .page {
   background-color: var(--background);
@@ -115,7 +104,18 @@ body {
   padding: 10px;
 }
 
-/* NbaAllStarEntries (card) -------------------------------------------------------------- */
+/* NbaAllStar Navbar -------------------------------------------------------------- */
+.navbar button {
+  background-color: #44BBA4;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.navbar button:hover {
+  background-color: yellow;
+}
+
+/* NBA ALL STAR Entry Cards  -------------------------------------------------------------- */
 .page .nba-entry-card {
   border: solid black 2px;
   border-radius: 10px;
@@ -148,6 +148,15 @@ body {
 
 .form-section .form-input input:hover {
   border: yellow solid 2px;
+}
+
+/* NBA Playoffs Entry Cards  -------------------------------------------------------------- */
+.page .table-header th {
+  background-color: #44BBA4;
+}
+
+.page .entry th {
+  background-color: rgb(202, 116, 116);
 }
 
 /* History (card) -------------------------------------------------------------- */
