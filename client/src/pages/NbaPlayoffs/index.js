@@ -8,7 +8,7 @@ function NbaPlayoffs() {
             <div>
                 < NbaPlayoffsNavbar />
             </div>
-            <h1>WELCOME TO THE NBA PLAYOFFS CHALENGE</h1>
+            <h1>WELCOME TO THE NBA PLAYOFFS CHALLENGE</h1>
             <div>
                 <h2>Instructions</h2>
                 <div>
