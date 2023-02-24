@@ -29,7 +29,9 @@ This application was developed to replace the necessity to wait for me for updat
 
 ## Deployed Application
 
+You can find the deployed application at: 
 
+https://sovicsports.herokuapp.com/
 
 ## Future Developments
 
@@ -37,6 +39,7 @@ This application was developed to replace the necessity to wait for me for updat
 
 ## Screenshots
 
-![](client/src/images/homepage.PNG);
-![](client/src/images/nba-instructions.PNG);
-![](client/src/images/history.PNG);
+![](client/src/images/homepage.PNG)
+![](client/src/images/add-entry.PNG)
+![](client/src/images/nba-instructions.PNG)
+![](client/src/images/history.PNG)
