@@ -22,6 +22,7 @@ import Error from './pages/Error';
 import History from './pages/History';
 import NbaAllStar from './pages/NbaAllStar';
 import NbaPlayoffs from './pages/NbaPlayoffs';
+import MarchMadness from './pages/MarchMadness';
 
 
 // Establish connection to back end server graphql endpoint
@@ -65,9 +66,9 @@ function App() {
                 path="/nbaEntry"
                 element={<NbaEntry />}
                 />
-                 <Route
-                path="/history"
-                element={<History />}
+                <Route
+                path="/marchMadness"
+                element={<MarchMadness />}
                 />
                 <Route
                 path="/nbaPlayoffs"
@@ -88,6 +89,10 @@ function App() {
                 <Route
                 path="/nbaPlayoffsStandings"
                 element={<NbaPlayoffsStandings />}
+                />
+                <Route
+                path="/history"
+                element={<History />}
                 />
                 <Route
                 path="*"

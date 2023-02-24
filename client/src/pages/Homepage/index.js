@@ -15,10 +15,10 @@ function Homepage() {
                     <Link to="/nbaAllStar" style={{textDecoration: 'none', color: 'black'}}>NBA All Star Weekend</Link>
                 </button>
                 <button>
-                    COMING SOON: Pickhoops March Madness
+                    <Link to="/marchMadness" style={{textDecoration: 'none', color: 'black'}}>PickHoops March Madness</Link>
                 </button>
                 <button>
-                    <Link to="/nbaplayoffs" style={{textDecoration: 'none', color: 'black'}}>NBA Playoffs Create A Team</Link>
+                    <Link to="/nbaPlayoffs" style={{textDecoration: 'none', color: 'black'}}>NBA Playoffs Create A Team</Link>
                 </button>
                 <button>
                     COMING SOON: NFL Weekly Player Survivor Pickem
