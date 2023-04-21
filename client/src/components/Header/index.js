@@ -11,7 +11,7 @@ function Header() {
                 </Link>
             </div>
             <p>
-                Version 1.0 | Updated: 2/16/2023
+                Version 1.02 | Updated: 4/21/2023
             </p>
         </section>
     )
