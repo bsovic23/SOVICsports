@@ -8,4 +8,4 @@ function NbaPlayoffsStandings() {
             </tr>
         </section>
     )
-}
+};
