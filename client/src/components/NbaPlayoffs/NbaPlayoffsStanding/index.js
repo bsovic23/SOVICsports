@@ -1,57 +1,61 @@
 import React from 'react';
 
 import NbaPlayoffsNavbar from '../../Navbar/nbaPlayoffsNavbar';
-import { sortByScore } from '../../../utils/functions';
+import { playerScoreFx, entryScoreTotalFx, sortByScoreNew } from '../../../utils/functions';
 
 function NbaPlayoffsStandings() {
     const userEntries = [
-        { userName: 'Brit Sovic'},
+        { userName: '10fifty', players: ['Lebron', 'Tatum', 'Giannis', 'Jokic', 'Embiid', 'Randle', 'Mitchell', 'Quickley', 'Brogdon', 'Portis']},
+        { userName: 'Brit Sovic', players: ['Mitchell', 'Embiid', 'Giannis', 'KD', 'Jokic', 'Tatum', 'Ja', 'Poole', 'Schroeder', 'Brogdon']},
+        { userName: 'Peter Swain', players: ['Tatum', 'KD', 'Lebron', 'Giannis', 'Curry', 'Embiid', 'Mitchell', 'Brogdon', 'Portis', 'Poole']},
+        { userName: 'Maloney', players: ['Curry', 'Booker', 'Tatum', 'Lebron', 'Jokic', 'Embiid', 'Giannis', 'Quickley', 'Poole', 'Brogdon']},
+        { userName: 'Ty Sovic', players: ['Tatum', 'Giannis', 'Curry', 'KD', 'Mitchell', 'Lebron', 'Embiid', 'Brogdon', 'Poole', 'Levert']},
+        { userName: 'Eggy', players: ['CP3', 'Giannis', 'Embiid', 'Mitchell', 'Jokic', 'Lebron', 'Tatum', 'Monk', 'Poole', 'Quickley']},
+        { userName: 'Rob Storey', players: ['Jokic', 'Giannis', 'KD', 'Tatum', 'Curry', 'Embiid', 'Mitchell', 'Bruce Brown', 'Portis', 'Brogdon']},
+        { userName: 'Anthony Wright', players: ['Lebron', 'KD', 'Giannis', 'Embiid', 'Tatum', 'Curry', 'KAT', 'Westbrook', 'Quickley', 'Bruce Brown']},
+        { userName: 'Alec Zoida', players: ['Giannis', 'KD', 'Curry', 'Embiid', 'Mitchell', 'Jokic', 'Lebron', 'Quickley', 'Brogdon', 'Tyus']},
+        { userName: 'Tre', players: ['Giannis', 'Embiid', 'KD', 'Curry', 'Jokic', 'Mitchell', 'Tatum', 'Portis', 'Brogdon', 'Warren']},
+        { userName: 'Matt Friedman', players: ['Embiid', 'Booker', 'Jokic', 'Giannis', 'Tatum', 'Bane', 'Mitchell', 'Warren', 'Melton', 'Portis']},
     ];
 
     const playerScores = [
-        { playerName: 'Lebron', score: '114'},
-        { playerName: 'Tatum', score: '133'},
-        { playerName: 'Giannis', score: '70'},
-        { playerName: 'Jokic', score: '136'},
-        { playerName: 'Embiid', score: '65'},
-        { playerName: 'Randle', score: '77'},
-        { playerName: 'Mitchell', score: '116'},
-        { playerName: 'Curry', score: '157'},
-        { playerName: 'KD', score: '147'},
-        { playerName: 'Booker', score: '191'},
-        { playerName: 'CP3', score: '73'},
-        { playerName: 'Bane', score: '126'},
-        { playerName: 'Ja', score: '113'},
-        { playerName: 'KAT', score: '91'},
-        { playerName: 'Quickley', score: '50'},
-        { playerName: 'Brogdon', score: '63'},
-        { playerName: 'Portis', score: '48'},
-        { playerName: 'Poole', score: '69'},
-        { playerName: 'Levert', score: '72'},
-        { playerName: 'Monk', score: '91'},
-        { playerName: 'Westbrook', score: '118'},
-        { playerName: 'Warren', score: '5'},
-        { playerName: 'Melton', score: '48'},
-        { playerName: 'Tyus', score: '24'},
-        { playerName: 'Bruce Brown', score: '62'},
-        { playerName: 'Schroeder', score: '26'}
+        { playerName: 'Lebron', score: 149},
+        { playerName: 'Tatum', score: 168},
+        { playerName: 'Giannis', score: 70},
+        { playerName: 'Jokic', score: 136},
+        { playerName: 'Embiid', score: 65},
+        { playerName: 'Randle', score: 77},
+        { playerName: 'Mitchell', score: 116},
+        { playerName: 'Curry', score: 241},
+        { playerName: 'KD', score: 147},
+        { playerName: 'Booker', score: 191},
+        { playerName: 'CP3', score: 73},
+        { playerName: 'Bane', score: 141},
+        { playerName: 'Ja', score: 123},
+        { playerName: 'KAT', score: 91},
+        { playerName: 'Quickley', score: 50},
+        { playerName: 'Brogdon', score: 85},
+        { playerName: 'Portis', score: 48},
+        { playerName: 'Poole', score: 89},
+        { playerName: 'Levert', score: 72},
+        { playerName: 'Monk', score: 133},
+        { playerName: 'Westbrook', score: 118},
+        { playerName: 'Warren', score: 5},
+        { playerName: 'Melton', score: 48},
+        { playerName: 'Tyus', score: 27},
+        { playerName: 'Bruce Brown', score: 62},
+        { playerName: 'Schroeder', score: 33}
     ];
 
-    const userScores = [
-        { name: '10fifty', score: 929 },
-        { name: 'Brit Sovic', score: 965 },
-        { name: 'Peter Swain', score: 1039 },
-        { name: 'Maloney', score: 1105 },
-        { name: 'Ty Sovic', score: 1063 },
-        { name: 'Eggy', score: 952 },
-        { name: 'Rob Storey', score: 1024 },
-        { name: 'Anthony Wright', score: 1042 },
-        { name: 'Alec Zoida', score: 994 },
-        { name: 'Tre', score: 967 },
-        { name: 'Matt Friedman', score: 943 },
-    ];
+    // (1) Score Individual Players (2) Sum the player arrays (3) Sort leader
 
-    const userStandings = sortByScore(userScores);
+    const practice = playerScoreFx(userEntries, playerScores);
+  
+    const userStandings = entryScoreTotalFx(practice);
+ 
+    const standingsDone = sortByScoreNew(userStandings);
+
+    // const final = sumAndSort(practice);
 
     return(
         <section class="page" id="nbaplayoffs-entries">
@@ -60,7 +64,7 @@ function NbaPlayoffsStandings() {
             </div>
             <h1>NBA Playoffs Challenge Standings</h1>
             <div>
-                <p>Standings updated as of 4/28 9:31 am ET</p>
+                <p>Standings at the end of Round 1 games</p>
             </div>
             <div>
                 <tr>
@@ -68,8 +72,8 @@ function NbaPlayoffsStandings() {
                     <th>Entry</th>
                     <th>Score</th>
                 </tr>
-                {userStandings && 
-                userStandings.map((standingsInfo, index) => (
+                {standingsDone && 
+                standingsDone.map((standingsInfo, index) => (
                     <tr key="standingsInfo.name">
                         <th>{index + 1}</th>
                         <th>{standingsInfo.name}</th>
