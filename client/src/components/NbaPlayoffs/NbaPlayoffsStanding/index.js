@@ -54,6 +54,7 @@ function NbaPlayoffsStandings() {
     const userStandings = entryScoreTotalFx(practice);
  
     const standingsDone = sortByScoreNew(userStandings);
+    const standingsPlayers = sortByScoreNew(playerScores);
 
     // const final = sumAndSort(practice);
 
@@ -77,6 +78,21 @@ function NbaPlayoffsStandings() {
                     <tr key="standingsInfo.name">
                         <th>{index + 1}</th>
                         <th>{standingsInfo.name}</th>
+                        <th>{standingsInfo.score}</th>
+                    </tr>
+                ))}
+            </div>
+            <div>
+                <tr>
+                    <th>Place</th>
+                    <th>Player</th>
+                    <th>Score</th>
+                </tr>
+                {standingsPlayers && 
+                standingsPlayers.map((standingsInfo, index) => (
+                    <tr key="standingsInfo.playerName">
+                        <th>{index + 1}</th>
+                        <th>{standingsInfo.playerName}</th>
                         <th>{standingsInfo.score}</th>
                     </tr>
                 ))}
