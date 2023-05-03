@@ -19,32 +19,32 @@ function NbaPlayoffsStandings() {
     ];
 
     const playerScores = [
-        { playerName: 'Lebron', score: 149},
-        { playerName: 'Tatum', score: 168},
+        { playerName: 'Lebron', score: 171},
+        { playerName: 'Tatum', score: 207},
         { playerName: 'Giannis', score: 70},
-        { playerName: 'Jokic', score: 136},
+        { playerName: 'Jokic', score: 189},
         { playerName: 'Embiid', score: 65},
-        { playerName: 'Randle', score: 77},
+        { playerName: 'Randle', score: 102},
         { playerName: 'Mitchell', score: 116},
-        { playerName: 'Curry', score: 241},
-        { playerName: 'KD', score: 147},
-        { playerName: 'Booker', score: 191},
-        { playerName: 'CP3', score: 73},
+        { playerName: 'Curry', score: 268},
+        { playerName: 'KD', score: 200},
+        { playerName: 'Booker', score: 253},
+        { playerName: 'CP3', score: 92},
         { playerName: 'Bane', score: 141},
         { playerName: 'Ja', score: 123},
         { playerName: 'KAT', score: 91},
-        { playerName: 'Quickley', score: 50},
-        { playerName: 'Brogdon', score: 85},
+        { playerName: 'Quickley', score: 65},
+        { playerName: 'Brogdon', score: 105},
         { playerName: 'Portis', score: 48},
-        { playerName: 'Poole', score: 89},
+        { playerName: 'Poole', score: 110},
         { playerName: 'Levert', score: 72},
         { playerName: 'Monk', score: 133},
         { playerName: 'Westbrook', score: 118},
         { playerName: 'Warren', score: 5},
-        { playerName: 'Melton', score: 48},
+        { playerName: 'Melton', score: 65},
         { playerName: 'Tyus', score: 27},
-        { playerName: 'Bruce Brown', score: 62},
-        { playerName: 'Schroeder', score: 33}
+        { playerName: 'Bruce Brown', score: 85},
+        { playerName: 'Schroeder', score: 52}
     ];
 
     // (1) Score Individual Players (2) Sum the player arrays (3) Sort leader
@@ -65,7 +65,7 @@ function NbaPlayoffsStandings() {
             </div>
             <h1>NBA Playoffs Challenge Standings</h1>
             <div>
-                <p>Standings at the end of Round 1 games</p>
+                <p>Standings as of 5/3/2023</p>
             </div>
             <div>
                 <tr>
