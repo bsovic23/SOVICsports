@@ -4,9 +4,17 @@ import { useQuery } from '@apollo/client';
 import { QUERY_ALL_NBAPLAYOFFS } from '../../../utils/queries';
 
 import NbaPlayoffsCards from '../../EntryCards/nbaPlayoffs';
-import NbaPlayoffsNavbar from '../../Navbar/nbaPlayoffsNavbar';
+import NavBar from '../../Navbar';
 
 const NbaPlayoffsEntries = () => {
+
+    const navbarChoices = [
+        {text: "CHALLENGE INSTRUCTIONS", link: "/nbaPlayoffs"},
+        {text: "CREATE ENTRY", link: "/nbaPlayoffsEntry"},
+        {text: "ALL ENTRIES", link: "/nbaPlayoffsEntries"},
+        {text: "STANDINGS", link: "/nbaPlayoffsStandings"}
+    ];
+
     const { loading, data } = useQuery(QUERY_ALL_NBAPLAYOFFS);
 
     const allNbaPlayoffs = data?.allNbaPlayoffs || [];
@@ -14,7 +22,7 @@ const NbaPlayoffsEntries = () => {
     return(
         <section class="page" id="nbaplayoffs-entries">
             <div>
-                < NbaPlayoffsNavbar />
+                < NavBar navElements={navbarChoices} />
             </div>
             <h1>ALL NBA PLAYOFF ENTRIES</h1>
             <div>

@@ -1,11 +1,19 @@
 import React from 'react';
-import NbaNavbar from '../../components/Navbar/nbaNavbar';
+import NavBar from '../../components/Navbar';
 
 const NbaAllStar = () => {
+
+    const navbarChoices = [
+        {text: "CHALLENGE INSTRUCTIONS", link: "/nbaAllStar"},
+        {text: "CREATE ENTRY", link: "/nbaEntry"},
+        {text: "ALL ENTRIES", link: "/nbaEntries"},
+        {text: "STANDINGS", link: "/nbaAllStar"}
+    ];
+
     return(
         <section class="page" id="allstar-page">
             <div>
-                < NbaNavbar />
+                < NavBar navElements={navbarChoices} />
             </div>
             <h1>WELCOME TO THE NBA ALL STAR CHALLENGE</h1>
             <div>

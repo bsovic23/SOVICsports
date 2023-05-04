@@ -1,9 +1,17 @@
 import React from 'react';
 
-import NbaPlayoffsNavbar from '../../Navbar/nbaPlayoffsNavbar';
+import NavBar from '../../Navbar';
 import { playerScoreFx, entryScoreTotalFx, sortByScoreNew } from '../../../utils/functions';
 
 function NbaPlayoffsStandings() {
+
+    const navbarChoices = [
+        {text: "CHALLENGE INSTRUCTIONS", link: "/nbaPlayoffs"},
+        {text: "CREATE ENTRY", link: "/nbaPlayoffsEntry"},
+        {text: "ALL ENTRIES", link: "/nbaPlayoffsEntries"},
+        {text: "STANDINGS", link: "/nbaPlayoffsStandings"}
+    ];
+
     const userEntries = [
         { userName: '10fifty', players: ['Lebron', 'Tatum', 'Giannis', 'Jokic', 'Embiid', 'Randle', 'Mitchell', 'Quickley', 'Brogdon', 'Portis']},
         { userName: 'Brit Sovic', players: ['Mitchell', 'Embiid', 'Giannis', 'KD', 'Jokic', 'Tatum', 'Ja', 'Poole', 'Schroeder', 'Brogdon']},
@@ -61,7 +69,7 @@ function NbaPlayoffsStandings() {
     return(
         <section class="page" id="nbaplayoffs-entries">
             <div>
-                < NbaPlayoffsNavbar />
+                < NavBar navElements={navbarChoices} />
             </div>
             <h1>NBA Playoffs Challenge Standings</h1>
             <div>

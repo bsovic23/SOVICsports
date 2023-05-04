@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
 import { useMutation } from "@apollo/client";
 
-import NbaPlayoffsNavbar from '../../Navbar/nbaPlayoffsNavbar';
+import NavBar from '../../Navbar';
 import { MUTATION_NBA_PLAYOFFS } from '../../../utils/mutations';
 
 const NbaPlayoffsEntry = () => {
+    
+    const navbarChoices = [
+        {text: "CHALLENGE INSTRUCTIONS", link: "/nbaPlayoffs"},
+        {text: "CREATE ENTRY", link: "/nbaPlayoffsEntry"},
+        {text: "ALL ENTRIES", link: "/nbaPlayoffsEntries"},
+        {text: "STANDINGS", link: "/nbaPlayoffsStandings"}
+    ];
+
     const [entryName, setEntry] = useState('');
     const [starterOne, setStarterOne] = useState('');
     const [starterTwo, setStarterTwo] = useState('');
@@ -59,7 +67,7 @@ const NbaPlayoffsEntry = () => {
     return(
         <section class="form-section" id="nbaplayoffs-create-entry">
             <div>
-                < NbaPlayoffsNavbar />
+                < NavBar navElements={navbarChoices} />
             </div>
             <h1>NBA PLAYOFFS CREATE ENTRY</h1>
             <div class="form-div">

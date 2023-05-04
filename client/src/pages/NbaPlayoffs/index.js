@@ -1,12 +1,20 @@
 import React from 'react';
 
-import NbaPlayoffsNavbar from '../../components/Navbar/nbaPlayoffsNavbar';
+import NavBar from '../../components/Navbar';
 
 function NbaPlayoffs() {
+    
+    const navbarChoices = [
+        {text: "CHALLENGE INSTRUCTIONS", link: "/nbaPlayoffs"},
+        {text: "CREATE ENTRY", link: "/nbaPlayoffsEntry"},
+        {text: "ALL ENTRIES", link: "/nbaPlayoffsEntries"},
+        {text: "STANDINGS", link: "/nbaPlayoffsStandings"}
+    ];
+
     return(
         <section class="page" id="playoffs-page">
             <div>
-                < NbaPlayoffsNavbar />
+                < NavBar navElements={navbarChoices} />
             </div>
             <h1>WELCOME TO THE NBA PLAYOFFS CHALLENGE</h1>
             <div>

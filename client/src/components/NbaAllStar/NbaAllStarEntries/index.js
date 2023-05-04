@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/client';
 import { QUERY_ALL_NBAALLSTAR } from '../../../utils/queries';
 
 import NbaAllStarEntries from '../../../components/EntryCards/nbaAllStar';
-import NbaNavbar from '../../Navbar/nbaNavbar';
+import NavBar from '../../../components/Navbar';
 
 const NbaEntries = () => {
 
@@ -12,12 +12,17 @@ const NbaEntries = () => {
 
     const allNbaAllStar = data?.allNbaAllStar || [];
 
-    console.log(allNbaAllStar);
+    const navbarChoices = [
+        {text: "CHALLENGE INSTRUCTIONS", link: "/nbaAllStar"},
+        {text: "CREATE ENTRY", link: "/nbaEntry"},
+        {text: "ALL ENTRIES", link: "/nbaEntries"},
+        {text: "STANDINGS", link: "/nbaAllStar"}
+    ];
     
     return(
         <section class="page" id="allstar-entries-page">
             <div>
-                < NbaNavbar />
+                < NavBar navElements={navbarChoices} />
             </div>
             <h1>ALL NBA ALL STAR ENTRIES</h1>
             <div>

@@ -2,7 +2,7 @@ import React from "react";
 import { useMutation } from "@apollo/client";
 import { MUTATION_NBA_ALLSTAR } from "../../../utils/mutations";
 
-import NbaNavbar from '../../Navbar/nbaNavbar';
+import NavBar from '../../../components/Navbar';
 import EntryForm from "../../EntryForm";
 
 const NbaEntry = () => {
@@ -22,12 +22,19 @@ const NbaEntry = () => {
         { name: 'threeChamp', type: 'text', placeholder: 'Three Champ'},
         { name: 'dunkChamp', type: 'text', placeholder: 'Dunk Champ'},
         { name: 'challengeCaptain', type: 'text', placeholder: 'Challenge Captain'}
-    ]
+    ];
+
+    const navbarChoices = [
+        {text: "CHALLENGE INSTRUCTIONS", link: "/nbaAllStar"},
+        {text: "CREATE ENTRY", link: "/nbaEntry"},
+        {text: "ALL ENTRIES", link: "/nbaEntries"},
+        {text: "STANDINGS", link: "/nbaAllStar"}
+    ];
 
     return(
         <section class='form-section'>
             <div>
-                <NbaNavbar />
+                < NavBar navElements={navbarChoices} />
             </div>
             <h1>NBA ALL STAR CREATE ENTRY</h1>
             <div class='form-div'>
