@@ -23,6 +23,7 @@ import History from './pages/History';
 import NbaAllStar from './pages/NbaAllStar';
 import NbaPlayoffs from './pages/NbaPlayoffs';
 import MarchMadness from './pages/MarchMadness';
+import BowlChallenge from './pages/BowlChallenge';
 
 
 // Establish connection to back end server graphql endpoint
@@ -93,6 +94,10 @@ function App() {
                 <Route
                 path="/history"
                 element={<History />}
+                />
+                <Route
+                path="/bowlchallenge"
+                element={<BowlChallenge />}
                 />
                 <Route
                 path="*"
