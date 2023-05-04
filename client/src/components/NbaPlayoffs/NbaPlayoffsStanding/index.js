@@ -20,10 +20,10 @@ function NbaPlayoffsStandings() {
 
     const playerScores = [
         { playerName: 'Lebron', score: 171},
-        { playerName: 'Tatum', score: 207},
+        { playerName: 'Tatum', score: 214},
         { playerName: 'Giannis', score: 70},
         { playerName: 'Jokic', score: 189},
-        { playerName: 'Embiid', score: 65},
+        { playerName: 'Embiid', score: 80},
         { playerName: 'Randle', score: 102},
         { playerName: 'Mitchell', score: 116},
         { playerName: 'Curry', score: 268},
@@ -34,14 +34,14 @@ function NbaPlayoffsStandings() {
         { playerName: 'Ja', score: 123},
         { playerName: 'KAT', score: 91},
         { playerName: 'Quickley', score: 65},
-        { playerName: 'Brogdon', score: 105},
+        { playerName: 'Brogdon', score: 128},
         { playerName: 'Portis', score: 48},
         { playerName: 'Poole', score: 110},
         { playerName: 'Levert', score: 72},
         { playerName: 'Monk', score: 133},
         { playerName: 'Westbrook', score: 118},
         { playerName: 'Warren', score: 5},
-        { playerName: 'Melton', score: 65},
+        { playerName: 'Melton', score: 67},
         { playerName: 'Tyus', score: 27},
         { playerName: 'Bruce Brown', score: 85},
         { playerName: 'Schroeder', score: 52}
@@ -65,7 +65,7 @@ function NbaPlayoffsStandings() {
             </div>
             <h1>NBA Playoffs Challenge Standings</h1>
             <div>
-                <p>Standings as of 5/3/2023</p>
+                <p>Standings as of 5/4/2023 morning</p>
             </div>
             <div>
                 <tr>
