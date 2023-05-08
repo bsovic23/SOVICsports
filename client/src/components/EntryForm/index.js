@@ -15,7 +15,7 @@ const EntryForm = ({ mutation, fields }) => {
     }
 
     return (
-        <form onSubmit={handleChange}>
+        <form onSubmit={handleSubmit}>
             {fields.map(field => (
                 <div class="form-div">
                     <input

@@ -7,9 +7,10 @@ const BowlChallenge = () => {
     const bowlChallengePicks = [];
 
     const navbarChoices = [
-        {text: "Element1", link: "/nbaAllStar"},
-        {text: "Element2", link: "/nbaAllStar"},
-        {text: "Element3", link: "/nbaAllStar"}
+        {text: "CHALLENGE INSTRUCTIONS", link: "/bowlChallenge"},
+        {text: "CREATE ENTRY", link: "/bowlChallengeEntry"},
+        {text: "ALL ENTRIES", link: "/nbaAllStar"},
+        {text: "STANDINGS", link: "/nbaAllStar"},
     ];
 
     return(
@@ -18,6 +19,14 @@ const BowlChallenge = () => {
                 < NavBar navElements={navbarChoices} />
             </div>
             <h1>COLLEGE FOOTBALL BOWL CHALLENGE</h1>
+            <div>
+                <h2>Instructions</h2>
+                <div>
+                    <h3>Choose the winner of each bowl game</h3>
+                    <li>You will receive points based on each correct pick you make</li>
+                    <li>Each set of bowl games are worth a differnt number of points</li>
+                </div>
+            </div>
         </section>
     )
 };

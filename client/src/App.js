@@ -14,6 +14,8 @@ import NbaEntry from './components/NbaAllStar/NbaAllStarCreateEntry';
 import NbaPlayoffsEntry from './components/NbaPlayoffs/NbaPlayoffsCreateEntry';
 import NbaPlayoffsEntries from './components/NbaPlayoffs/NbaPlayoffsEntries';
 import NbaPlayoffsStandings from './components/NbaPlayoffs/NbaPlayoffsStanding';
+// 3. Bowl Challenge
+import BowlChallengeEntry from './components/BowlChallenge/BowlChallengeCreateEntry';
 
 // Page Imports
 import Homepage from './pages/Homepage';
@@ -96,8 +98,12 @@ function App() {
                 element={<History />}
                 />
                 <Route
-                path="/bowlchallenge"
+                path="/bowlChallenge"
                 element={<BowlChallenge />}
+                />
+                <Route
+                path="/bowlChallengeEntry"
+                element={<BowlChallengeEntry />}
                 />
                 <Route
                 path="*"

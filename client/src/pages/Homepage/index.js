@@ -21,10 +21,10 @@ function Homepage() {
                     <Link to="/nbaPlayoffs" style={{textDecoration: 'none', color: 'black'}}>NBA Playoffs Create A Team</Link>
                 </button>
                 <button>
-                    COMING SOON: NFL Weekly Player Survivor Pickem
+                    COMING SOON: NFL Season Team
                 </button>
                 <button>
-                    COMING SOON: College Football Bowl Challenge
+                    <Link to="/bowlChallenge" style={{textDecoration: 'none', color: 'black'}}>College Football Bowl Challenge</Link>
                 </button>
             </div>
             <div>
