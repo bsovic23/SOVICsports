@@ -16,6 +16,8 @@ import NbaPlayoffsEntries from './components/NbaPlayoffs/NbaPlayoffsEntries';
 import NbaPlayoffsStandings from './components/NbaPlayoffs/NbaPlayoffsStanding';
 // 3. Bowl Challenge
 import BowlChallengeEntry from './components/BowlChallenge/BowlChallengeCreateEntry';
+import BowlChallengeEntries from './components/BowlChallenge/BowlChallengeEntries';
+import BowlChallengeStandings from './components/BowlChallenge/BowlChallengeStandings';
 
 // Page Imports
 import Homepage from './pages/Homepage';
@@ -38,6 +40,26 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+// Routes
+
+const routes = [
+  { path: "/", element: <Homepage /> },
+  { path: "/nbaAllStar", element: <NbaAllStar />},
+  { path: "/nbaEntries", element: <NbaEntries />},
+  { path: "/nbaEntry", element: <NbaEntry />},
+  { path: "/marchMadness", element: <MarchMadness />},
+  { path: "/nbaPlayoffs", element: <NbaPlayoffs />},
+  { path: "/nbaPlayoffsEntry", element: <NbaPlayoffsEntry />},
+  { path: "/nbaPlayoffsEntries", element: <NbaPlayoffsEntries />},
+  { path: "/nbaPlayoffsStandings", element: <NbaPlayoffsStandings />},
+  { path: "/history", element: <History />},
+  { path: "/bowlChallenge", element: <BowlChallenge />},
+  { paht: "/bowlChallengeEntry", element: <BowlChallengeEntry />},
+  { path: "/bowlChallengeEntries", element: <BowlChallengeEntries />},
+  { path: "/bowlChallengeStandings", element: <BowlChallengeStandings />},
+  { path: "*", element: <Error />}
+];
+
 // Application
 
 function App() {
@@ -49,66 +71,9 @@ function App() {
           <Header />
             <div>
               <Routes>
-                <Route
-                path="/"
-                element={<Homepage />}
-                />
-                <Route
-                path="/profile"
-                element={<Profile />}
-                />
-                <Route
-                path="/nbaAllStar"
-                element={<NbaAllStar />}
-                />
-                <Route
-                path="/nbaEntries"
-                element={<NbaEntries />}
-                />
-                <Route
-                path="/nbaEntry"
-                element={<NbaEntry />}
-                />
-                <Route
-                path="/marchMadness"
-                element={<MarchMadness />}
-                />
-                <Route
-                path="/nbaPlayoffs"
-                element={<NbaPlayoffs />}
-                />
-                <Route
-                path="/nbaPlayoffsEntry"
-                element={<NbaPlayoffsEntry />}
-                />
-                <Route
-                path="/nbaPlayoffsEntries"
-                element={<NbaPlayoffsEntries />}
-                />
-                <Route
-                path="/nbaPlayoffsEntries"
-                element={<NbaPlayoffsEntries />}
-                />
-                <Route
-                path="/nbaPlayoffsStandings"
-                element={<NbaPlayoffsStandings />}
-                />
-                <Route
-                path="/history"
-                element={<History />}
-                />
-                <Route
-                path="/bowlChallenge"
-                element={<BowlChallenge />}
-                />
-                <Route
-                path="/bowlChallengeEntry"
-                element={<BowlChallengeEntry />}
-                />
-                <Route
-                path="*"
-                element={<Error />}
-                />
+                {routes.map(({ path, element }) => (
+                  <Route key={path} path={path} element={element} />
+                ))}
               </Routes>
             </div>
           <Footer />

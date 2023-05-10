@@ -9,8 +9,8 @@ const BowlChallenge = () => {
     const navbarChoices = [
         {text: "CHALLENGE INSTRUCTIONS", link: "/bowlChallenge"},
         {text: "CREATE ENTRY", link: "/bowlChallengeEntry"},
-        {text: "ALL ENTRIES", link: "/nbaAllStar"},
-        {text: "STANDINGS", link: "/nbaAllStar"},
+        {text: "ALL ENTRIES", link: "/bowlChallengeEntries"},
+        {text: "STANDINGS", link: "/bowlChallengeStandings"},
     ];
 
     return(

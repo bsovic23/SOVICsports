@@ -27,32 +27,32 @@ function NbaPlayoffsStandings() {
     ];
 
     const playerScores = [
-        { playerName: 'Lebron', score: 215},
-        { playerName: 'Tatum', score: 265},
+        { playerName: 'Lebron', score: 242},
+        { playerName: 'Tatum', score: 301},
         { playerName: 'Giannis', score: 70},
-        { playerName: 'Jokic', score: 306},
-        { playerName: 'Embiid', score: 110},
-        { playerName: 'Randle', score: 112},
+        { playerName: 'Jokic', score: 335},
+        { playerName: 'Embiid', score: 143},
+        { playerName: 'Randle', score: 132},
         { playerName: 'Mitchell', score: 116},
-        { playerName: 'Curry', score: 311},
-        { playerName: 'KD', score: 276},
-        { playerName: 'Booker', score: 336},
+        { playerName: 'Curry', score: 342},
+        { playerName: 'KD', score: 302},
+        { playerName: 'Booker', score: 364},
         { playerName: 'CP3', score: 92},
         { playerName: 'Bane', score: 141},
         { playerName: 'Ja', score: 123},
         { playerName: 'KAT', score: 91},
         { playerName: 'Quickley', score: 77},
-        { playerName: 'Brogdon', score: 162},
+        { playerName: 'Brogdon', score: 169},
         { playerName: 'Portis', score: 48},
         { playerName: 'Poole', score: 121},
         { playerName: 'Levert', score: 72},
         { playerName: 'Monk', score: 133},
         { playerName: 'Westbrook', score: 118},
-        { playerName: 'Warren', score: 17},
+        { playerName: 'Warren', score: 21},
         { playerName: 'Melton', score: 81},
         { playerName: 'Tyus', score: 27},
-        { playerName: 'Bruce Brown', score: 101},
-        { playerName: 'Schroeder', score: 68}
+        { playerName: 'Bruce Brown', score: 126},
+        { playerName: 'Schroeder', score: 78}
     ];
 
     // (1) Score Individual Players (2) Sum the player arrays (3) Sort leader
@@ -73,7 +73,7 @@ function NbaPlayoffsStandings() {
             </div>
             <h1>NBA Playoffs Challenge Standings</h1>
             <div>
-                <p>Standings as of 5/8/2023 morning</p>
+                <p>Standings as of 5/10/2023 morning</p>
             </div>
             <div>
                 <tr>
