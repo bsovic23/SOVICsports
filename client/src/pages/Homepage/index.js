@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Homepage() {
+
     return(
         <section class="homepage">
             <h2>SOVICsports Challenges</h2>

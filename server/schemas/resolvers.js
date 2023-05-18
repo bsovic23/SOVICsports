@@ -2,7 +2,8 @@ const {
     nbaAllStar,
     bowlPickem,
     history,
-    nbaPlayoffs
+    nbaPlayoffs,
+    comment
 } = require('../models');
 
 const resolvers = {
@@ -39,6 +40,16 @@ const resolvers = {
         //
         allNbaPlayoffs: async () => {
             return nbaPlayoffs.find();
+        },
+
+        // Bowl Pickem
+        allBowlPickem: async () => {
+            return bowlPickem.find();
+        },
+
+        // Get all Comments
+        allComments: async () => {
+            return comment.find();
         }
     },
 
@@ -60,6 +71,18 @@ const resolvers = {
             const nbaPlayoffsEntry = await nbaPlayoffs.create(args);
 
             return nbaPlayoffsEntry;
+        },
+
+        addBowlPickem: async(parent, args) => {
+            const bowlPickemEntry = await bowlPickem.create(args);
+
+            return bowlPickemEntry;
+        },
+
+        addComment: async (parent, args) => {
+            const commentEntry = await comment.create(args);
+
+            return commentEntry;
         }
     }
 };

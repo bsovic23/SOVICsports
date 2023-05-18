@@ -54,7 +54,7 @@ const routes = [
   { path: "/nbaPlayoffsStandings", element: <NbaPlayoffsStandings />},
   { path: "/history", element: <History />},
   { path: "/bowlChallenge", element: <BowlChallenge />},
-  { paht: "/bowlChallengeEntry", element: <BowlChallengeEntry />},
+  { path: "/bowlChallengeEntry", element: <BowlChallengeEntry />},
   { path: "/bowlChallengeEntries", element: <BowlChallengeEntries />},
   { path: "/bowlChallengeStandings", element: <BowlChallengeStandings />},
   { path: "*", element: <Error />}

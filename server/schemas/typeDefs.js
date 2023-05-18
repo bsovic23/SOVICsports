@@ -55,6 +55,59 @@ const typeDefs = gql`
         benchThree: String
     }
 
+    type comment {
+        _id: ID
+        commentBy: String
+        commentDate: String
+        commentType: String
+        commentBody: String
+    }
+
+    type bowlPickem {
+        _id: ID
+        enteredAt: String
+        year: String
+        game1: String
+        game2: String
+        game3: String
+        game4: String
+        game5: String
+        game6: String
+        game7: String
+        game8: String
+        game9: String
+        game10: String
+        game11: String
+        game12: String
+        game13: String
+        game14: String
+        game15: String
+        game16: String
+        game17: String
+        game18: String
+        game19: String
+        game20: String
+        game21: String
+        game22: String
+        game23: String
+        game24: String
+        game25: String
+        game26: String
+        game27: String
+        game28: String
+        game29: String
+        game30: String
+        game31: String
+        game32: String
+        game33: String
+        game34: String
+        game35: String
+        semifinal1: String
+        semifinal2: String
+        champion: String
+        titleTotalPoints: String
+    }
+
     type Query {
         allNbaAllStar(entryName: String): [nbaAllStar]
         allHistory: [history]
@@ -62,13 +115,16 @@ const typeDefs = gql`
         historyChallenge(challenge: String): [history]
         historyFirstPlace(place: String): [history]
         allNbaPlayoffs: [nbaPlayoffs]
+        allBowlPickem: [bowlPickem]
+        allComments: [comment]
     }
 
     type Mutation {
         addNbaAllStar(entryName: String, starterOne: String, starterTwo: String, starterThree: String, starterFour: String, benchOne: String, benchTwo: String, benchThree: String, benchFour: String, skillsChamp: String, threeChamp: String, dunkChamp: String, challengeCaptain: String): nbaAllStar
-        addBowlPickem(entryName: String, year: String, game1: String, game2: String, game3: String): bowlPickem
         addHistory(entryName: String, year: String, challenge: String, score: String, place: String, totalpx: String): history
         addNbaPlayoffs(entryName: String, starterOne: String, starterTwo: String, starterThree: String, starterFour: String, starterFive: String, starterSix: String, starterSeven: String, benchOne: String, benchTwo: String, benchThree: String): nbaPlayoffs
+        addBowlPickem(entryName: String, enteredAt: String, year: String, game1: String, game2: String, game3: String, game4: String, game5: String, game6: String, game7: String, game8: String, game9: String, game10: String, game11: String, game12: String, game13: String, game14: String, game15: String, game16: String, game17: String, game18: String, game19: String, game20: String, game21: String, game22: String, game23: String, game24: String, game25: String, game26: String, game27: String, game28: String, game29: String, game30: String, game31: String, game32: String, game33: String, game34: String, game35: String, semifinal1: String, semifinal2: String, champion: String, titleTotalPoints: String): bowlPickem 
+        addComment(commentBy: String, commentDate: String, commentType: String, commentBody: String): comment
     }
 `;
 
