@@ -27,10 +27,10 @@ function NbaPlayoffsStandings() {
     ];
 
     const playerScores = [
-        { playerName: 'Lebron', score: 302},
-        { playerName: 'Tatum', score: 376},
+        { playerName: 'Lebron', score: 413},
+        { playerName: 'Tatum', score: 553},
         { playerName: 'Giannis', score: 70},
-        { playerName: 'Jokic', score: 348},
+        { playerName: 'Jokic', score: 806},
         { playerName: 'Embiid', score: 218},
         { playerName: 'Randle', score: 171},
         { playerName: 'Mitchell', score: 116},
@@ -42,7 +42,7 @@ function NbaPlayoffsStandings() {
         { playerName: 'Ja', score: 123},
         { playerName: 'KAT', score: 91},
         { playerName: 'Quickley', score: 77},
-        { playerName: 'Brogdon', score: 202},
+        { playerName: 'Brogdon', score: 236},
         { playerName: 'Portis', score: 48},
         { playerName: 'Poole', score: 139},
         { playerName: 'Levert', score: 72},
@@ -51,8 +51,8 @@ function NbaPlayoffsStandings() {
         { playerName: 'Warren', score: 21},
         { playerName: 'Melton', score: 92},
         { playerName: 'Tyus', score: 27},
-        { playerName: 'Bruce Brown', score: 144},
-        { playerName: 'Schroeder', score: 100}
+        { playerName: 'Bruce Brown', score: 332},
+        { playerName: 'Schroeder', score: 128}
     ];
 
     // (1) Score Individual Players (2) Sum the player arrays (3) Sort leader
