@@ -73,7 +73,7 @@ function NbaPlayoffsStandings() {
             </div>
             <h1>NBA Playoffs Challenge Standings</h1>
             <div>
-                <p>Standings as of end of Round 2</p>
+                <p>Final Standings, congrats Mike Maloney!</p>
             </div>
             <div>
                 <tr>
