@@ -24,8 +24,8 @@ body {
 
 .homepage div button {
   display: block;
-  margin: 10px;
-  padding: 5px;
+  margin: 5px;
+  padding: 10px;
   border: black solid 2px;
   border-radius: 5px;
   background-color: #44BBA4;

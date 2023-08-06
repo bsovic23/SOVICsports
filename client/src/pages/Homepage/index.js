@@ -8,24 +8,31 @@ function Homepage() {
         <section class="homepage">
             <h2>SOVICsports Challenges</h2>
             <div>
-            <p>Which challenge would you like to access:</p>
+                <p>Which challenge would you like to access:</p>
                 <button>
                     COMING SOON: NFL Playoffs Create A Team
                 </button>
-                <button>
-                    <Link to="/nbaAllStar" style={{textDecoration: 'none', color: 'black'}}>NBA All Star Weekend</Link>
-                </button>
-                <button>
-                    <Link to="/marchMadness" style={{textDecoration: 'none', color: 'black'}}>PickHoops March Madness</Link>
-                </button>
-                <button>
-                    <Link to="/nbaPlayoffs" style={{textDecoration: 'none', color: 'black'}}>NBA Playoffs Create A Team</Link>
-                </button>
+                <Link to="/nbaAllStar" style={{textDecoration: 'none', color: 'black'}}>
+                    <button>NBA All Star Weekend</button>
+                </Link>
+                <Link to="/marchMadness" style={{textDecoration: 'none', color: 'black'}}>
+                    <button>PickHoops March Madness</button>
+                </Link>
+                <Link to="/nbaPlayoffs" style={{textDecoration: 'none', color: 'black'}}>
+                    <button>NBA Playoffs Create A Team</button>
+                </Link>
                 <button>
                     COMING SOON: NFL Season Team
                 </button>
+                <Link to="/bowlChallenge" style={{textDecoration: 'none', color: 'black'}}>
+                    <button>College Football Bowl Challenge</button>
+                </Link>
+            </div>
+            <div class='homepage'>
+                <h2>Your Profile</h2>
+                <p>View your profile, and your individual SOVICsports history</p>
                 <button>
-                    <Link to="/bowlChallenge" style={{textDecoration: 'none', color: 'black'}}>College Football Bowl Challenge</Link>
+                    COMING SOON: Profile
                 </button>
             </div>
             <div>
@@ -34,16 +41,16 @@ function Homepage() {
                     For each challenge you enter, those total points will go towards your year standing. The points leader
                     at the end of the year will win a bonus prize
                 </p>
-                <button>
-                    COMING SOON: SOVICsports Year Standings
-                </button>
+                <Link to="/overallStandings" style={{textDecoration: 'none', color: 'black'}}>
+                    <button>SOVICsports Year Standing</button>
+                </Link> 
             </div>
             <div>
                 <h2>SOVICsports Challenge History</h2>
                 <p>Click the button below to check the history of any SOVICsports challenge</p>
-                <button>
-                    <Link to="/history" style={{textDecoration: 'none', color: 'black'}}>SOVICsports Challenge History</Link>
-                </button>
+                <Link to="/history" style={{textDecoration: 'none', color: 'black'}}>
+                    <button>SOVICsports Challenge History</button>
+                </Link>
             </div>
             <div class="homepage">
                 <h2>About SOVICsports</h2>
@@ -64,6 +71,16 @@ function Homepage() {
                     <br />
                     <br />
                 </p>
+            </div>
+            <div class="homepage">
+                <h2>Review SOVICsports</h2>
+                <p>
+                    If you would like to submit a site error, site suggestion, or review of the application, please click the link below
+                </p>
+                <button>
+                    COMING SOON: Review SOVICsports
+                </button>
+            </div>
             <div class="homepage">
                 <h2>Support SOVICsports</h2>
                 <p>
@@ -73,7 +90,6 @@ function Homepage() {
                     This project took time (and will continue to take time as I continue to make improvements throughout the year). If 
                     you feel like contrubuting anything, you can always venmo me.
                 </p>
-            </div>
             </div>
         </section>
     )

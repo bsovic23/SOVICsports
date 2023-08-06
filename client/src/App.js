@@ -28,6 +28,7 @@ import NbaAllStar from './pages/NbaAllStar';
 import NbaPlayoffs from './pages/NbaPlayoffs';
 import MarchMadness from './pages/MarchMadness';
 import BowlChallenge from './pages/BowlChallenge';
+import OverallStandings from './pages/OverallStandings';
 
 
 // Establish connection to back end server graphql endpoint
@@ -57,6 +58,7 @@ const routes = [
   { path: "/bowlChallengeEntry", element: <BowlChallengeEntry />},
   { path: "/bowlChallengeEntries", element: <BowlChallengeEntries />},
   { path: "/bowlChallengeStandings", element: <BowlChallengeStandings />},
+  { path: "/overallStandings", element: <OverallStandings />},
   { path: "*", element: <Error />}
 ];
 
