@@ -77,9 +77,9 @@ function Homepage() {
                 <p>
                     If you would like to submit a site error, site suggestion, or review of the application, please click the link below
                 </p>
-                <button>
-                    COMING SOON: Review SOVICsports
-                </button>
+                <Link to="/comment" style={{textDecoration: 'none', color: 'black'}}>
+                    <button>Reveiw SOVICsports</button>
+                </Link>
             </div>
             <div class="homepage">
                 <h2>Support SOVICsports</h2>

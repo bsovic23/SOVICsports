@@ -57,3 +57,15 @@ mutation Login($entryName: String, $password: String) {
   }
 }
 `
+
+export const MUTATION_COMMENT = gql`
+  mutation Mutation($commentBy: String, $commentDate: String, $commentType: String, $commentBody: String) {
+    addComment(commentBy: $commentBy, commentDate: $commentDate, commentType: $commentType, commentBody: $commentBody) {
+      _id
+      commentBy
+      commentDate
+      commentType
+      commentBody
+    }
+  }
+`

@@ -29,7 +29,7 @@ import NbaPlayoffs from './pages/NbaPlayoffs';
 import MarchMadness from './pages/MarchMadness';
 import BowlChallenge from './pages/BowlChallenge';
 import OverallStandings from './pages/OverallStandings';
-
+import Comment from './pages/Comment';
 
 // Establish connection to back end server graphql endpoint
 const httpLink = createHttpLink({
@@ -59,6 +59,7 @@ const routes = [
   { path: "/bowlChallengeEntries", element: <BowlChallengeEntries />},
   { path: "/bowlChallengeStandings", element: <BowlChallengeStandings />},
   { path: "/overallStandings", element: <OverallStandings />},
+  { path: "/comment", element: <Comment />},
   { path: "*", element: <Error />}
 ];
 

@@ -173,4 +173,9 @@ body {
   background-color: #93E1D8;
 }
 
+/* Comment ----------------------------------------- */
+#comment label {
+  margin: 10px;
+  display: block;
+}
 
