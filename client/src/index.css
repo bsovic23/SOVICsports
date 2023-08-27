@@ -18,11 +18,8 @@ body {
 }
 
 /* Homepage */
-.homepage {
-  background: var(--background);
-}
 
-.homepage div button {
+#homepage div button {
   display: block;
   margin: 5px;
   padding: 10px;
@@ -31,11 +28,11 @@ body {
   background-color: #44BBA4;
 }
 
-.homepage div button:hover {
+#homepage div button:hover {
   border: yellow solid 2px;
 }
 
-.homepage h2 {
+#homepage h2 {
   background-color: var(--header);
   padding: 20px;
 }
@@ -157,6 +154,13 @@ body {
 
 .page .entry th {
   background-color: rgb(202, 116, 116);
+}
+
+/* College Football Challenge Form -------------------------------------------------------------- */
+.cfb-form .submit {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
 }
 
 /* History (card) -------------------------------------------------------------- */

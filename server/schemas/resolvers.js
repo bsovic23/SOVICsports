@@ -1,6 +1,6 @@
 const {
     nbaAllStar,
-    bowlPickem,
+    cfbBowlPickem,
     history,
     nbaPlayoffs,
     comment
@@ -43,8 +43,8 @@ const resolvers = {
         },
 
         // Bowl Pickem
-        allBowlPickem: async () => {
-            return bowlPickem.find();
+        allCfbBowlPickem: async () => {
+            return cfbBowlPickem.find();
         },
 
         // Get all Comments
@@ -73,8 +73,8 @@ const resolvers = {
             return nbaPlayoffsEntry;
         },
 
-        addBowlPickem: async(parent, args) => {
-            const bowlPickemEntry = await bowlPickem.create(args);
+        addCfbBowlPickem: async(parent, args) => {
+            const bowlPickemEntry = await cfbBowlPickem.create(args);
 
             return bowlPickemEntry;
         },

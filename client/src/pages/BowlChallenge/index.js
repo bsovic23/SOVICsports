@@ -12,7 +12,7 @@ const BowlChallenge = () => {
     ];
 
     return(
-        <section class='bowlchallenge'>
+        <section id='bowlchallenge' class='page'>
             <div>
                 < NavBar navElements={navbarChoices} />
             </div>

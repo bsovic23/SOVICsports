@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Homepage() {
 
     return(
-        <section class="homepage">
+        <section class="page" id='homepage'>
             <h2>SOVICsports Challenges</h2>
             <div>
                 <p>Which challenge would you like to access:</p>

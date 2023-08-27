@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-const bowlPickemSchema = new Schema(
+const cfbBowlPickemSchema = new Schema(
     {
         entryName: {
             type: String
@@ -132,6 +132,6 @@ const bowlPickemSchema = new Schema(
     }
 );
 
-const bowlPickem = model('bowlPickem', bowlPickemSchema);
+const cfbBowlPickem = model('cfbBowlPickem', cfbBowlPickemSchema);
 
-module.exports = bowlPickem;
+module.exports = cfbBowlPickem;
