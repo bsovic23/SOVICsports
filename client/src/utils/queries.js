@@ -56,7 +56,7 @@ query Query {
 `;
 
 export const QUERY_ALL_CFB_BOWL_PICKEM = gql`
-query AllCfbBowlPickem {
+query allCfbBowlPickem {
   allCfbBowlPickem {
     _id
     entryName

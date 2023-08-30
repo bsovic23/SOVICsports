@@ -1,7 +1,7 @@
 // This component will not use the generic EntryForm since different format
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
-import { MUTATION_CFB_B0WL_PICKEM } from '../../../utils/mutations';
+import { MUTATION_CFB_BOWL_PICKEM } from '../../../utils/mutations';
 import NavBar from '../../Navbar';
 
 // import bowl picks data
@@ -24,7 +24,7 @@ const BowlChallengeEntry = () => {
     const [champion, setChampion] = useState('');
     const [titleTotalPoints, setTitleTotalPoints] = useState('');
 
-    const [addCfbBowlPickem] = useMutation(MUTATION_CFB_B0WL_PICKEM);
+    const [addCfbBowlPickem] = useMutation(MUTATION_CFB_BOWL_PICKEM);
 
     const handleButtonClick = (event, winner, game) => {
         event.preventDefault();

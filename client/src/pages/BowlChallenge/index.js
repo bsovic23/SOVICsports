@@ -16,7 +16,7 @@ const BowlChallenge = () => {
             <div>
                 < NavBar navElements={navbarChoices} />
             </div>
-            <h1>COLLEGE FOOTBALL BOWL CHALLENGE</h1>
+            <h1>College Football Bowl Challenge</h1>
             <div>
                 <h2>Instructions</h2>
                 <div>

@@ -36,6 +36,8 @@ https://sovicsports.herokuapp.com/
 ## Future Developments
 
 * I hope to add the other sporting challenges (labeled on site as COMING SOON)
+* Improve the UI
+* Create login capabilites
 
 ## Screenshots
 
