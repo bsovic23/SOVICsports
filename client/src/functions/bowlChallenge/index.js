@@ -28,5 +28,7 @@ export const bowlChallengeStandings = (data) => {
         standings.push({entryPerson: entries.entryName, points: totalPoints});
         }
     
+    standings.sort((a,b) => b.points - a.points);
+    
     return standings;
 };

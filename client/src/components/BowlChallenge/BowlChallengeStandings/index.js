@@ -35,13 +35,21 @@ const BowlChallengeStandings = () => {
                     </div>
                 ) : (
                     <div>
-                    {standingsCurrent &&
-                        standingsCurrent.map((entries, index) => (
-                            <div key={index}>
-                                <p>name:{entries.entryPerson}</p>
-                                <p>points:{entries.points}</p>
-                            </div>
-                        ))}
+                        <table>
+                            <tr>
+                                <th>Place</th>
+                                <th>Entry Name</th>
+                                <th>Points</th>
+                            </tr>
+                            {standingsCurrent &&
+                                standingsCurrent.map((entries, index) => (
+                                    <tr key={index}>
+                                        <td>{index+1}</td>
+                                        <td>{entries.entryPerson}</td>
+                                        <td>{entries.points}</td>
+                                    </tr>
+                            ))}             
+                        </table>
                     </div>
                 )}
             </div>

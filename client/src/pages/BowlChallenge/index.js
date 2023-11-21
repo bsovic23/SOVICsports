@@ -24,6 +24,13 @@ const BowlChallenge = () => {
                     <li>You will receive points based on each correct pick you make</li>
                     <li>Each set of bowl games are worth a different number of points</li>
                 </div>
+                <div>
+                    <li>I advise you to make your picks seperately and then when
+                        ready, fill out the form. If you submit an entry and need
+                        to make a change, please refill out the form and let me know 
+                        which duplicate entry I need to delete from the database
+                    </li>
+                </div>
             </div>
         </section>
     )

@@ -6,11 +6,9 @@ const NavBar = ({navElements}) => {
     return(
         <section class='navbar'>
             {navElements.map((button) => (
-                <button key={button.text}>
-                    <Link to={button.link} style={{textDecoration: 'none', color: 'black'}}>
-                        {button.text}
-                    </Link>
-                </button>
+                <Link to={button.link} style={{textDecoration: 'none', color: 'black'}}>
+                    <button key={button.text}>{button.text}</button>
+                </Link>
             ))}
         </section>
     )

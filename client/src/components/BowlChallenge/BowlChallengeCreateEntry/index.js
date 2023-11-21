@@ -4,7 +4,7 @@ import { useMutation } from '@apollo/client';
 import { MUTATION_CFB_BOWL_PICKEM } from '../../../utils/mutations';
 import NavBar from '../../Navbar';
 
-// import bowl picks data
+// data import
 import { bowlPicks2023 } from '../../../data/BowlChallenge';
 
 const BowlChallengeEntry = () => {
@@ -30,15 +30,15 @@ const BowlChallengeEntry = () => {
         event.preventDefault();
         const updatedTeams = [...selectedTeams];
         const existingPickIndex = updatedTeams.findIndex((currentPicks) => currentPicks.game === game);
-        
+    
         if (existingPickIndex !== -1) {
-          updatedTeams[existingPickIndex] = { game: winner };
+            updatedTeams[existingPickIndex] = { game, selectedTeam: winner };
         } else {
-          updatedTeams.push({ game: winner });
+            updatedTeams.push({ game, selectedTeam: winner });
         }
     
         setTeam(updatedTeams);
-      };
+    };
 
       const handleFormSubmit = (event) => {
         event.preventDefault();
@@ -89,20 +89,31 @@ const BowlChallengeEntry = () => {
                     />
                 </div>
                 {bowlPicks2023.map(({index, game, points, teamOne, teamOneColor, teamOneColor2, teamTwo, teamTwoColor, teamTwoColor2}) => (
-                    <div key={index}>
-                        <p>{points} Point Game</p>
-                        <p>Game #{game}</p>
-                        <button 
-                            style={{ backgroundColor: teamOneColor, borderColor: teamOneColor2, borderWidth: "10px" }}
-                            onClick={(e) => handleButtonClick(e, teamOne, game)}
-                        >{teamOne}
-                        </button>
-                        vs.
-                        <button 
-                            style={{ backgroundColor: teamTwoColor, borderColor: teamTwoColor2, borderWidth: "10px" }}
-                            onClick={(e) => handleButtonClick(e, teamTwo, game)}
-                        >{teamTwo}
-                        </button>
+                    <div key={index} id="cfb-matchup">
+                        <div>
+                            <p>{points} Point Game</p>
+                            <p>Game #{game}</p>
+                            <button 
+                                style={{ backgroundColor: teamOneColor, borderColor: teamOneColor2, borderWidth: "10px" }}
+                                onClick={(e) => handleButtonClick(e, teamOne, game)}
+                            >{teamOne}
+                            </button>
+                            vs.
+                            <button 
+                                style={{ backgroundColor: teamTwoColor, borderColor: teamTwoColor2, borderWidth: "10px" }}
+                                onClick={(e) => handleButtonClick(e, teamTwo, game)}
+                            >{teamTwo}
+                            </button>
+                        </div>
+                        <div>
+                            {selectedTeams.map((pick) => (
+                                pick.game === game && (
+                                    <div key={pick.selectedTeam}>
+                                        Team Selected: {pick.selectedTeam}
+                                    </div>
+                                )
+                            ))}
+                        </div>
                     </div>
                 ))}
                 <div>

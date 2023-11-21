@@ -163,6 +163,28 @@ body {
   height: 50px;
 }
 
+#cfb-matchup {
+  display: flex;
+  border: black 1px solid;
+}
+
+/* College Football Challenge Standings -------------------------------------------------------------- */
+#bowl-challenge-standings table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#bowl-challenge-standings table th, #bowl-challenge-standings table td {
+  border: 1px black solid;
+  text-align: center;
+  padding: 5px;
+}
+
+#bowl-challenge-standings table tr:hover {
+  background-color: yellow;
+}
+
 /* History (card) -------------------------------------------------------------- */
 .history-card-section {
   background-color: var(--background);
