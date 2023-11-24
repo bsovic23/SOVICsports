@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AllHistoryCards = ({ allHistory }) => {
+const AllHistoryCards = ({ index, allHistory }) => {
     if (!allHistory.length) {
         return <h3>THERE IS NO HISTORY</h3>;
     }
@@ -11,7 +11,7 @@ const AllHistoryCards = ({ allHistory }) => {
             <div class="history-cards-container">
                 {allHistory 
                 && allHistory.map(history=> (
-                    <div key={history.username} class="history-card">
+                    <div key={index} class="history-card">
                         <h4>{history.username}</h4>
                         <p>{history.year} {history.challenge} Challenge</p>
                         <p>Placed {history.place} out of {history.totalpx}</p>
