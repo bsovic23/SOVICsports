@@ -18,9 +18,10 @@ function BowlChallengeEntries() {
 
     const { loading, data } = useQuery(QUERY_ALL_CFB_BOWL_PICKEM);
     const allBowlPickem = data?.allCfbBowlPickem || [];
+    console.log(allBowlPickem);
 
     return(
-        <section class='page'>
+        <section class='page' id='bowl-challenge-all-entries'>
             <div>
                 <NavBar navElements={navbarChoices} />
             </div>
@@ -31,13 +32,36 @@ function BowlChallengeEntries() {
                         ... loading
                     </div>
                 ) : (
-                    <div>
-                        {allBowlPickem && allBowlPickem.map((entry, index) => (
-                            <div key={index}>
-                                Entry: {entry.entryName}
-                            </div>
-                        ))}
-                    </div>
+                    <table>
+                        <tr>
+                            <th>Entry</th>
+                            <th>Game 1</th>
+                            <th>Game 2</th>
+                            <th>Game 3</th>
+                            <th>Game 4</th>
+                            <th>Game 5</th>
+                            <th>Game 6</th>
+                            <th>Semifinal 1</th>
+                            <th>Semifinal 2</th>
+                            <th>Champion</th>
+                            <th>Total Points</th>
+                        </tr>
+                            {allBowlPickem && allBowlPickem.map((entry, index) => (
+                                <tr key={index}>
+                                    <td>{entry.entryName}</td>
+                                    <td>{entry.game1}</td>
+                                    <td>{entry.game2}</td>
+                                    <td>{entry.game3}</td>
+                                    <td>{entry.game4}</td>
+                                    <td>{entry.game5}</td>
+                                    <td>{entry.game6}</td>
+                                    <td>{entry.semifinal1}</td>
+                                    <td>{entry.semifinal2}</td>
+                                    <td>{entry.champion}</td>
+                                    <td>{entry.titleTotalPoints}</td>
+                                </tr>
+                            ))}
+                    </table>
                 )}
             </div>
         </section>

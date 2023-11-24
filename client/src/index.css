@@ -168,6 +168,23 @@ body {
   border: black 1px solid;
 }
 
+/* College Football Challenge All Entries -------------------------------------------------------------- */
+#bowl-challenge-all-entries table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#bowl-challenge-all-entries th, #bowl-challenge-all-entries td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+}
+
+#bowl-challenge-all-entries tr:hover {
+  background-color: yellow;
+}
+
 /* College Football Challenge Standings -------------------------------------------------------------- */
 #bowl-challenge-standings table {
   border-collapse: collapse;
