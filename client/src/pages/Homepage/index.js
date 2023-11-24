@@ -87,7 +87,7 @@ function Homepage() {
                     SOVICsports was created to provide the greatest user experience to my friends for these individual sports contests.
                     <br />
                     <br />
-                    This project took time (and will continue to take time as I continue to make improvements throughout the year). If 
+                    This project took time (and will continue to take time as I continue to make improvements throughout the year(s)). If 
                     you feel like contrubuting anything, you can always venmo me.
                 </p>
             </div>

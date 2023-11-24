@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY_ALL_CFB_BOWL_PICKEM } from '../../../utils/queries';
 
@@ -17,10 +17,14 @@ const BowlChallengeStandings = () => {
         {text: "STANDINGS", link: "/bowlChallengeStandings"},
     ];
 
-    const { loading, data } = useQuery(QUERY_ALL_CFB_BOWL_PICKEM);
+    const { loading, data, refetch } = useQuery(QUERY_ALL_CFB_BOWL_PICKEM);
     const allBowlPickem = data?.allCfbBowlPickem || [];
 
     const standingsCurrent = bowlChallengeStandings(allBowlPickem);
+
+    useEffect(() => {
+        refetch();
+    }, [refetch]);
 
     return(
         <section class='page' id='bowl-challenge-standings'>
@@ -40,6 +44,7 @@ const BowlChallengeStandings = () => {
                                 <th>Place</th>
                                 <th>Entry Name</th>
                                 <th>Points</th>
+                                <th>Champion Picked</th>
                             </tr>
                             {standingsCurrent &&
                                 standingsCurrent.map((entries, index) => (
@@ -47,6 +52,7 @@ const BowlChallengeStandings = () => {
                                         <td>{index+1}</td>
                                         <td>{entries.entryPerson}</td>
                                         <td>{entries.points}</td>
+                                        <td>{entries.champion}</td>
                                     </tr>
                             ))}             
                         </table>

@@ -4,6 +4,7 @@ export const overallStandingsTotal = (data) => {
     for (const obj of data) {
         const user = obj.playerName;
         const score = obj.place;
+
         totalScore[user] = (totalScore[user] || 0) + score;
     }
 

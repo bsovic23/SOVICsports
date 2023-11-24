@@ -1,7 +1,7 @@
 // College Football Bowl Challenge Standings Function
 
 export const bowlChallengeStandings = (data) => {
-
+    console.log(data);
     const winners = [
         { winner1: "Georgia", points: 1},
         { winner2: "Penn State", points: 2},
@@ -25,7 +25,7 @@ export const bowlChallengeStandings = (data) => {
                 } else continue;
             }
         
-        standings.push({entryPerson: entries.entryName, points: totalPoints});
+        standings.push({entryPerson: entries.entryName, points: totalPoints, champion: entries.champion});
         }
     
     standings.sort((a,b) => b.points - a.points);

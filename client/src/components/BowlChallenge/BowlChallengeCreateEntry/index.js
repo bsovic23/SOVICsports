@@ -42,18 +42,17 @@ const BowlChallengeEntry = () => {
 
       const handleFormSubmit = (event) => {
         event.preventDefault();
-    
-        const formattedPicks = selectedTeams.reduce((formatted, currentPick) => {
-            const gameKey = `${bowlPicks2023.find(game => game.teamOne === currentPick.game || game.teamTwo === currentPick.game).game}`;
-            formatted[gameKey] = currentPick.game;
-            return formatted;
-        }, {});
+
+        const gameVariables = {};
+        selectedTeams.forEach(({ game, selectedTeam }) => {
+            gameVariables[game] = selectedTeam;
+        });
         
         addCfbBowlPickem({
             variables: {
                 entryName: entryName,
                 year: year,
-                ...formattedPicks,
+                ...gameVariables,
                 semifinal1: semifinal1,
                 semifinal2: semifinal2,
                 champion: champion,
