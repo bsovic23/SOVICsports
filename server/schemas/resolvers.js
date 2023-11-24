@@ -9,50 +9,48 @@ const {
 const resolvers = {
 
     Query: {
-        // [X] Query works in apollo studio
         // Get All All star Entries
+        // [X] Query works in apollo studio
         allNbaAllStar: async () => {
             return nbaAllStar.find().sort({ enteredAt: -1 });
         },
         // Get All History
-        // 
+        // [X] Query works in apollo studio
         allHistory: async () => {
             return history.find()
         },
 
         // Get history by username
-        //
+        // [X] Query works in apollo studio
         historyUsername: async (parent, { username }) => {
             return history.find({ username });
         },
 
         // Get history by challenge
-        //
+        // [X] Query works in apollo studio
         historyChallenge: async (parent, { challenge }) => {
             return history.find({ challenge }).sort({year: -1});
         },
-
+        // Get history by for all first place finishes
+        // [X] Query works in apollo studio
         historyFirstPlace: async (parent, { place }) => {
             return history.find({ place });
         },
-
         // Get All NBA Playoffs
         //
         allNbaPlayoffs: async () => {
             return nbaPlayoffs.find();
         },
-
         // Bowl Pickem
+        //
         allCfbBowlPickem: async () => {
             return cfbBowlPickem.find();
         },
-
         // Get all Comments
         allComments: async () => {
             return comment.find();
         }
     },
-
     Mutation: {
         // [X] Mutation works in apollo studio
         addNbaAllStar: async (parent, args) => {

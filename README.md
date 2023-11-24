@@ -36,12 +36,14 @@ https://sovicsports.herokuapp.com/
 ## Future Developments
 
 * I hope to add the other sporting challenges (labeled on site as COMING SOON)
-* Improve the UI
-* Create login capabilites
+* Improve the UI of all the challenge pages
+* Create login capabilites that link a users history to their profile
+* Add profile section
 
 ## Screenshots
 
 ![](client/src/images/homepage.PNG)
+![](client/src/images/cfb-bowl-challenge.PNG)
 ![](client/src/images/add-entry.PNG)
 ![](client/src/images/nba-instructions.PNG)
 ![](client/src/images/history.PNG)

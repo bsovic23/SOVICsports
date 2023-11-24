@@ -11,7 +11,7 @@ function Header() {
                 </Link>
             </div>
             <p>
-                Version 1.01.02 | Updated: 08/06/2023 | Click here to see whats new
+                Version 1.01.03 | Updated: 11/24/2023 | <Link to='/applicationUpdates' style={{textDecoration: 'none', color: 'black'}}>Click here to see whats new</Link>
             </p>
         </section>
     )

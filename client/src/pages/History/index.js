@@ -11,15 +11,15 @@ const History = () => {
 
     const allHistory = data?.allHistory || [];
 
-    console.log(allHistory);
-    
     return(
         <section>
-             <div>
-                {loading ? (
+            <div>
+                {(loading) ? (
                     <div>Loading...</div>
                 ) : (
-                    <AllHistoryCards allHistory={allHistory} />
+                    <AllHistoryCards
+                        allHistory={allHistory}
+                    />
                 )}
             </div>
         </section>
