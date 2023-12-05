@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY_ALL_CFB_BOWL_PICKEM } from '../../../utils/queries';
 
@@ -23,43 +23,54 @@ const BowlChallengeStandings = () => {
     const standingsCurrent = bowlChallengeStandings(allBowlPickem);
 
     useEffect(() => {
+        const currentDate = new Date();
+        const gameStartDate = new Date('2023-12-16');
+    
+        if (currentDate > gameStartDate) {
+          setShowStandings(true);
+        }
+    
         refetch();
-    }, [refetch]);
+      }, [refetch]);
+
+    const [showStandings, setShowStandings] = useState(false);
 
     return(
-        <section class='page' id='bowl-challenge-standings'>
+        <section className='page' id='bowl-challenge-standings'>
+        <div>
+          <Navbar navElements={navbarChoices} />
+        </div>
+        <h1>College Football Bowl Challenge Standings</h1>
+        <div>
+          {loading ? (
+            <div>...loading</div>
+          ) : (
             <div>
-                <Navbar navElements={navbarChoices} />
+              {showStandings ? (
+                <table>
+                  <tr>
+                    <th>Place</th>
+                    <th>Entry Name</th>
+                    <th>Points</th>
+                    <th>Champion Picked</th>
+                  </tr>
+                  {standingsCurrent &&
+                    standingsCurrent.map((entries, index) => (
+                      <tr key={index}>
+                        <td>{index + 1}</td>
+                        <td>{entries.entryPerson}</td>
+                        <td>{entries.points}</td>
+                        <td>{entries.champion}</td>
+                      </tr>
+                    ))}
+                </table>
+              ) : (
+                <p>Standings will appear after the first games start on 12/16/2023.</p>
+              )}
             </div>
-            <h1>College Football Bowl Challenge Standings</h1>
-            <div>
-                {loading ? (
-                    <div>
-                        ...loading
-                    </div>
-                ) : (
-                    <div>
-                        <table>
-                            <tr>
-                                <th>Place</th>
-                                <th>Entry Name</th>
-                                <th>Points</th>
-                                <th>Champion Picked</th>
-                            </tr>
-                            {standingsCurrent &&
-                                standingsCurrent.map((entries, index) => (
-                                    <tr key={index}>
-                                        <td>{index+1}</td>
-                                        <td>{entries.entryPerson}</td>
-                                        <td>{entries.points}</td>
-                                        <td>{entries.champion}</td>
-                                    </tr>
-                            ))}             
-                        </table>
-                    </div>
-                )}
-            </div>
-        </section>
+          )}
+        </div>
+      </section>
     )
 };
 

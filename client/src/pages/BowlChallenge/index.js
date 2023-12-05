@@ -22,13 +22,23 @@ const BowlChallenge = () => {
                 <div>
                     <h3>Choose the winner of each bowl game</h3>
                     <li>You will receive points based on each correct pick you make</li>
-                    <li>Each set of bowl games are worth a different number of points</li>
+                    <li>Each set of bowl games are worth a different number of points (1, 2, 3, 5, 8, 12)</li>
                 </div>
                 <div>
                     <li>I advise you to make your picks seperately and then when
                         ready, fill out the form. If you submit an entry and need
                         to make a change, please refill out the form and let me know 
                         which duplicate entry I need to delete from the database
+                    </li>
+                    <li>
+                        After you complete an entry, check the "ALL ENTRIES" tab. If
+                        you see your entry name, then your entry was submitted
+                    </li>
+                    <li>
+                        After the first game locks, all entries are locked. Unfortunately
+                        if there is an injury/sub to a team later in the bowl season, to be
+                        fair to everyone, no one can make an adjustment (since all entries will
+                        be visible after the first game)
                     </li>
                 </div>
             </div>

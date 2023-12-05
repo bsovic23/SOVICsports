@@ -82,27 +82,52 @@ const BowlChallengeEntry = () => {
                 <div>
                     <label>Entry Name:</label>
                     <input
-                        placeholder='Enter your name here'
+                        placeholder='Type Entry Name Here'
                         value={entryName}
                         onChange={(e) => setEntryName(e.target.value)}
                     />
                 </div>
-                {bowlPicks2023.map(({index, game, points, teamOne, teamOneColor, teamOneColor2, teamTwo, teamTwoColor, teamTwoColor2}) => (
-                    <div key={index} id="cfb-matchup">
+                {bowlPicks2023.map(({index, game, points, teamOne, teamOneColor, teamOneColor2, teamTwo, teamTwoColor, teamTwoColor2, spread}) => (
+                    <div key={index} id="cfb-matchup" style={{ backgroundColor: getBackgroundColor(points)}}>
                         <div>
-                            <p>{points} Point Game</p>
-                            <p>Game #{game}</p>
-                            <button 
-                                style={{ backgroundColor: teamOneColor, borderColor: teamOneColor2, borderWidth: "10px" }}
-                                onClick={(e) => handleButtonClick(e, teamOne, game)}
-                            >{teamOne}
-                            </button>
-                            vs.
-                            <button 
-                                style={{ backgroundColor: teamTwoColor, borderColor: teamTwoColor2, borderWidth: "10px" }}
-                                onClick={(e) => handleButtonClick(e, teamTwo, game)}
-                            >{teamTwo}
-                            </button>
+                            <div style={{ marginLeft: '4%' }}>
+                                <p>{points} Point Game</p>
+                                <p>{game}</p>
+                                <p>{spread}</p>
+                            </div>
+                            <div style={{ marginLeft: '20px' }}>
+                                <button 
+                                    style={{ 
+                                        backgroundColor: teamOneColor, 
+                                        borderColor: teamOneColor2, 
+                                        borderWidth: '12px', 
+                                        height: '75px', 
+                                        width: '250px', 
+                                        fontWeight: 'bold', 
+                                        fontSize: '20px',
+                                        marginRight: '10px' 
+                                    }}
+                                    onClick={(e) => handleButtonClick(e, teamOne, game)}
+                                >
+                                {teamOne}
+                                </button>
+                                vs.
+                                <button 
+                                    style={{ 
+                                        backgroundColor: teamTwoColor, 
+                                        borderColor: teamTwoColor2, 
+                                        borderWidth: '12px', 
+                                        height: '75px', 
+                                        width: '250px', 
+                                        fontWeight: 'bold', 
+                                        fontSize: '20px',
+                                        marginLeft: '10px'  
+                                    }}
+                                    onClick={(e) => handleButtonClick(e, teamTwo, game)}
+                                >
+                                {teamTwo}
+                                </button>
+                            </div>
                         </div>
                         <div>
                             {selectedTeams.map((pick) => (
@@ -116,17 +141,17 @@ const BowlChallengeEntry = () => {
                     </div>
                 ))}
                 <div>
-                    <label>Semi Final Winner One:</label>
+                    <label>Semi Final Winner One (Michigan (1) vs Alabama (4)):</label>
                     <input
-                        placeholder='type winner here'
+                        placeholder='type semi one winner'
                         value={semifinal1}
                         onChange={(e) => setSemiFinal1(e.target.value)}
                     />
                 </div>
                 <div>
-                    <label>Semi Final Winner Two:</label>
+                    <label>Semi Final Winner Two (Washington (2) vs Texas (3)):</label>
                     <input
-                        placeholder='type winner here'
+                        placeholder='type semi two winner'
                         value={semifinal2}
                         onChange={(e) => setSemiFinal2(e.target.value)}
                     />
@@ -152,5 +177,20 @@ const BowlChallengeEntry = () => {
         </section>
     )
 };
+
+function getBackgroundColor(points) {
+    switch (points) {
+      case 1:
+        return 'gray';
+      case 2:
+        return '#D3D3D3';
+        case 3:
+            return 'gray';
+            case 5:
+                return '#D3D3D3';
+      default:
+        return 'white';
+    }
+  }
 
 export default BowlChallengeEntry;
