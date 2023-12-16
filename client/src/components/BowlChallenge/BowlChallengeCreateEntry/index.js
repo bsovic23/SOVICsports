@@ -9,6 +9,8 @@ import { bowlPicks2023 } from '../../../data/BowlChallenge';
 
 const BowlChallengeEntry = () => {
 
+    const entryOpen = false;
+
     const navbarChoices = [
         {text: "CHALLENGE INSTRUCTIONS", link: "/bowlChallenge"},
         {text: "CREATE ENTRY", link: "/bowlChallengeEntry"},
@@ -78,7 +80,8 @@ const BowlChallengeEntry = () => {
             <h1>
                 College Football Bowl Challenge
             </h1>
-           <form onSubmit={handleFormSubmit}>
+            {entryOpen ? (
+            <form onSubmit={handleFormSubmit}>
                 <div>
                     <label>Entry Name:</label>
                     <input
@@ -173,7 +176,10 @@ const BowlChallengeEntry = () => {
                     />
                 </div>
                 <button class='submit' type='submit'>Submit</button>
-           </form>
+            </form>
+            ) : (
+                <p>The deadline to submit an entry has passed</p>
+            )}
         </section>
     )
 };

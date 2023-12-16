@@ -44,7 +44,8 @@ const Comment = () => {
             </div>
             <div>
                 <h1>Leave a Comment</h1>
-                <p>In the section below, please leave your name, and click
+                <p>
+                    In the section below, please leave your name, and click
                     what type of comment you want to leave. Brit will be able
                     to review and address any comment left.
                 </p>

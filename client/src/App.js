@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // 0. General
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Admin from './components/Admin';
 // 1. All Star
 import NbaEntries from './components/NbaAllStar/NbaAllStarEntries';
 import NbaEntry from './components/NbaAllStar/NbaAllStarCreateEntry';
@@ -46,6 +47,7 @@ const client = new ApolloClient({
 
 const routes = [
   { path: "/", element: <Homepage /> },
+  { path: "/Admin", element: <Admin />},
   { path: "/nbaAllStar", element: <NbaAllStar />},
   { path: "/nbaEntries", element: <NbaEntries />},
   { path: "/nbaEntry", element: <NbaEntry />},

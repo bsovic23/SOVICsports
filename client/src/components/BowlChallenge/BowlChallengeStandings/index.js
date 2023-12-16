@@ -65,7 +65,7 @@ const BowlChallengeStandings = () => {
                     ))}
                 </table>
               ) : (
-                <p>Standings will appear after the first games start on 12/16/2023.</p>
+                <p>Standings will appear after the first day of games conclude on 12/16/2023.</p>
               )}
             </div>
           )}

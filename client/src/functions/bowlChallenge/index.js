@@ -1,16 +1,11 @@
 // College Football Bowl Challenge Standings Function
 
 export const bowlChallengeStandings = (data) => {
-    console.log(data);
-    const winners = [
+    /* const winners = [
         { winner1: "Georgia", points: 1},
-        { winner2: "Penn State", points: 2},
-        { winner3: "Auburn", points: 3},
-        { winner4: "USC", points: 4},
-        { winner5: "Washington", points: 4},
-        { winner6: "Syracuse", points: 4},
-    ];
+    ]; */
 
+    const winners = []; // blank until winners updated
     let standings = [];
 
     for (const entries of data) {

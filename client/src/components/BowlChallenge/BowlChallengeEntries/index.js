@@ -22,7 +22,7 @@ function BowlChallengeEntries() {
     const allBowlPickem = data?.allCfbBowlPickem || [];
 
     useEffect(() => {
-        const deadline = new Date("2023-12-31T23:59:59");
+        const deadline = new Date("2023-12-01T23:59:59");
         const currentDate = new Date();
 
         if (currentDate > deadline) {
