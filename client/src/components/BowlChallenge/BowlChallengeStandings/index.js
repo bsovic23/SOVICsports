@@ -55,13 +55,15 @@ const BowlChallengeStandings = () => {
                     <th>Champion Picked</th>
                   </tr>
                   {standingsCurrent &&
-                    standingsCurrent.map((entries, index) => (
+                    standingsCurrent.map((entries, index) => (entries.entryPerson !== 'adminAnswers' && 
+                    (
                       <tr key={index}>
                         <td>{index + 1}</td>
                         <td>{entries.entryPerson}</td>
                         <td>{entries.points}</td>
                         <td>{entries.champion}</td>
                       </tr>
+                    )
                     ))}
                 </table>
               ) : (
