@@ -18,6 +18,7 @@ function Admin() {
 
     const adminAnswersEntry = allBowlPickem.find(entry => entry.entryName === 'adminAnswers');
     const existingData = adminAnswersEntry || {};
+    console.log(adminAnswersEntry);
 
     const [password, setPassword] = useState('');
 
