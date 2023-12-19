@@ -18,7 +18,6 @@ function Admin() {
 
     const adminAnswersEntry = allBowlPickem.find(entry => entry.entryName === 'adminAnswers');
     const existingData = adminAnswersEntry || {};
-    console.log(adminAnswersEntry);
 
     const [password, setPassword] = useState('');
 
@@ -30,11 +29,19 @@ function Admin() {
     const [champion, setChampion] = useState(existingData.champion || '');
 
     useEffect(() => {
-        setTeam(existingData.selectedTeams || []);
-        setSemiFinal1(existingData.semifinal1 || '');
-        setSemiFinal2(existingData.semifinal2 || '');
-        setChampion(existingData.champion || '');
-      }, [existingData]);
+        if (existingData.selectedTeams !== undefined && !isEqual(existingData.selectedTeams, selectedTeams)) {
+            setTeam(existingData.selectedTeams);
+        }
+        if (existingData.semifinal1 !== undefined && existingData.semifinal1 !== semifinal1) {
+            setSemiFinal1(existingData.semifinal1);
+        }
+        if (existingData.semifinal2 !== undefined && existingData.semifinal2 !== semifinal2) {
+            setSemiFinal2(existingData.semifinal2);
+        }
+        if (existingData.champion !== undefined && existingData.champion !== champion) {
+            setChampion(existingData.champion);
+        }
+    }, [existingData, selectedTeams, semifinal1, semifinal2, champion]);
 
     const [addCfbBowlPickem] = useMutation(MUTATION_CFB_BOWL_PICKEM);
 
