@@ -89,7 +89,7 @@ function BowlChallengeEntries() {
                         </>
                         )}
                         </tr>
-                            {allBowlPickem && allBowlPickem.map((entry, index) => (entries.entryName !== 'adminAnswers' && (
+                            {allBowlPickem && allBowlPickem.map((entry, index) => (entry.entryName !== 'adminAnswers' && (
                                 <tr key={index}>
                                     <td>{entry.entryName}</td>
                             {dataShow === 1 && (

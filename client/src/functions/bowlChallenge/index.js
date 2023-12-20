@@ -4,6 +4,7 @@ export const bowlChallengeStandings = (data) => {
     const winners = [
         { winner1: "Jacksonville State", points: 1},
         { winner3: "Appalachian State", points: 1},
+        { winner10: "UTSA", points: 1},
         { winner17: "UCLA", points: 2},
         { winner18: "Texas Tech", points: 2},
     ];
