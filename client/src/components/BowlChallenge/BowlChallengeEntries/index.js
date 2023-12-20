@@ -89,7 +89,7 @@ function BowlChallengeEntries() {
                         </>
                         )}
                         </tr>
-                            {allBowlPickem && allBowlPickem.map((entry, index) => (
+                            {allBowlPickem && allBowlPickem.map((entry, index) => (entries.entryName !== 'adminAnswers' && (
                                 <tr key={index}>
                                     <td>{entry.entryName}</td>
                             {dataShow === 1 && (
@@ -136,7 +136,7 @@ function BowlChallengeEntries() {
                             </>
                             )}
                                 </tr>
-                            ))}
+                            )))}
                     </table>
                 )}
             </div>
