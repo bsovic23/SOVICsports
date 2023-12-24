@@ -88,12 +88,11 @@ function Homepage() {
                     <br />
                     <br />
                     This project took time (and will continue to take time as I continue to make improvements throughout the year(s)). If 
-                    you feel like contrubuting anything, you can always venmo me.
+                    you feel like contributing anything, you can always venmo me.
                 </p>
             </div>
         </section>
     )
 };
-
 
 export default Homepage;

@@ -45,15 +45,14 @@ function Admin() {
 
     const [addCfbBowlPickem] = useMutation(MUTATION_CFB_BOWL_PICKEM);
 
-    const handleButtonClick = (event, winner, game) => {
-        event.preventDefault();
+    const handleButtonClick = (game, selectedTeam) => {
         const updatedTeams = [...selectedTeams];
         const existingPickIndex = updatedTeams.findIndex((currentPicks) => currentPicks.game === game);
     
         if (existingPickIndex !== -1) {
-            updatedTeams[existingPickIndex] = { game, selectedTeam: winner };
+            updatedTeams[existingPickIndex] = { game, selectedTeam };
         } else {
-            updatedTeams.push({ game, selectedTeam: winner });
+            updatedTeams.push({ game, selectedTeam });
         }
     
         setTeam(updatedTeams);
@@ -75,7 +74,6 @@ function Admin() {
                 semifinal1: semifinal1,
                 semifinal2: semifinal2,
                 champion: champion,
-                titleTotalPoints: titleTotalPoints,
             }
         }).then(() => {
             window.alert("Your entry has been updated!");
@@ -122,7 +120,9 @@ function Admin() {
                                     <label>
                                         <input
                                             type='radio'
-                                            onClick={(e) => handleButtonClick(e, teamOne, game)}
+                                            name={game}
+                                            value={teamOne}
+                                            onChange={() => handleButtonClick(game, teamOne)}
                                         />
                                         {teamOne}
                                     </label>
@@ -130,7 +130,9 @@ function Admin() {
                                     <label>
                                         <input
                                             type='radio'
-                                            onClick={(e) => handleButtonClick(e, teamTwo, game)}
+                                            name={game}
+                                            value={teamTwo}
+                                            onChange={() => handleButtonClick(game, teamTwo)}
                                         />
                                     {teamTwo}
                                     </label>
@@ -161,8 +163,8 @@ function Admin() {
                                 onChange={(e) => setChampion(e.target.value)}
                             />
                         </div>
+                        <button class='submit' type='submit'>Submit</button>
                     </form>
-                    <button class='submit' type='submit'>Submit</button>
                 </div>
             ) : (
                 <div>
