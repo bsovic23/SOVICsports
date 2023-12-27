@@ -13,13 +13,9 @@ function Admin() {
         { text: "HOME", link: "/"},
     ];
 
-    const { loading, data } = useQuery(QUERY_ALL_CFB_BOWL_PICKEM);
-    const allBowlPickem = data?.allCfbBowlPickem || [];
-
-    const adminAnswersEntry = allBowlPickem.find(entry => entry.entryName === 'adminAnswers');
-    const existingData = adminAnswersEntry || {};
-
     const [password, setPassword] = useState('');
+
+    const existingData = {};
 
     const [year, setYear] = useState('2023');
     const [entryName, setEntryName] = useState('adminAnswers');
@@ -28,7 +24,17 @@ function Admin() {
     const [semifinal2, setSemiFinal2] = useState(existingData.semifinal2 || '');
     const [champion, setChampion] = useState(existingData.champion || '');
 
+    /*
+    const { loading, data, refetch } = useQuery(QUERY_ALL_CFB_BOWL_PICKEM);
+    const allBowlPickem = data?.allCfbBowlPickem || [];
+
+    const adminAnswersEntry = allBowlPickem.find(entry => entry.entryName === 'adminAnswers');
+    console.log(adminAnswersEntry);
+    const existingData = adminAnswersEntry || {};
+
     useEffect(() => {
+        refetch();
+
         if (existingData.selectedTeams !== undefined && !isEqual(existingData.selectedTeams, selectedTeams)) {
             setTeam(existingData.selectedTeams);
         }
@@ -41,7 +47,8 @@ function Admin() {
         if (existingData.champion !== undefined && existingData.champion !== champion) {
             setChampion(existingData.champion);
         }
-    }, [existingData, selectedTeams, semifinal1, semifinal2, champion]);
+    }, []);
+    */
 
     const [addCfbBowlPickem] = useMutation(MUTATION_CFB_BOWL_PICKEM);
 
