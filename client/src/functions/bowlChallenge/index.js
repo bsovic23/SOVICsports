@@ -1,5 +1,7 @@
 // College Football Bowl Challenge Standings Function
 
+// Updated up to 12/28 BC SMU game
+
 export const bowlChallengeStandings = (data) => {
     const winners = [
         { winner1: "Jacksonville State", points: 1},
@@ -14,9 +16,14 @@ export const bowlChallengeStandings = (data) => {
         { winner11: "Minnesota", points: 1},
         { winner12: "Texas State", points: 1},
         { winner14: "Kansas", points: 2},
+        { winner15: "Virginia Tech", points: 2},
         { winner17: "UCLA", points: 2},
         { winner18: "Texas Tech", points: 2},
         { winner19: "Northwestern", points: 2},
+        { winner23: "USC", points: 3},
+        { winner24: "Oklahoma State", points: 3},
+        { winner25: "Boston College", points: 3},
+        { winner29: "West Virginia", points: 3},
     ];
 
     let standings = [];
