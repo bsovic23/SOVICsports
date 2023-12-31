@@ -12,6 +12,7 @@ export const bowlChallengeStandings = (data) => {
         { winner6: "Air Force", points: 1},
         { winner7: "Georgia State", points: 1},
         { winner8: "South Alabama", points: 1},
+        { winner9: "Wyoming", points: 1},
         { winner10: "UTSA", points: 1},
         { winner11: "Minnesota", points: 1},
         { winner12: "Texas State", points: 1},
@@ -29,6 +30,9 @@ export const bowlChallengeStandings = (data) => {
         { winner27: "Notre Dame", points: 3},
         { winner28: "Rutgers", points: 3},
         { winner29: "West Virginia", points: 3},
+        { winner30: "Maryland", points: 3},
+        { winner32: "Georgia", points: 5},
+        { winner33: "Ole Miss", points: 5},
         { winner34: "Missouri", points: 5},
         { winner35: "Arizona", points: 5},
     ];
