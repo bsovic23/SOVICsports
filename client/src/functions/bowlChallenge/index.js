@@ -33,7 +33,7 @@ export const bowlChallengeStandings = (data) => {
         { winner28: "Rutgers", points: 3},
         { winner29: "West Virginia", points: 3},
         { winner30: "Maryland", points: 3},
-        { winner31: "Liberty", points: 5},
+        { winner31: "Oregon", points: 5},
         { winner32: "Georgia", points: 5},
         { winner33: "Ole Miss", points: 5},
         { winner34: "Missouri", points: 5},
