@@ -22,6 +22,8 @@ export const bowlChallengeStandings = (data) => {
         { winner17: "UCLA", points: 2},
         { winner18: "Texas Tech", points: 2},
         { winner19: "Northwestern", points: 2},
+        { winner20: "Tennessee", points: 3},
+        { winner21: "LSU", points: 3},
         { winner22: "Clemson", points: 3},
         { winner23: "USC", points: 3},
         { winner24: "Oklahoma State", points: 3},
@@ -31,10 +33,13 @@ export const bowlChallengeStandings = (data) => {
         { winner28: "Rutgers", points: 3},
         { winner29: "West Virginia", points: 3},
         { winner30: "Maryland", points: 3},
+        { winner31: "Liberty", points: 5},
         { winner32: "Georgia", points: 5},
         { winner33: "Ole Miss", points: 5},
         { winner34: "Missouri", points: 5},
         { winner35: "Arizona", points: 5},
+        { winner36: "Washington", points: 8},
+        { winner37: "Michigan", points: 8},
     ];
 
     let standings = [];
@@ -47,15 +52,27 @@ export const bowlChallengeStandings = (data) => {
             const pickChoice = entry[`game${gameNumber}`];
             const actualWinner = winner[`winner${gameNumber}`];
 
-            if (pickChoice === actualWinner) {
-                totalPoints += winner.points;
+            // Check if the current game is a semifinal (game36 or game37)
+            if (gameNumber === 36 || gameNumber === 37) {
+                const semifinalKey = `semifinal${gameNumber - 35}`;
+                const pickChoiceSemifinal = entry[semifinalKey];
+                const actualWinnerSemifinal = winner[`winner${gameNumber}`];
+
+                if (pickChoiceSemifinal === actualWinnerSemifinal) {
+                    totalPoints += winner.points;
+                }
+            } else {
+                // For regular games (game1 to game35)
+                if (pickChoice === actualWinner) {
+                    totalPoints += winner.points;
+                }
             }
         }
 
         standings.push({ entryPerson: entry.entryName, points: totalPoints, champion: entry.champion });
     }
     
-    standings.sort((a,b) => b.points - a.points);
+    standings.sort((a, b) => b.points - a.points);
     
     return standings;
 };
