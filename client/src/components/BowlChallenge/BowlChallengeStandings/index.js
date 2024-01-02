@@ -41,11 +41,6 @@ const BowlChallengeStandings = () => {
           <Navbar navElements={navbarChoices} />
         </div>
         <h1>College Football Bowl Challenge Standings</h1>
-        <p>
-          STANDINGS ARE CURRENTLY WRONG AND NOT ACCOUNTING FOR PLAYOFFS
-
-          THE IT TEAM (ME) IS CURRENTLY WORKING ON FIXING THE SOLUTION
-        </p>
         <div>
           {loading ? (
             <div>...loading</div>
