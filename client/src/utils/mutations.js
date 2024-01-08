@@ -119,3 +119,21 @@ export const MUTATION_CFB_BOWL_PICKEM = gql`
   }
 }
 `;
+
+export const MUTATION_NFL_PLAYOFFS = gql`
+  mutation Mutation($entryName: String, $year: String, $qb: String, $rb1: String, $rb2: String, $wr1: String, $wr2: String, $te: String, $flex: String, $captain: String) {
+    addNflPlayoffs(entryName: $entryName, year: $year, qb: $qb, rb1: $rb1, rb2: $rb2, wr1: $wr1, wr2: $wr2, te: $te, flex: $flex, captain: $captain) {
+      _id
+      entryName
+      year
+      qb
+      rb1
+      rb2
+      wr1
+      wr2
+      te
+      flex
+      captain
+    }
+  }
+`;

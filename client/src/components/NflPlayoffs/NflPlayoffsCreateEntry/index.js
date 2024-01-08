@@ -1,16 +1,25 @@
 import React, { useState } from 'react';
-import NavBar from '../../Navbar';
+import { useMutation } from '@apollo/client'; 
 
 // Data Import
 import { NflPlayoffsPlayers } from '../../../data/NflPlayoffs';
 
 // Component Imports
+import NavBar from '../../Navbar';
+
+// GraphQL Imports
+import { MUTATION_NFL_PLAYOFFS } from '../../../utils/mutations';
 
 const NflPlayoffsEntry = () => {
 
     const entryOpen = true;
 
-    const navbarChoices = [];
+    const navbarChoices = [
+        {text: "CHALLENGE INSTRUCTIONS", link: "/nflPlayoffs"},
+        {text: "CREATE ENTRY", link: "/nflPlayoffsEntry"},
+        {text: "ALL ENTRIES", link: "/"},
+        {text: "STANDINGS", link: "/"},
+    ];
 
     // Entry Variables
     const [showModal, setShowModal] = useState(false);
@@ -27,6 +36,8 @@ const NflPlayoffsEntry = () => {
         captain: 'select CAPTAIN'
     });
     const [positionData, setPositionData] = useState('');
+
+    const [addNflPlayoffs] = useMutation(MUTATION_NFL_PLAYOFFS);
 
     const handlePositionClick = (positionSlot, positionClick) => {
         let playerChoices;
@@ -63,7 +74,36 @@ const NflPlayoffsEntry = () => {
 
     const submitForm = (event) => {
         event.preventDefault();
-        console.log('form submmtied');
+
+        addNflPlayoffs({
+            variables: {
+                entryName: entryName,
+                year: year,
+                qb: players.qb,
+                rb1: players.rb1,
+                rb2: players.rb2,
+                wr1: players.wr1,
+                wr2: players.wr2,
+                te: players.te,
+                flex: players.flex,
+                captain: players.captain
+            }
+        }).then(() => {
+            setEntryName('');
+            setPlayers({
+                qb: 'select QB',
+                rb1: 'select RB',
+                rb2: 'select RB',
+                wr1: 'select WR',
+                wr2: 'select WR',
+                te: 'select TE',
+                flex: 'select FLEX',
+                captain: 'select CAPTAIN'
+            });
+            window.alert("Your entry has been submitted!");
+        }).catch(error => {
+            console.error("Error submitting entry:", error);
+        });
     }
 
     return(
@@ -89,22 +129,24 @@ const NflPlayoffsEntry = () => {
                             </label>
                         </div>
                         <div id='nfl-section-1'>
-                            <button onClick={() => handlePositionClick('qb', 'qb')}>QB: {players['qb']}</button>
-                            <button onClick={() => handlePositionClick('rb1', 'rb')}>RB: {players['rb1']}</button>
-                            <button onClick={() => handlePositionClick('rb2', 'rb')}>RB: {players['rb2']}</button>
-                            <button onClick={() => handlePositionClick('wr1', 'wr')}>WR: {players['wr1']}</button>
-                            <button onClick={() => handlePositionClick('wr2', 'wr')}>WR: {players['wr2']}</button>
-                            <button onClick={() => handlePositionClick('te', 'te')}>TE: {players['te']}</button>
-                            <button onClick={() => handlePositionClick('flex', 'flex')}>FLEX: {players['flex']}</button>
-                            <button onClick={() => handlePositionClick('captain', 'captain')}>CAPTAIN: {players['captain']}</button>
+                            <button type='button' onClick={() => handlePositionClick('qb', 'qb')}>QB: {players['qb']}</button>
+                            <button type='button' onClick={() => handlePositionClick('rb1', 'rb')}>RB: {players['rb1']}</button>
+                            <button type='button' onClick={() => handlePositionClick('rb2', 'rb')}>RB: {players['rb2']}</button>
+                            <button type='button' onClick={() => handlePositionClick('wr1', 'wr')}>WR: {players['wr1']}</button>
+                            <button type='button' onClick={() => handlePositionClick('wr2', 'wr')}>WR: {players['wr2']}</button>
+                            <button type='button' onClick={() => handlePositionClick('te', 'te')}>TE: {players['te']}</button>
+                            <button type='button' onClick={() => handlePositionClick('flex', 'flex')}>FLEX: {players['flex']}</button>
+                            <button type='button' onClick={() => handlePositionClick('captain', 'captain')}>CAPTAIN: {players['captain']}</button>
                         </div>
                         <div>
                             {showModal && (
                                 <div class='modal' id='nfl-section-2'>
-                                    <button onClick={() => setShowModal(false)}>X</button>
+                                    <button onClick={() => setShowModal(false)}>X Close window</button>
                                     <div class='scrollable-container'>
                                         {positionData && Array.isArray(positionData) && positionData.map((player, index) => (
-                                            <button 
+                                            <button
+                                                style={{ display: 'block', marginBottom: '5px' }}
+                                                type='button' 
                                                 key={index} 
                                                 onClick={() => handlePlayerClicked(player.slot, player.playerName)}
                                             >
@@ -114,7 +156,8 @@ const NflPlayoffsEntry = () => {
                                     </div>
                                 </div>
                             )}
-                        </div>   
+                        </div> 
+                        <button class='submit' type='submit'>Submit</button>
                     </form>
                 </div>
             ) : (
