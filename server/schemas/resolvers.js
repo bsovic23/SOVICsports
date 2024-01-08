@@ -3,7 +3,8 @@ const {
     cfbBowlPickem,
     history,
     nbaPlayoffs,
-    comment
+    comment,
+    nflPlayoffs
 } = require('../models');
 
 const resolvers = {
@@ -49,6 +50,11 @@ const resolvers = {
         // Get all Comments
         allComments: async () => {
             return comment.find();
+        },
+        // NFL Playoffs
+        //
+        allNflPlayoffs: async () => {
+            return nflPlayoffs.find();
         }
     },
     Mutation: {
@@ -81,6 +87,12 @@ const resolvers = {
             const commentEntry = await comment.create(args);
 
             return commentEntry;
+        },
+
+        addNflPlayoffs: async (parent, args) => {
+            const nflPlayoffsEntry = await nflPlayoffs.create(args);
+
+            return nflPlayoffsEntry;
         }
     }
 };
