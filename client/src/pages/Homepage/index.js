@@ -9,9 +9,9 @@ function Homepage() {
             <h2>SOVICsports Challenges</h2>
             <div>
                 <p>Which challenge would you like to access:</p>
-                <button>
-                    COMING SOON: NFL Playoffs Create A Team
-                </button>
+                <Link to="/nflPlayoffs" style={{textDecoration: 'none', color: 'black'}}>
+                    <button>NFL Playoffs Challenge</button>
+                </Link>
                 <Link to="/nbaAllStar" style={{textDecoration: 'none', color: 'black'}}>
                     <button>NBA All Star Weekend</button>
                 </Link>

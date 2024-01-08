@@ -19,6 +19,8 @@ import NbaPlayoffsStandings from './components/NbaPlayoffs/NbaPlayoffsStanding';
 import BowlChallengeEntry from './components/BowlChallenge/BowlChallengeCreateEntry';
 import BowlChallengeEntries from './components/BowlChallenge/BowlChallengeEntries';
 import BowlChallengeStandings from './components/BowlChallenge/BowlChallengeStandings';
+//4. NFL Playoffs Challenge
+import NflPlayoffsEntry from './components/NflPlayoffs/NflPlayoffsCreateEntry';
 
 // Page Imports
 import Homepage from './pages/Homepage';
@@ -32,6 +34,7 @@ import BowlChallenge from './pages/BowlChallenge';
 import OverallStandings from './pages/OverallStandings';
 import Comment from './pages/Comment';
 import ApplicationUpdates from './pages/ApplicationUpdates';
+import NflPlayoffs from './pages/NflPlayoffs';
 
 // Establish connection to back end server graphql endpoint
 const httpLink = createHttpLink({
@@ -64,6 +67,8 @@ const routes = [
   { path: "/overallStandings", element: <OverallStandings />},
   { path: "/comment", element: <Comment />},
   { path: "/applicationUpdates", element: <ApplicationUpdates />},
+  { path: "/nflPlayoffs", element: <NflPlayoffs />},
+  { path: "/nflPlayoffsEntry", element: <NflPlayoffsEntry />},
   { path: "*", element: <Error />}
 ];
 
