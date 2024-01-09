@@ -5,15 +5,21 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "qb",
     "playerName": "Brock Purdy",
-    "team": "49ers"
+    "team": "49ers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 2,
     "seed": 1,
     "conference": "NFC",
     "position": "rb",
-    "playerName": "Christian McCaffrey",
-    "team": "49ers"
+    "playerName": "Cristian McCaffrey",
+    "team": "49ers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 3,
@@ -21,7 +27,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "rb",
     "playerName": "Elijah Mitchell",
-    "team": "49ers"
+    "team": "49ers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 4,
@@ -29,7 +38,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "Brandon Aiyuk",
-    "team": "49ers"
+    "team": "49ers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 5,
@@ -37,7 +49,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "Deebo Samuel",
-    "team": "49ers"
+    "team": "49ers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 6,
@@ -45,7 +60,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "te",
     "playerName": "George Kittle",
-    "team": "49ers"
+    "team": "49ers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 7,
@@ -53,7 +71,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "qb",
     "playerName": "Dak Prescott",
-    "team": "Cowboys"
+    "team": "Cowboys",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 8,
@@ -61,7 +82,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "rb",
     "playerName": "Tony Pollard",
-    "team": "Cowboys"
+    "team": "Cowboys",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 9,
@@ -69,7 +93,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "CeeDee Lamb",
-    "team": "Cowboys"
+    "team": "Cowboys",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 10,
@@ -77,7 +104,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "te",
     "playerName": "Jake Ferguson",
-    "team": "Cowboys"
+    "team": "Cowboys",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 11,
@@ -85,7 +115,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "qb",
     "playerName": "Jarred Goff",
-    "team": "Lions"
+    "team": "Lions",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 12,
@@ -93,7 +126,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "rb",
     "playerName": "David Montgomery",
-    "team": "Lions"
+    "team": "Lions",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 13,
@@ -101,7 +137,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "rb",
     "playerName": "Jahmyr Gibbs",
-    "team": "Lions"
+    "team": "Lions",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 14,
@@ -109,7 +148,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "Amon Ra St-Brown",
-    "team": "Lions"
+    "team": "Lions",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 15,
@@ -117,7 +159,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "te",
     "playerName": "Sam LaPorta",
-    "team": "Lions"
+    "team": "Lions",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 16,
@@ -125,7 +170,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "qb",
     "playerName": "Baker Mayfield",
-    "team": "Bucs"
+    "team": "Bucs",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 17,
@@ -133,7 +181,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "rb",
     "playerName": "Rachaard White",
-    "team": "Bucs"
+    "team": "Bucs",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 18,
@@ -141,7 +192,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "Mike Evans",
-    "team": "Bucs"
+    "team": "Bucs",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 19,
@@ -149,7 +203,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "Chris Godwin",
-    "team": "Bucs"
+    "team": "Bucs",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 20,
@@ -157,7 +214,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "te",
     "playerName": "Cade Otton",
-    "team": "Bucs"
+    "team": "Bucs",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 21,
@@ -165,7 +225,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "qb",
     "playerName": "Jalen Hurts",
-    "team": "Eagles"
+    "team": "Eagles",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 22,
@@ -173,7 +236,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "rb",
     "playerName": "D'Andre Swift",
-    "team": "Eagles"
+    "team": "Eagles",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 23,
@@ -181,7 +247,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "AJ Brown",
-    "team": "Eagles"
+    "team": "Eagles",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 24,
@@ -189,7 +258,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "DeVonta Smith",
-    "team": "Eagles"
+    "team": "Eagles",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 25,
@@ -197,7 +269,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "te",
     "playerName": "Dallas Goedert",
-    "team": "Eagles"
+    "team": "Eagles",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 26,
@@ -205,7 +280,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "qb",
     "playerName": "Matthew Stafford",
-    "team": "Rams"
+    "team": "Rams",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 27,
@@ -213,7 +291,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "rb",
     "playerName": "Kyren Williams",
-    "team": "Rams"
+    "team": "Rams",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 28,
@@ -221,7 +302,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "Puka Nacua",
-    "team": "Rams"
+    "team": "Rams",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 29,
@@ -229,7 +313,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "Cooper Kupp",
-    "team": "Rams"
+    "team": "Rams",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 30,
@@ -237,7 +324,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "te",
     "playerName": "Tyler Higbee",
-    "team": "Rams"
+    "team": "Rams",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 31,
@@ -245,7 +335,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "qb",
     "playerName": "Jordan Love",
-    "team": "Packers"
+    "team": "Packers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 32,
@@ -253,7 +346,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "rb",
     "playerName": "Aaron Jones",
-    "team": "Packers"
+    "team": "Packers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 33,
@@ -261,7 +357,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "Christian Watson",
-    "team": "Packers"
+    "team": "Packers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 34,
@@ -269,7 +368,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "Romeo Doubs",
-    "team": "Packers"
+    "team": "Packers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 35,
@@ -277,7 +379,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "Jayden Reed",
-    "team": "Packers"
+    "team": "Packers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 36,
@@ -285,7 +390,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "te",
     "playerName": "Luke Musgrave",
-    "team": "Packers"
+    "team": "Packers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 37,
@@ -293,7 +401,10 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "te",
     "playerName": "Tucker Kraft",
-    "team": "Packers"
+    "team": "Packers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 38,
@@ -301,7 +412,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "qb",
     "playerName": "Lamar Jackson",
-    "team": "Ravens"
+    "team": "Ravens",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 39,
@@ -309,7 +423,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "rb",
     "playerName": "Gus Edwards",
-    "team": "Ravens"
+    "team": "Ravens",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 40,
@@ -317,7 +434,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "rb",
     "playerName": "Justice Hill",
-    "team": "Ravens"
+    "team": "Ravens",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 41,
@@ -325,7 +445,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "wr",
     "playerName": "Zay Flowers",
-    "team": "Ravens"
+    "team": "Ravens",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 42,
@@ -333,7 +456,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "te",
     "playerName": "Isaiah Likely",
-    "team": "Ravens"
+    "team": "Ravens",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 43,
@@ -341,7 +467,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "qb",
     "playerName": "Josh Allen",
-    "team": "Bills"
+    "team": "Bills",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 44,
@@ -349,7 +478,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "rb",
     "playerName": "James Cook",
-    "team": "Bills"
+    "team": "Bills",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 45,
@@ -357,7 +489,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "wr",
     "playerName": "Stefon Diggs",
-    "team": "Bills"
+    "team": "Bills",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 46,
@@ -365,7 +500,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "wr",
     "playerName": "Gabe Davis",
-    "team": "Bills"
+    "team": "Bills",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 47,
@@ -373,7 +511,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "te",
     "playerName": "Dalton Kincaid",
-    "team": "Bills"
+    "team": "Bills",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 48,
@@ -381,7 +522,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "te",
     "playerName": "Dawson Knox",
-    "team": "Bills"
+    "team": "Bills",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 49,
@@ -389,7 +533,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "qb",
     "playerName": "Patrick Mahomes",
-    "team": "Chiefs"
+    "team": "Chiefs",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 50,
@@ -397,7 +544,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "rb",
     "playerName": "Isiah Pacheco",
-    "team": "Chiefs"
+    "team": "Chiefs",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 51,
@@ -405,7 +555,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "wr",
     "playerName": "Rashee Rice",
-    "team": "Chiefs"
+    "team": "Chiefs",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 52,
@@ -413,7 +566,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "te",
     "playerName": "Travis Kelce",
-    "team": "Chiefs"
+    "team": "Chiefs",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 53,
@@ -421,7 +577,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "qb",
     "playerName": "CJ Stroud",
-    "team": "Texans"
+    "team": "Texans",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 54,
@@ -429,7 +588,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "rb",
     "playerName": "Dameon Pierce",
-    "team": "Texans"
+    "team": "Texans",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 55,
@@ -437,7 +599,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "rb",
     "playerName": "Devin Singletary",
-    "team": "Texans"
+    "team": "Texans",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 56,
@@ -445,7 +610,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "wr",
     "playerName": "Nico Collins",
-    "team": "Texans"
+    "team": "Texans",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 57,
@@ -453,7 +621,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "te",
     "playerName": "Dalton Schultz",
-    "team": "Texans"
+    "team": "Texans",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 58,
@@ -461,7 +632,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "qb",
     "playerName": "Joe Flacco",
-    "team": "Browns"
+    "team": "Browns",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 59,
@@ -469,7 +643,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "rb",
     "playerName": "Jerome Ford",
-    "team": "Browns"
+    "team": "Browns",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 60,
@@ -477,7 +654,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "wr",
     "playerName": "Amari Cooper",
-    "team": "Browns"
+    "team": "Browns",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 61,
@@ -485,7 +665,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "te",
     "playerName": "David Njoku",
-    "team": "Browns"
+    "team": "Browns",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 62,
@@ -493,7 +676,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "qb",
     "playerName": "Tua Tagovailoa",
-    "team": "Dolphins"
+    "team": "Dolphins",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 63,
@@ -501,7 +687,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "rb",
     "playerName": "Raheem Mostert",
-    "team": "Dolphins"
+    "team": "Dolphins",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 64,
@@ -509,7 +698,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "rb",
     "playerName": "De'Von Achane",
-    "team": "Dolphins"
+    "team": "Dolphins",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 65,
@@ -517,7 +709,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "wr",
     "playerName": "Tyreek Hill",
-    "team": "Dolphins"
+    "team": "Dolphins",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 66,
@@ -525,7 +720,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "wr",
     "playerName": "Jaylen Waddle",
-    "team": "Dolphins"
+    "team": "Dolphins",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 67,
@@ -533,7 +731,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "te",
     "playerName": "Durham Smythe",
-    "team": "Dolphins"
+    "team": "Dolphins",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 68,
@@ -541,7 +742,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "qb",
     "playerName": "Mason Rudolph",
-    "team": "Steelers"
+    "team": "Steelers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 69,
@@ -549,7 +753,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "rb",
     "playerName": "Najee Harris",
-    "team": "Steelers"
+    "team": "Steelers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 70,
@@ -557,7 +764,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "rb",
     "playerName": "Jaylen Warren",
-    "team": "Steelers"
+    "team": "Steelers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 71,
@@ -565,7 +775,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "wr",
     "playerName": "Dionte Johnson",
-    "team": "Steelers"
+    "team": "Steelers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 72,
@@ -573,7 +786,10 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "wr",
     "playerName": "George Pickens",
-    "team": "Steelers"
+    "team": "Steelers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   },
   {
     "id": 73,
@@ -581,6 +797,9 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "te",
     "playerName": "Pat Freiermuth",
-    "team": "Steelers"
+    "team": "Steelers",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
   }
-];
+]

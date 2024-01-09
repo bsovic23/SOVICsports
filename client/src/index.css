@@ -247,6 +247,16 @@ body {
   background-color: yellow;
 }
 
+#nfl-playoffs-all-entries .active {
+  background-color: green;
+}
+
+#nfl-playoffs-all-entries .eliminated {
+  background-color: red;
+}
+
+
+
 /* History (card) -------------------------------------------------------------- */
 .history-card-section {
   background-color: var(--background);

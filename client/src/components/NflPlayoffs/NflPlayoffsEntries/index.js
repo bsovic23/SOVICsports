@@ -3,6 +3,9 @@ import React from 'react';
 // Component Imports
 import NavBar from '../../Navbar';
 
+// Data Imports
+import { NflPlayoffsPlayers } from '../../../data/NflPlayoffs';
+
 // GraphQL Imports
 import { QUERY_ALL_NFL_PLAYOFFS } from '../../../utils/queries';
 import { useQuery } from '@apollo/client';
@@ -54,14 +57,14 @@ const NflPlayoffsEntries = () => {
                             <td>{entry.entryName}</td>
                         {showEntries === 1 && (
                             <>
-                            <td>{entry.captain}</td>
-                            <td>{entry.qb}</td>
-                            <td>{entry.rb}</td>
-                            <td>{entry.rb}</td>
-                            <td>{entry.wr}</td>
-                            <td>{entry.wr}</td>
-                            <td>{entry.te}</td>
-                            <td>{entry.flex}</td>
+                            <td class={NflPlayoffsPlayers.find(player => player.playerName === entry.captain)?.eliminated === 'yes' ? 'eliminated' : 'active'}>{entry.captain}</td>
+                            <td class={NflPlayoffsPlayers.find(player => player.playerName === entry.qb)?.eliminated === 'yes' ? 'eliminated' : 'active'}>{entry.qb}</td>
+                            <td class={NflPlayoffsPlayers.find(player => player.playerName === entry.rb1)?.eliminated === 'yes' ? 'eliminated' : 'active'}>{entry.rb1}</td>
+                            <td class={NflPlayoffsPlayers.find(player => player.playerName === entry.rb2)?.eliminated === 'yes' ? 'eliminated' : 'active'}>{entry.rb2}</td>
+                            <td class={NflPlayoffsPlayers.find(player => player.playerName === entry.wr1)?.eliminated === 'yes' ? 'eliminated' : 'active'}>{entry.wr1}</td>
+                            <td class={NflPlayoffsPlayers.find(player => player.playerName === entry.wr2)?.eliminated === 'yes' ? 'eliminated' : 'active'}>{entry.wr2}</td>
+                            <td class={NflPlayoffsPlayers.find(player => player.playerName === entry.te)?.eliminated === 'yes' ? 'eliminated' : 'active'}>{entry.te}</td>
+                            <td class={NflPlayoffsPlayers.find(player => player.playerName === entry.flex)?.eliminated === 'yes' ? 'eliminated' : 'active'}>{entry.flex}</td>
                             </>
                         )}
                         </tr>
