@@ -12,7 +12,7 @@ export const NflPlayoffsPlayers = [
     "seed": 1,
     "conference": "NFC",
     "position": "rb",
-    "playerName": "Cristian McCaffrey",
+    "playerName": "Christian McCaffrey",
     "team": "49ers"
   },
   {

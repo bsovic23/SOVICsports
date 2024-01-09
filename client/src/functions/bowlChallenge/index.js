@@ -40,6 +40,7 @@ export const bowlChallengeStandings = (data) => {
         { winner35: "Arizona", points: 5},
         { winner36: "Michigan", points: 8},
         { winner37: "Washington", points: 8},
+        { winner38: "Michigan", points: 12},
     ];
 
     let standings = [];
@@ -53,7 +54,16 @@ export const bowlChallengeStandings = (data) => {
             const pickChoice = entry[`game${gameNumber}`];
             const actualWinner = winner[`winner${gameNumber}`];
 
-            if (gameNumber >= 36) {
+            if (gameNumber === 38) {
+                // Handling final (game38)
+                const finalKey = 'champion';
+                const pickChoiceFinal = entry[finalKey];
+                const actualWinnerSemifinal = winner[`winner${gameNumber}`];
+
+                if (pickChoiceFinal === actualWinnerSemifinal) {
+                    totalPoints += winner.points;
+                }
+            } else if (gameNumber >= 36) {
                 // Handling semifinals (game36 and game37)
                 const semifinalKey = `semifinal${gameNumber - 35}`;
                 const pickChoiceSemifinal = entry[semifinalKey];

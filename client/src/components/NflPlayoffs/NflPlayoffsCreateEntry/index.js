@@ -116,7 +116,7 @@ const NflPlayoffsEntry = () => {
             </h1>
             {entryOpen ? (
                 <div>
-                    <p>Entry open</p>
+                    <p>Please Read the Instructions Before Filling OUT</p>
                     <form onSubmit={submitForm}>
                         <div>
                             <label>
