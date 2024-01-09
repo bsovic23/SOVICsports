@@ -104,3 +104,21 @@ query allCfbBowlPickem {
   }
 }
 `;
+
+export const QUERY_ALL_NFL_PLAYOFFS = gql`
+  query Query {
+    allNflPlayoffs {
+      _id
+      entryName
+      year
+      qb
+      rb1
+      rb2
+      wr1
+      wr2
+      te
+      flex
+      captain
+    }
+  }
+`

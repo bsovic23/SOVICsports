@@ -21,7 +21,7 @@ import BowlChallengeEntries from './components/BowlChallenge/BowlChallengeEntrie
 import BowlChallengeStandings from './components/BowlChallenge/BowlChallengeStandings';
 //4. NFL Playoffs Challenge
 import NflPlayoffsEntry from './components/NflPlayoffs/NflPlayoffsCreateEntry';
-
+import NflPlayoffsEntries from './components/NflPlayoffs/NflPlayoffsEntries';
 // Page Imports
 import Homepage from './pages/Homepage';
 import Profile from './pages/Profile';
@@ -69,6 +69,7 @@ const routes = [
   { path: "/applicationUpdates", element: <ApplicationUpdates />},
   { path: "/nflPlayoffs", element: <NflPlayoffs />},
   { path: "/nflPlayoffsEntry", element: <NflPlayoffsEntry />},
+  { path: "/nflPlayoffsEntries", element: <NflPlayoffsEntries />},
   { path: "*", element: <Error />}
 ];
 

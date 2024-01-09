@@ -7,8 +7,8 @@ const NflPlayoffs = () => {
     const navbarChoices = [
         {text: "CHALLENGE INSTRUCTIONS", link: "/nflPlayoffs"},
         {text: "CREATE ENTRY", link: "/nflPlayoffsEntry"},
-        {text: "ALL ENTRIES", link: "/"},
-        {text: "STANDINGS", link: "/"},
+        {text: "ALL ENTRIES", link: "/nflPlayoffsEntries"},
+        {text: "STANDINGS", link: "/nflPlayoffStandings"},
     ];
 
     return(

@@ -230,6 +230,23 @@ body {
   width: 350px;
 }
 
+/* NFL Playoffs Challenge All Entries -------------------------------------------------------------- */
+#nfl-playoffs-all-entries table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#nfl-playoffs-all-entries th, #nfl-playoffs-all-entries td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+}
+
+#nfl-playoffs-all-entries tr:hover {
+  background-color: yellow;
+}
+
 /* History (card) -------------------------------------------------------------- */
 .history-card-section {
   background-color: var(--background);
