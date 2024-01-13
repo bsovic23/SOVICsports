@@ -12,13 +12,14 @@ import { useQuery } from '@apollo/client';
 
 const NflPlayoffsEntries = () => {
 
-    const showEntries = 0;
+    // 0 = entryName only    1 = full entry details
+    const showEntries = 1;
 
     const navbarChoices = [
         {text: "CHALLENGE INSTRUCTIONS", link: "/nflPlayoffs"},
         {text: "CREATE ENTRY", link: "/nflPlayoffsEntry"},
         {text: "ALL ENTRIES", link: "/nflPlayoffsEntries"},
-        {text: "STANDINGS", link: "/nflPlayoffStandings"},
+        {text: "STANDINGS", link: "/nflPlayoffsStandings"},
     ];
 
     const { loading, data } = useQuery(QUERY_ALL_NFL_PLAYOFFS);

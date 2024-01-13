@@ -248,14 +248,29 @@ body {
 }
 
 #nfl-playoffs-all-entries .active {
-  background-color: green;
+  background-color: rgb(130, 231, 105);
 }
 
 #nfl-playoffs-all-entries .eliminated {
-  background-color: red;
+  background-color: rgb(235, 93, 93);
 }
 
+/* College Football Challenge Standings -------------------------------------------------------------- */
+#nfl-playoffs-standings table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+}
 
+#nfl-playoffs-standings table th, #nfl-playoffs-standings table td {
+  border: 1px black solid;
+  text-align: center;
+  padding: 5px;
+}
+
+#nfl-playoffs-standings table tr:hover {
+  background-color: yellow;
+}
 
 /* History (card) -------------------------------------------------------------- */
 .history-card-section {

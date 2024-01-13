@@ -18,7 +18,7 @@ const NflPlayoffsEntry = () => {
         {text: "CHALLENGE INSTRUCTIONS", link: "/nflPlayoffs"},
         {text: "CREATE ENTRY", link: "/nflPlayoffsEntry"},
         {text: "ALL ENTRIES", link: "/nflPlayoffsEntries"},
-        {text: "STANDINGS", link: "/nflPlayoffStandings"},
+        {text: "STANDINGS", link: "/nflPlayoffsStandings"},
     ];
 
     // Entry Variables
@@ -116,7 +116,7 @@ const NflPlayoffsEntry = () => {
             </h1>
             {entryOpen ? (
                 <div>
-                    <p>Please Read the Instructions Before Filling OUT</p>
+                    <p>Please Read the Instructions Before Filling Out</p>
                     <form onSubmit={submitForm}>
                         <div>
                             <label>

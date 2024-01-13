@@ -462,6 +462,17 @@ export const NflPlayoffsPlayers = [
     "colorTwo": "color"
   },
   {
+    "id": 100,
+    "seed": 1,
+    "conference": "AFC",
+    "position": "te",
+    "playerName": "Mark Andrews",
+    "team": "Ravens",
+    "eliminated": "no",
+    "colorOne": "color",
+    "colorTwo": "color"
+  },
+  {
     "id": 43,
     "seed": 2,
     "conference": "AFC",

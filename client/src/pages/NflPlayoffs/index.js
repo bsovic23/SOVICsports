@@ -8,7 +8,7 @@ const NflPlayoffs = () => {
         {text: "CHALLENGE INSTRUCTIONS", link: "/nflPlayoffs"},
         {text: "CREATE ENTRY", link: "/nflPlayoffsEntry"},
         {text: "ALL ENTRIES", link: "/nflPlayoffsEntries"},
-        {text: "STANDINGS", link: "/nflPlayoffStandings"},
+        {text: "STANDINGS", link: "/nflPlayoffsStandings"},
     ];
 
     return(
