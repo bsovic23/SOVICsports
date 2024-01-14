@@ -1,7 +1,6 @@
 export const nflPlayoffsStandingsFx = (data) => {
 
     const nlfPlayoffsPlayerPoints = [
-        [
             {
               "playerName": "Jerome Ford",
               "points": 7.2
@@ -138,8 +137,7 @@ export const nflPlayoffsStandingsFx = (data) => {
               "playerName": "Nico Collins",
               "points": 22
             }
-          ]
-    ];
+          ];
     
     const results = [];
 
