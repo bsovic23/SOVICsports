@@ -644,7 +644,7 @@ export const NflPlayoffsPlayers = [
     "position": "qb",
     "playerName": "Joe Flacco",
     "team": "Browns",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -655,7 +655,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "Jerome Ford",
     "team": "Browns",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -666,7 +666,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Amari Cooper",
     "team": "Browns",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -677,7 +677,7 @@ export const NflPlayoffsPlayers = [
     "position": "te",
     "playerName": "David Njoku",
     "team": "Browns",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -688,7 +688,7 @@ export const NflPlayoffsPlayers = [
     "position": "qb",
     "playerName": "Tua Tagovailoa",
     "team": "Dolphins",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -699,7 +699,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "Raheem Mostert",
     "team": "Dolphins",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -710,7 +710,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "De'Von Achane",
     "team": "Dolphins",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -721,7 +721,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Tyreek Hill",
     "team": "Dolphins",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -732,7 +732,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Jaylen Waddle",
     "team": "Dolphins",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -743,7 +743,7 @@ export const NflPlayoffsPlayers = [
     "position": "te",
     "playerName": "Durham Smythe",
     "team": "Dolphins",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },

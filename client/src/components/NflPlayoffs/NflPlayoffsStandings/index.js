@@ -31,7 +31,7 @@ const NflPlayoffsStandings = () => {
                 <NavBar navElements={navbarChoices} />
             </div>
             <h1>NFL Playoffs Challenge Standings</h1>
-            <p>Updated: 4:00 pm ET</p>
+            <p>Updated: 1.14.23 9:30 am ET</p>
             <div>
                 {loading ? (
                     <div>...loading</div>
