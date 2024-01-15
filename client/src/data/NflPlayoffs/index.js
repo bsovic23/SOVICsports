@@ -72,7 +72,7 @@ export const NflPlayoffsPlayers = [
     "position": "qb",
     "playerName": "Dak Prescott",
     "team": "Cowboys",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -83,7 +83,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "Tony Pollard",
     "team": "Cowboys",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -94,7 +94,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "CeeDee Lamb",
     "team": "Cowboys",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -105,7 +105,7 @@ export const NflPlayoffsPlayers = [
     "position": "te",
     "playerName": "Jake Ferguson",
     "team": "Cowboys",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -281,7 +281,7 @@ export const NflPlayoffsPlayers = [
     "position": "qb",
     "playerName": "Matthew Stafford",
     "team": "Rams",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -292,7 +292,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "Kyren Williams",
     "team": "Rams",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -303,7 +303,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Puka Nacua",
     "team": "Rams",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -314,7 +314,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Cooper Kupp",
     "team": "Rams",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -325,7 +325,7 @@ export const NflPlayoffsPlayers = [
     "position": "te",
     "playerName": "Tyler Higbee",
     "team": "Rams",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
