@@ -136,6 +136,14 @@ export const nflPlayoffsStandingsFx = (data) => {
       {
         "playerName": "Nico Collins",
         "points": 22
+      },
+      {
+        "playerName": "Mike Evans",
+        "points": 6.3
+      },
+      {
+        "playerName": "Chris Godwin",
+        "points": 12.5
       }
     ]
     
