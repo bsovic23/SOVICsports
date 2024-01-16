@@ -226,7 +226,7 @@ export const NflPlayoffsPlayers = [
     "position": "qb",
     "playerName": "Jalen Hurts",
     "team": "Eagles",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -237,7 +237,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "D'Andre Swift",
     "team": "Eagles",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -248,7 +248,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "AJ Brown",
     "team": "Eagles",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -259,7 +259,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "DeVonta Smith",
     "team": "Eagles",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -270,7 +270,7 @@ export const NflPlayoffsPlayers = [
     "position": "te",
     "playerName": "Dallas Goedert",
     "team": "Eagles",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -754,7 +754,7 @@ export const NflPlayoffsPlayers = [
     "position": "qb",
     "playerName": "Mason Rudolph",
     "team": "Steelers",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -765,7 +765,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "Najee Harris",
     "team": "Steelers",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -776,7 +776,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "Jaylen Warren",
     "team": "Steelers",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -787,7 +787,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Dionte Johnson",
     "team": "Steelers",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -798,7 +798,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "George Pickens",
     "team": "Steelers",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -809,7 +809,7 @@ export const NflPlayoffsPlayers = [
     "position": "te",
     "playerName": "Pat Freiermuth",
     "team": "Steelers",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   }

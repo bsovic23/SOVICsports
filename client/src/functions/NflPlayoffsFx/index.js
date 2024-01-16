@@ -38,6 +38,10 @@ export const nflPlayoffsStandingsFx = (data) => {
         "points": 35.3
       },
       {
+        "playerName": "DeVonta Smith",
+        "points": 18.8
+      },
+      {
         "playerName": "Jarred Goff",
         "points": 14.78
       },
@@ -47,7 +51,7 @@ export const nflPlayoffsStandingsFx = (data) => {
       },
       {
         "playerName": "Josh Allen",
-        "points": 0
+        "points": 33.52
       },
       {
         "playerName": "Patrick Mahomes",
@@ -79,7 +83,7 @@ export const nflPlayoffsStandingsFx = (data) => {
       },
       {
         "playerName": "James Cook",
-        "points": 0
+        "points": 10.4
       },
       {
         "playerName": "Isiah Pacheco",
@@ -103,11 +107,11 @@ export const nflPlayoffsStandingsFx = (data) => {
       },
       {
         "playerName": "Dalton Kincaid",
-        "points": 0
+        "points": 13.4
       },
       {
         "playerName": "Dawson Knox",
-        "points": 0
+        "points": 7.4
       },
       {
         "playerName": "Travis Kelce",
@@ -118,16 +122,12 @@ export const nflPlayoffsStandingsFx = (data) => {
         "points": 21
       },
       {
-        "playerName": "DeVonta Smith",
-        "points": 0
-      },
-      {
         "playerName": "Zay Flowers",
         "points": 0
       },
       {
         "playerName": "Stefon Diggs",
-        "points": 0
+        "points": 8.7
       },
       {
         "playerName": "Rashee Rice",
