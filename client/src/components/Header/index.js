@@ -13,7 +13,7 @@ function Header() {
                 </Link>
             </div>
             <p>
-                Version 1.01.04 | Updated: 01/08/2024 | <Link to='/applicationUpdates' style={{textDecoration: 'none', color: 'black'}}>Click here to see whats new</Link> | <Link to='/Admin' style={{textDecoration: 'none', color: 'black'}}>Admin Access</Link>
+                Version 1.01.05 | Updated: 01/19/2024 | <Link to='/applicationUpdates' style={{textDecoration: 'none', color: 'black'}}>Click here to see whats new</Link> | <Link to='/Admin' style={{textDecoration: 'none', color: 'black'}}>Admin Access</Link>
             </p>
         </section>
     )

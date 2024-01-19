@@ -5,10 +5,13 @@ import { useQuery } from '@apollo/client';
 import NavBar from '../../Navbar';
 
 // function imports
-import { nflPlayoffsStandingsFx } from '../../../functions/NflPlayoffsFx';
+import { nflPlayoffsPlayerPointsFx, nflPlayoffsStandingsFx } from '../../../functions/NflPlayoffsFx';
 
 // graphQL imports
 import { QUERY_ALL_NFL_PLAYOFFS } from '../../../utils/queries';
+
+// data imports
+import { NflPlayoffsPlayerPoints } from '../../../data/NflPlayoffsPlayerPoints';
 
 const NflPlayoffsStandings = () => {
 
@@ -25,6 +28,9 @@ const NflPlayoffsStandings = () => {
 
     const nflPlayoffsStandings = nflPlayoffsStandingsFx(allNflPlayoffs);
 
+    // Calculating Player Points Standings
+    const playerPointsSorted = nflPlayoffsPlayerPointsFx(NflPlayoffsPlayerPoints);
+
     return(
         <section class='page' id='nfl-playoffs-standings'>
             <div>
@@ -37,25 +43,47 @@ const NflPlayoffsStandings = () => {
                     <div>...loading</div>
                 ) : (
                     <div>
-                        <table>
-                            <tr>
-                                <th>Place</th>
-                                <th>Entry Name</th>
-                                <th>Total Points</th>
-                                <th>Captain</th>
-                            </tr>
-                            {nflPlayoffsStandings &&
-                                nflPlayoffsStandings.map((entries, index) => (entries.entryPerson !== 'adminAnswers' && 
-                                (
-                                <tr key={index}>
-                                    <td>{index + 1}</td>
-                                    <td>{entries.entryName}</td>
-                                    <td>{entries.totalScore}</td>
-                                    <td>{entries.captain}</td>
+                        <div>
+                            <table>
+                                <tr>
+                                    <th>Place</th>
+                                    <th>Entry Name</th>
+                                    <th>Total Points</th>
+                                    <th>Captain</th>
                                 </tr>
-                                )
-                                ))}
-                        </table>
+                                {nflPlayoffsStandings &&
+                                    nflPlayoffsStandings.map((entries, index) => (entries.entryPerson !== 'adminAnswers' && 
+                                    (
+                                    <tr key={index}>
+                                        <td>{index + 1}</td>
+                                        <td>{entries.entryName}</td>
+                                        <td>{entries.totalScore}</td>
+                                        <td>{entries.captain}</td>
+                                    </tr>
+                                    )
+                                    ))}
+                            </table>
+                        </div>
+                        <div>
+                            <h3>Player Points Leaders</h3>
+                            <table>
+                                <tr>    
+                                    <th>Rank</th>
+                                    <th>Player Name</th>
+                                    <th>Player Points</th>
+                                </tr>
+                                {playerPointsSorted.map((entry, index) => (
+                                <tr
+                                    key={index}
+                                >
+                                    <td>{index + 1}</td>
+                                    <td>{entry.playerName}</td>
+                                    <td>{entry.points}</td>
+                                </tr>
+                                ))
+                                }
+                            </table>
+                        </div>
                     </div>
                 )}
             </div>

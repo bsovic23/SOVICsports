@@ -5,11 +5,11 @@ const ApplicationUpdates = () => {
         <section class='page'>
             <h1>Whats New!</h1>
             <div>
-                <h3>Update 1.01.04</h3>
+                <h3>Update 1.01.05</h3>
                 <ol>
                     <li>NFL Playoffs Challenge</li>
                     <ul>
-                        <li>Add Entry ability for NFL Playoffs</li>
+                        <li>Individual player scores are visible to see the best performing and worst performing picks</li>
                     </ul>
                 </ol>
             </div>

@@ -1,3 +1,12 @@
+export const nflPlayoffsPlayerPointsFx = (data) => {
+
+  const nflPlayoffsPlayerPointsSorted = data.sort((a,b) => (b.points - a.points));
+
+  return nflPlayoffsPlayerPointsSorted;
+
+};
+
+
 export const nflPlayoffsStandingsFx = (data) => {
 
     const nlfPlayoffsPlayerPoints = [
