@@ -336,7 +336,7 @@ export const NflPlayoffsPlayers = [
     "position": "qb",
     "playerName": "Jordan Love",
     "team": "Packers",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -347,7 +347,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "Aaron Jones",
     "team": "Packers",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -358,7 +358,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Christian Watson",
     "team": "Packers",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -369,7 +369,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Romeo Doubs",
     "team": "Packers",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -380,7 +380,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Jayden Reed",
     "team": "Packers",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -391,7 +391,7 @@ export const NflPlayoffsPlayers = [
     "position": "te",
     "playerName": "Luke Musgrave",
     "team": "Packers",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -402,7 +402,7 @@ export const NflPlayoffsPlayers = [
     "position": "te",
     "playerName": "Tucker Kraft",
     "team": "Packers",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -589,7 +589,7 @@ export const NflPlayoffsPlayers = [
     "position": "qb",
     "playerName": "CJ Stroud",
     "team": "Texans",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -600,7 +600,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "Dameon Pierce",
     "team": "Texans",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -611,7 +611,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "Devin Singletary",
     "team": "Texans",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -622,7 +622,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Nico Collins",
     "team": "Texans",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -633,7 +633,7 @@ export const NflPlayoffsPlayers = [
     "position": "te",
     "playerName": "Dalton Schultz",
     "team": "Texans",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },

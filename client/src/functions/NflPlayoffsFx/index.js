@@ -51,12 +51,28 @@ export const nflPlayoffsStandingsFx = (data) => {
         "points": 18.8
       },
       {
+        "playerName": "CJ Stroud",
+        "points": 30.96
+      },
+      {
+        "playerName": "Aaron Jones",
+        "points": 50.2
+      },
+      {
+        "playerName": "Devin Singletary",
+        "points": 25.5
+      },
+      {
+        "playerName": "Nico Collins",
+        "points": 31.3
+      },
+      {
         "playerName": "Jarred Goff",
         "points": 14.78
       },
       {
         "playerName": "Lamar Jackson",
-        "points": 0
+        "points": 36.08
       },
       {
         "playerName": "Josh Allen",
@@ -67,12 +83,8 @@ export const nflPlayoffsStandingsFx = (data) => {
         "points": 18.58
       },
       {
-        "playerName": "CJ Stroud",
-        "points": 23.06
-      },
-      {
         "playerName": "Cristian McCaffrey",
-        "points": 0
+        "points": 28.3
       },
       {
         "playerName": "Jahmyr Gibbs",
@@ -80,15 +92,11 @@ export const nflPlayoffsStandingsFx = (data) => {
       },
       {
         "playerName": "Rachaard White",
-        "points": 0
-      },
-      {
-        "playerName": "Aaron Jones",
-        "points": 35.1
+        "points": 8
       },
       {
         "playerName": "Gus Edwards",
-        "points": 0
+        "points": 4.4
       },
       {
         "playerName": "James Cook",
@@ -99,16 +107,12 @@ export const nflPlayoffsStandingsFx = (data) => {
         "points": 15.8
       },
       {
-        "playerName": "Devin Singletary",
-        "points": 16
-      },
-      {
         "playerName": "George Kittle",
-        "points": 0
+        "points": 16.1
       },
       {
         "playerName": "Isaiah Likely",
-        "points": 0
+        "points": 10.4
       },
       {
         "playerName": "Mark Andrews",
@@ -132,7 +136,7 @@ export const nflPlayoffsStandingsFx = (data) => {
       },
       {
         "playerName": "Zay Flowers",
-        "points": 0
+        "points": 6.1
       },
       {
         "playerName": "Stefon Diggs",
@@ -141,10 +145,6 @@ export const nflPlayoffsStandingsFx = (data) => {
       {
         "playerName": "Rashee Rice",
         "points": 30
-      },
-      {
-        "playerName": "Nico Collins",
-        "points": 22
       },
       {
         "playerName": "Mike Evans",
