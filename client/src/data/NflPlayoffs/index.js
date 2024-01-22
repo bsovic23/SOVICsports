@@ -171,7 +171,7 @@ export const NflPlayoffsPlayers = [
     "position": "qb",
     "playerName": "Baker Mayfield",
     "team": "Bucs",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -182,7 +182,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "Rachaard White",
     "team": "Bucs",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -193,7 +193,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Mike Evans",
     "team": "Bucs",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -204,7 +204,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Chris Godwin",
     "team": "Bucs",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -215,7 +215,7 @@ export const NflPlayoffsPlayers = [
     "position": "te",
     "playerName": "Cade Otton",
     "team": "Bucs",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -479,7 +479,7 @@ export const NflPlayoffsPlayers = [
     "position": "qb",
     "playerName": "Josh Allen",
     "team": "Bills",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -490,7 +490,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "James Cook",
     "team": "Bills",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -501,7 +501,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Stefon Diggs",
     "team": "Bills",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -512,7 +512,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Gabe Davis",
     "team": "Bills",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -523,7 +523,7 @@ export const NflPlayoffsPlayers = [
     "position": "te",
     "playerName": "Dalton Kincaid",
     "team": "Bills",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -534,7 +534,7 @@ export const NflPlayoffsPlayers = [
     "position": "te",
     "playerName": "Dawson Knox",
     "team": "Bills",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },

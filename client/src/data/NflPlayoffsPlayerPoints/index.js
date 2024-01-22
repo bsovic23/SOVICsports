@@ -33,7 +33,7 @@ export const NflPlayoffsPlayerPoints = [
   },
   {
     "playerName": "Puka Nacua",
-    "points": 35.3
+    "points": 35.9
   },
   {
     "playerName": "DeVonta Smith",
@@ -45,102 +45,106 @@ export const NflPlayoffsPlayerPoints = [
   },
   {
     "playerName": "Aaron Jones",
-    "points": 50.2
+    "points": 54.7
   },
   {
     "playerName": "Devin Singletary",
-    "points": 25.5
+    "points": 28
   },
   {
     "playerName": "Nico Collins",
-    "points": 31.3
-  },
-  {
-    "playerName": "Jarred Goff",
-    "points": 14.78
-  },
-  {
-    "playerName": "Lamar Jackson",
-    "points": 36.08
+    "points": 33.8
   },
   {
     "playerName": "Josh Allen",
-    "points": 33.52
-  },
-  {
-    "playerName": "Patrick Mahomes",
-    "points": 18.58
-  },
-  {
-    "playerName": "Cristian McCaffrey",
-    "points": 28.3
-  },
-  {
-    "playerName": "Jahmyr Gibbs",
-    "points": 16.8
+    "points": 64.12
   },
   {
     "playerName": "Rachaard White",
-    "points": 8
-  },
-  {
-    "playerName": "Gus Edwards",
-    "points": 4.4
+    "points": 27.6
   },
   {
     "playerName": "James Cook",
-    "points": 10.4
+    "points": 24.6
+  },
+  {
+    "playerName": "Dalton Kincaid",
+    "points": 24.4
+  },
+  {
+    "playerName": "Dawson Knox",
+    "points": 9.3
+  },
+  {
+    "playerName": "Stefon Diggs",
+    "points": 18
+  },
+  {
+    "playerName": "Mike Evans",
+    "points": 39.5
+  },
+  {
+    "playerName": "Chris Godwin",
+    "points": 22.5
+  },
+  {
+    "playerName": "Jarred Goff",
+    "points": 34.86
+  },
+  {
+    "playerName": "Lamar Jackson",
+    "points": 39.1
+  },
+  {
+    "playerName": "Patrick Mahomes",
+    "points": 37.08
+  },
+  {
+    "playerName": "Cristian McCaffrey",
+    "points": 31.8
+  },
+  {
+    "playerName": "Jahmyr Gibbs",
+    "points": 38.2
+  },
+  {
+    "playerName": "Gus Edwards",
+    "points": 4.9
   },
   {
     "playerName": "Isiah Pacheco",
-    "points": 15.8
+    "points": 33.900000000000006
   },
   {
     "playerName": "George Kittle",
-    "points": 16.1
+    "points": 18.1
   },
   {
     "playerName": "Isaiah Likely",
-    "points": 10.4
+    "points": 11.4
   },
   {
     "playerName": "Mark Andrews",
     "points": 0
   },
   {
-    "playerName": "Dalton Kincaid",
-    "points": 13.4
-  },
-  {
-    "playerName": "Dawson Knox",
-    "points": 7.4
-  },
-  {
     "playerName": "Travis Kelce",
-    "points": 14.1
+    "points": 38.6
   },
   {
     "playerName": "Amon Ra St-Brown",
-    "points": 21
+    "points": 42.7
   },
   {
     "playerName": "Zay Flowers",
-    "points": 6.1
-  },
-  {
-    "playerName": "Stefon Diggs",
-    "points": 8.7
+    "points": 8.1
   },
   {
     "playerName": "Rashee Rice",
-    "points": 30
+    "points": 38.7
   },
   {
-    "playerName": "Mike Evans",
-    "points": 6.3
-  },
-  {
-    "playerName": "Chris Godwin",
-    "points": 12.5
+    "playerName": "Brock Purdy",
+    "points": 15.5
   }
 ]
