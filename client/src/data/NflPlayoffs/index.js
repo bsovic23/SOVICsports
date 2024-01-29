@@ -116,7 +116,7 @@ export const NflPlayoffsPlayers = [
     "position": "qb",
     "playerName": "Jarred Goff",
     "team": "Lions",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -127,7 +127,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "David Montgomery",
     "team": "Lions",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -138,7 +138,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "Jahmyr Gibbs",
     "team": "Lions",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -149,7 +149,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Amon Ra St-Brown",
     "team": "Lions",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -160,7 +160,7 @@ export const NflPlayoffsPlayers = [
     "position": "te",
     "playerName": "Sam LaPorta",
     "team": "Lions",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -413,7 +413,7 @@ export const NflPlayoffsPlayers = [
     "position": "qb",
     "playerName": "Lamar Jackson",
     "team": "Ravens",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -424,7 +424,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "Gus Edwards",
     "team": "Ravens",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -435,7 +435,7 @@ export const NflPlayoffsPlayers = [
     "position": "rb",
     "playerName": "Justice Hill",
     "team": "Ravens",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -446,7 +446,7 @@ export const NflPlayoffsPlayers = [
     "position": "wr",
     "playerName": "Zay Flowers",
     "team": "Ravens",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -457,7 +457,7 @@ export const NflPlayoffsPlayers = [
     "position": "te",
     "playerName": "Isaiah Likely",
     "team": "Ravens",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },
@@ -468,7 +468,7 @@ export const NflPlayoffsPlayers = [
     "position": "te",
     "playerName": "Mark Andrews",
     "team": "Ravens",
-    "eliminated": "no",
+    "eliminated": "yes",
     "colorOne": "color",
     "colorTwo": "color"
   },

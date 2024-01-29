@@ -89,62 +89,62 @@ export const NflPlayoffsPlayerPoints = [
   },
   {
     "playerName": "Jarred Goff",
-    "points": 34.86
+    "points": 49.78
   },
   {
     "playerName": "Lamar Jackson",
-    "points": 39.1
-  },
-  {
-    "playerName": "Patrick Mahomes",
-    "points": 37.08
-  },
-  {
-    "playerName": "Cristian McCaffrey",
-    "points": 31.8
+    "points": 59.68
   },
   {
     "playerName": "Jahmyr Gibbs",
-    "points": 38.2
+    "points": 51.80
   },
   {
     "playerName": "Gus Edwards",
-    "points": 4.9
-  },
-  {
-    "playerName": "Isiah Pacheco",
-    "points": 33.900000000000006
-  },
-  {
-    "playerName": "George Kittle",
-    "points": 18.1
+    "points": 9.5
   },
   {
     "playerName": "Isaiah Likely",
-    "points": 11.4
+    "points": 15
   },
   {
     "playerName": "Mark Andrews",
-    "points": 0
-  },
-  {
-    "playerName": "Travis Kelce",
-    "points": 38.6
+    "points": 3.5
   },
   {
     "playerName": "Amon Ra St-Brown",
-    "points": 42.7
+    "points": 58.6
   },
   {
     "playerName": "Zay Flowers",
-    "points": 8.1
+    "points": 33
+  },
+  {
+    "playerName": "Patrick Mahomes",
+    "points": 57.22
+  },
+  {
+    "playerName": "Cristian McCaffrey",
+    "points": 66
+  },
+  {
+    "playerName": "Isiah Pacheco",
+    "points": 57.10
+  },
+  {
+    "playerName": "George Kittle",
+    "points": 27.8
+  },
+  {
+    "playerName": "Travis Kelce",
+    "points": 75.7
   },
   {
     "playerName": "Rashee Rice",
-    "points": 38.7
+    "points": 56.30
   },
   {
     "playerName": "Brock Purdy",
-    "points": 15.5
+    "points": 38.98
   }
 ]
