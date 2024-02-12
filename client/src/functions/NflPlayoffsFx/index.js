@@ -108,7 +108,7 @@ export const nflPlayoffsStandingsFx = (data) => {
       },
       {
         "playerName": "Jahmyr Gibbs",
-        "points": 51.80
+        "points": 51.800000000000004
       },
       {
         "playerName": "Gus Edwards",
@@ -132,31 +132,31 @@ export const nflPlayoffsStandingsFx = (data) => {
       },
       {
         "playerName": "Patrick Mahomes",
-        "points": 57.22
+        "points": 105.14
       },
       {
         "playerName": "Cristian McCaffrey",
-        "points": 66
+        "points": 95
       },
       {
         "playerName": "Isiah Pacheco",
-        "points": 57.10
+        "points": 81.30000000000001
       },
       {
         "playerName": "George Kittle",
-        "points": 27.8
+        "points": 30.2
       },
       {
         "playerName": "Travis Kelce",
-        "points": 75.7
+        "points": 104
       },
       {
         "playerName": "Rashee Rice",
-        "points": 56.30
+        "points": 76.7
       },
       {
         "playerName": "Brock Purdy",
-        "points": 38.98
+        "points": 54.38
       }
     ]
     
