@@ -14,6 +14,7 @@ const NbaPlayoffsEntry = () => {
     ];
 
     const [entryName, setEntry] = useState('');
+    const [year, setYear] = useState('2024');
     const [starterOne, setStarterOne] = useState('');
     const [starterTwo, setStarterTwo] = useState('');
     const [starterThree, setStarterThree] = useState('');
@@ -34,6 +35,7 @@ const NbaPlayoffsEntry = () => {
             await addNbaPlayoffs({
                 variables: {
                     entryName,
+                    year,
                     starterOne,
                     starterTwo,
                     starterThree,

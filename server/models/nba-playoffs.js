@@ -5,6 +5,9 @@ const nbaPlayoffsSchema = new Schema(
         entryName: {
             type: String
         },
+        year: {
+            type: String
+        },
         starterOne: {
             type: String
         },
