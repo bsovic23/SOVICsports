@@ -1,4 +1,3 @@
-// This component will not use the generic EntryForm since different format
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { MUTATION_CFB_BOWL_PICKEM } from '../../../utils/mutations';
@@ -9,7 +8,7 @@ import { bowlPicks2023 } from '../../../data/BowlChallenge';
 
 const BowlChallengeEntry = () => {
 
-    const entryOpen = false;
+    const entryOpen = true;
 
     const navbarChoices = [
         {text: "CHALLENGE INSTRUCTIONS", link: "/bowlChallenge"},
@@ -18,13 +17,27 @@ const BowlChallengeEntry = () => {
         {text: "STANDINGS", link: "/bowlChallengeStandings"},
     ];
 
-    const [year, setYear] = useState('2023');
+    const [year, setYear] = useState('2024');
     const [entryName, setEntryName] = useState('');
     const [selectedTeams, setTeam] = useState([]);
-    const [semifinal1, setSemiFinal1] = useState('');
-    const [semifinal2, setSemiFinal2] = useState('');
-    const [champion, setChampion] = useState('');
+    const [bracketPicks, setBracketPicks] = useState({
+        semi1: '',
+        semi2: '',
+        champion: ''
+    });
     const [titleTotalPoints, setTitleTotalPoints] = useState('');
+    const [matches, setMatches] = useState({
+        round1: [
+          { team1: 'Team A', team2: 'Team B' },
+          { team1: 'Team C', team2: 'Team D' },
+          { team1: 'Team E', team2: 'Team F' },
+          { team1: 'Team G', team2: 'Team H' }
+        ],
+        round2: [
+          { team1: '', team2: '' },
+          { team1: '', team2: '' }
+        ]
+      });
 
     const [addCfbBowlPickem] = useMutation(MUTATION_CFB_BOWL_PICKEM);
 
@@ -42,9 +55,26 @@ const BowlChallengeEntry = () => {
         setTeam(updatedTeams);
     };
 
-      const handleFormSubmit = (event) => {
-        event.preventDefault();
+    const handleWinnerSelection = (round, matchIndex, teamIndex, event) => {
+        event.preventDefault(); // Prevent form submission
+        const newMatches = { ...matches };
+        
+        // Update the winner in the current round
+        const winner = newMatches[round][matchIndex][`team${teamIndex + 1}`];
+        
+        // Set the winner in the next round
+        const nextRound = round === 'round1' ? 'round2' : 'round3'; // Assuming there might be a third round
+        if (newMatches[nextRound]) {
+            const nextMatchIndex = Math.floor(matchIndex / 2);
+            const nextTeamSlot = matchIndex % 2 === 0 ? 'team1' : 'team2';
+            newMatches[nextRound][nextMatchIndex][nextTeamSlot] = winner;
+        }
 
+        setMatches(newMatches);
+    };
+
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
         const gameVariables = {};
         selectedTeams.forEach(({ game, selectedTeam }) => {
             gameVariables[game] = selectedTeam;
@@ -55,16 +85,14 @@ const BowlChallengeEntry = () => {
                 entryName: entryName,
                 year: year,
                 ...gameVariables,
-                semifinal1: semifinal1,
-                semifinal2: semifinal2,
-                champion: champion,
+                semifinal1: bracketPicks.semi1,
+                semifinal2: bracketPicks.semi2,
+                champion: bracketPicks.champion,
                 titleTotalPoints: titleTotalPoints,
             }
         }).then(() => {
             setEntryName('');
-            setSemiFinal1('');
-            setSemiFinal2('');
-            setChampion('');
+            setBracketPicks({ semi1: '', semi2: '', champion: '' });
             setTitleTotalPoints('');
             window.alert("Your entry has been submitted!");
         }).catch(error => {
@@ -73,9 +101,9 @@ const BowlChallengeEntry = () => {
     };
 
     return(
-        <section class='form-section'>
+        <section className='form-section'>
             <div>
-                < NavBar navElements={navbarChoices} />
+                <NavBar navElements={navbarChoices} />
             </div>
             <h1>
                 College Football Bowl Challenge
@@ -143,29 +171,35 @@ const BowlChallengeEntry = () => {
                         </div>
                     </div>
                 ))}
-                <div>
-                    <label>Semi Final Winner One (Michigan (1) vs Alabama (4)):</label>
-                    <input
-                        placeholder='type semi one winner'
-                        value={semifinal1}
-                        onChange={(e) => setSemiFinal1(e.target.value)}
-                    />
-                </div>
-                <div>
-                    <label>Semi Final Winner Two (Washington (2) vs Texas (3)):</label>
-                    <input
-                        placeholder='type semi two winner'
-                        value={semifinal2}
-                        onChange={(e) => setSemiFinal2(e.target.value)}
-                    />
-                </div>
-                <div>
-                    <label>Champion:</label>
-                    <input
-                        placeholder='type champion here'
-                        value={champion}
-                        onChange={(e) => setChampion(e.target.value)}
-                    />
+                <div className="bracket">
+                    <h2>Round 1</h2>
+                    <div className="round" id="round-1">
+                        {matches.round1.map((match, matchIndex) => (
+                        <div key={matchIndex} className="matchup">
+                            <button onClick={(e) => handleWinnerSelection('round1', matchIndex, 0, e)}>
+                            {match.team1}
+                            </button>
+                            <span>vs</span>
+                            <button onClick={(e) => handleWinnerSelection('round1', matchIndex, 1, e)}>
+                            {match.team2}
+                            </button>
+                        </div>
+                        ))}
+                    </div>
+                    <h2>Round 2</h2>
+                    <div className="round" id="round-2">
+                        {matches.round2.map((match, matchIndex) => (
+                        <div key={matchIndex} className="matchup">
+                            <button>
+                            {match.team1 ? match.team1 : 'TBD'}
+                            </button>
+                            <span>vs</span>
+                            <button>
+                            {match.team2 ? match.team2 : 'TBD'}
+                            </button>
+                        </div>
+                        ))}
+                    </div>
                 </div>
                 <div>
                     <label>Tiebreaker #1: Title Game Total Points Without Going Over:</label>
@@ -175,7 +209,7 @@ const BowlChallengeEntry = () => {
                         onChange={(e) => setTitleTotalPoints(e.target.value)}
                     />
                 </div>
-                <button class='submit' type='submit'>Submit</button>
+                <button className='submit' type='submit'>Submit</button>
             </form>
             ) : (
                 <p>The deadline to submit an entry has passed</p>
@@ -197,6 +231,6 @@ function getBackgroundColor(points) {
       default:
         return 'white';
     }
-  }
+}
 
 export default BowlChallengeEntry;
