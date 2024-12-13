@@ -22,7 +22,13 @@ const BowlChallenge = () => {
                 <div>
                     <h3>Choose the winner of each bowl game</h3>
                     <li>You will receive points based on each correct pick you make</li>
-                    <li>Each set of bowl games are worth a different number of points (1, 2, 3, 5, 8, 12)</li>
+                    <li>Each set of bowl games are worth a different number of points (1, 2, 3)</li>
+                    <li>The College Football Playoff scoring will be</li>
+                    <li>Round 1: 5 points</li>
+                    <li>Quarterfinals: 7 points</li>
+                    <li>Semifinals: 9 points</li>
+                    <li>Championship: 11 points</li>
+                    <li>Champion: 14 points</li>
                     <li>Tiebreaker #1 will be closest total points</li>
                     <li>Tiebreaker #2, if two or more people are equal points difference, will be most 1 point games correctly picked</li>
                 </div>
