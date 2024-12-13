@@ -21,8 +21,12 @@ function BowlChallengeEntries() {
     const { loading, data } = useQuery(QUERY_ALL_CFB_BOWL_PICKEM);
     const allBowlPickem = data?.allCfbBowlPickem || [];
 
+    const filteredEntries = allBowlPickem.filter((entry) => {
+        return entry.year === "2024";
+    });
+
     useEffect(() => {
-        const deadline = new Date("2024-12-10T23:59:59");
+        const deadline = new Date("2024-12-17T23:59:59");
         const currentDate = new Date();
 
         if (currentDate > deadline) {
@@ -89,7 +93,7 @@ function BowlChallengeEntries() {
                         </>
                         )}
                         </tr>
-                            {allBowlPickem && allBowlPickem.map((entry, index) => (entry.entryName !== 'adminAnswers' && (
+                            {filteredEntries && filteredEntries.map((entry, index) => (entry.entryName !== 'adminAnswers' && (
                                 <tr key={index}>
                                     <td>{entry.entryName}</td>
                             {dataShow === 1 && (
@@ -128,10 +132,6 @@ function BowlChallengeEntries() {
                                     <td>{entry.game32}</td>
                                     <td>{entry.game33}</td>
                                     <td>{entry.game34}</td>
-                                    <td>{entry.game35}</td>
-                                    <td>{entry.semifinal1}</td>
-                                    <td>{entry.semifinal2}</td>
-                                    <td>{entry.champion}</td>
                                     <td>{entry.titleTotalPoints}</td>
                             </>
                             )}

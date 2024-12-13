@@ -4,7 +4,7 @@ import { MUTATION_CFB_BOWL_PICKEM } from '../../../utils/mutations';
 import NavBar from '../../Navbar';
 
 // data import
-import { bowlPicks2023 } from '../../../data/BowlChallenge';
+import { bowlPicks2024 } from '../../../data/BowlChallenge';
 
 const BowlChallengeEntry = () => {
 
@@ -17,27 +17,29 @@ const BowlChallengeEntry = () => {
         {text: "STANDINGS", link: "/bowlChallengeStandings"},
     ];
 
+    const [matches, setMatches] = useState({
+        round1: [
+          { team1: 'Tennessee', team2: 'Ohio State' },
+          { team1: 'Texas', team2: 'Clemson' },
+          { team1: 'Notre Dame', team2: 'Indiana' },
+          { team1: 'SMU', team2: 'Penn State' },
+        ],
+        round2: [
+          { team1: '', team2: 'Oregon' },
+          { team1: '', team2: 'Arizona State' },
+          { team1: '', team2: 'Georgia' },
+          { team1: '', team2: 'Boise State' },
+        ],
+        round3: [{ team1: '', team2: '' }, { team1: '', team2: '' }],
+        round4: [{ team1: '', team2: '' }],
+        champion: { team1: '' },
+    });
+    
+
     const [year, setYear] = useState('2024');
     const [entryName, setEntryName] = useState('');
     const [selectedTeams, setTeam] = useState([]);
-    const [bracketPicks, setBracketPicks] = useState({
-        semi1: '',
-        semi2: '',
-        champion: ''
-    });
     const [titleTotalPoints, setTitleTotalPoints] = useState('');
-    const [matches, setMatches] = useState({
-        round1: [
-          { team1: 'Team A', team2: 'Team B' },
-          { team1: 'Team C', team2: 'Team D' },
-          { team1: 'Team E', team2: 'Team F' },
-          { team1: 'Team G', team2: 'Team H' }
-        ],
-        round2: [
-          { team1: '', team2: '' },
-          { team1: '', team2: '' }
-        ]
-      });
 
     const [addCfbBowlPickem] = useMutation(MUTATION_CFB_BOWL_PICKEM);
 
@@ -55,44 +57,77 @@ const BowlChallengeEntry = () => {
         setTeam(updatedTeams);
     };
 
-    const handleWinnerSelection = (round, matchIndex, teamIndex, event) => {
-        event.preventDefault(); // Prevent form submission
-        const newMatches = { ...matches };
-        
-        // Update the winner in the current round
-        const winner = newMatches[round][matchIndex][`team${teamIndex + 1}`];
-        
-        // Set the winner in the next round
-        const nextRound = round === 'round1' ? 'round2' : 'round3'; // Assuming there might be a third round
-        if (newMatches[nextRound]) {
+    const handleWinnerSelection = (round, matchIndex, teamIndex) => {
+        setMatches((prevMatches) => {
+          const newMatches = { ...prevMatches };
+          const winner = newMatches[round][matchIndex][`team${teamIndex + 1}`];
+    
+          if (round === 'round1') {
+            newMatches.round2[matchIndex].team1 = winner;
+          } else if (round === 'round2') {
             const nextMatchIndex = Math.floor(matchIndex / 2);
             const nextTeamSlot = matchIndex % 2 === 0 ? 'team1' : 'team2';
-            newMatches[nextRound][nextMatchIndex][nextTeamSlot] = winner;
-        }
-
-        setMatches(newMatches);
-    };
+            newMatches.round3[nextMatchIndex][nextTeamSlot] = winner;
+          } else if (round === 'round3') {
+            const nextTeamSlot = matchIndex % 2 === 0 ? 'team1' : 'team2';
+            newMatches.round4[0][nextTeamSlot] = winner;
+          } else if (round === 'round4') {
+            newMatches.champion.team1 = winner;
+          }
+    
+          return newMatches;
+        });
+      };    
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
         const gameVariables = {};
+        console.log(selectedTeams);
         selectedTeams.forEach(({ game, selectedTeam }) => {
             gameVariables[game] = selectedTeam;
         });
+
+        const roundOne = [
+            matches.round1[0].team1, matches.round1[0].team2,
+            matches.round1[1].team1, matches.round1[1].team2,
+            matches.round1[2].team1, matches.round1[2].team2,
+            matches.round1[3].team1, matches.round1[3].team2,
+        ];
+        const quarterfinals = [
+            matches.round2[0].team1, matches.round2[0].team2,
+            matches.round2[1].team1, matches.round2[1].team2,
+            matches.round2[2].team1, matches.round2[2].team2,
+            matches.round2[3].team1, matches.round2[3].team2,
+        ];
+        const semifinals = [
+            matches.round3[0].team1, matches.round3[0].team2,
+            matches.round3[1].team1, matches.round3[1].team2,
+        ];
+        const championship = [
+            matches.round4[0].team1, matches.round4[0].team2,
+        ];
+        const champion = matches.champion.team1;
         
         addCfbBowlPickem({
             variables: {
                 entryName: entryName,
                 year: year,
                 ...gameVariables,
-                semifinal1: bracketPicks.semi1,
-                semifinal2: bracketPicks.semi2,
-                champion: bracketPicks.champion,
+                roundOne1: quarterfinals[0] || '',
+                roundOne2: quarterfinals[2] || '',
+                roundOne3: quarterfinals[4] || '',
+                roundOne4: quarterfinals[6] || '',
+                quarterfinals1: semifinals[0] || '',
+                quarterfinals2: semifinals[1]  || '',
+                quarterfinals3: semifinals[2]  || '',
+                quarterfinals4: semifinals[3]  || '',
+                semifinal1: championship[0] || '',
+                semifinal2: championship[1] || '',
+                champion: champion || '',
                 titleTotalPoints: titleTotalPoints,
             }
         }).then(() => {
             setEntryName('');
-            setBracketPicks({ semi1: '', semi2: '', champion: '' });
             setTitleTotalPoints('');
             window.alert("Your entry has been submitted!");
         }).catch(error => {
@@ -118,12 +153,12 @@ const BowlChallengeEntry = () => {
                         onChange={(e) => setEntryName(e.target.value)}
                     />
                 </div>
-                {bowlPicks2023.map(({index, game, points, teamOne, teamOneColor, teamOneColor2, teamTwo, teamTwoColor, teamTwoColor2, spread}) => (
+                {bowlPicks2024.map(({index, game, points, teamOne, teamOneColor, teamOneColor2, teamTwo, teamTwoColor, teamTwoColor2, spread}) => (
                     <div key={index} id="cfb-matchup" style={{ backgroundColor: getBackgroundColor(points)}}>
                         <div>
                             <div style={{ marginLeft: '4%' }}>
                                 <p>{points} Point Game</p>
-                                <p>{game}</p>
+                                <p>Game {game}</p>
                                 <p>{spread}</p>
                             </div>
                             <div style={{ marginLeft: '20px' }}>
@@ -173,34 +208,90 @@ const BowlChallengeEntry = () => {
                 ))}
                 <div className="bracket">
                     <h2>Round 1</h2>
-                    <div className="round" id="round-1">
+                    <div className="round">
                         {matches.round1.map((match, matchIndex) => (
                         <div key={matchIndex} className="matchup">
-                            <button onClick={(e) => handleWinnerSelection('round1', matchIndex, 0, e)}>
+                            <button
+                            type="button"
+                            onClick={() => handleWinnerSelection('round1', matchIndex, 0)}
+                            >
                             {match.team1}
                             </button>
                             <span>vs</span>
-                            <button onClick={(e) => handleWinnerSelection('round1', matchIndex, 1, e)}>
+                            <button
+                            type="button"
+                            onClick={() => handleWinnerSelection('round1', matchIndex, 1)}
+                            >
                             {match.team2}
                             </button>
                         </div>
                         ))}
                     </div>
-                    <h2>Round 2</h2>
-                    <div className="round" id="round-2">
+                    <h2>Quarterfinals</h2>
+                    <div className="round">
                         {matches.round2.map((match, matchIndex) => (
                         <div key={matchIndex} className="matchup">
-                            <button>
-                            {match.team1 ? match.team1 : 'TBD'}
+                            <button
+                            type="button"
+                            onClick={() => handleWinnerSelection('round2', matchIndex, 0)}
+                            >
+                            {match.team1 || ''}
                             </button>
                             <span>vs</span>
-                            <button>
-                            {match.team2 ? match.team2 : 'TBD'}
+                            <button
+                            type="button"
+                            onClick={() => handleWinnerSelection('round2', matchIndex, 1)}
+                            >
+                            {match.team2 || ''}
                             </button>
                         </div>
                         ))}
                     </div>
-                </div>
+                    <h2>Semifinals</h2>
+                    <div className="round">
+                        {matches.round3.map((match, matchIndex) => (
+                        <div key={matchIndex} className="matchup">
+                            <button
+                            type="button"
+                            onClick={() => handleWinnerSelection('round3', matchIndex, 0)}
+                            >
+                            {match.team1 || ''}
+                            </button>
+                            <span>vs</span>
+                            <button
+                            type="button"
+                            onClick={() => handleWinnerSelection('round3', matchIndex, 1)}
+                            >
+                            {match.team2 || ''}
+                            </button>
+                        </div>
+                        ))}
+                    </div>
+                    <h2>Championship</h2>
+                    <div className="round">
+                        {matches.round4.map((match, matchIndex) => (
+                        <div key={matchIndex} className="matchup">
+                            <button
+                            type="button"
+                            onClick={() => handleWinnerSelection('round4', matchIndex, 0)}
+                            >
+                            {match.team1 || ''}
+                            </button>
+                            <span>vs</span>
+                            <button
+                            type="button"
+                            onClick={() => handleWinnerSelection('round4', matchIndex, 1)}
+                            >
+                            {match.team2 || ''}
+                            </button>
+                        </div>
+                        ))}
+                    </div>
+                    <h2>Champion</h2>
+                    <div className="champion">
+                        <span>{matches.champion.team1 || ''}</span>
+                    </div>
+                    </div>
                 <div>
                     <label>Tiebreaker #1: Title Game Total Points Without Going Over:</label>
                     <input

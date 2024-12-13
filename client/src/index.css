@@ -168,6 +168,88 @@ body {
   border: black 1px solid;
 }
 
+.form-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.bracket {
+  margin-top: 20px;
+}
+
+.round {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.matchup {
+  display: flex;
+  justify-content: center; /* Ensures that the matchup buttons are centered in each match */
+  align-items: center;
+}
+
+.team {
+  display: flex;
+  align-items: center; /* Ensures the teams and vs are aligned */
+}
+
+.team button {
+  margin: 0 10px; /* Adds space between the buttons */
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.team button:hover {
+  background-color: #e0e0e0;
+}
+
+.team span {
+  margin: 0 10px; /* Adds space between the teams and the "vs" text */
+}
+
+.round span {
+  margin: 5px 0;
+}
+
+.champion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.bracket button {
+  background-color: lightgray; /* Light gray background */
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Slightly rounded corners */
+  padding: 10px 15px; /* Padding for a better look */
+  cursor: pointer; /* Show pointer on hover */
+  font-size: 14px; /* Adjust font size */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.bracket button:hover {
+  background-color: gray; /* Slightly darker gray on hover */
+  color: white; /* Change text color on hover */
+}
+
+.bracket .matchup button {
+  margin: 5px; /* Space between buttons */
+}
+
+
 /* College Football Challenge All Entries -------------------------------------------------------------- */
 #bowl-challenge-all-entries table {
   border-collapse: collapse;

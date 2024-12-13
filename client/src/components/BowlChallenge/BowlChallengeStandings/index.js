@@ -24,7 +24,7 @@ const BowlChallengeStandings = () => {
 
     useEffect(() => {
         const currentDate = new Date();
-        const gameStartDate = new Date('2023-12-16');
+        const gameStartDate = new Date('2024-12-17T00:00:00');
     
         if (currentDate > gameStartDate) {
           setShowStandings(true);
@@ -67,7 +67,7 @@ const BowlChallengeStandings = () => {
                     ))}
                 </table>
               ) : (
-                <p>Standings will appear after the first day of games conclude on 12/16/2023.</p>
+                <p>Standings will appear after the first concludes on 12/17/2024.</p>
               )}
             </div>
           )}

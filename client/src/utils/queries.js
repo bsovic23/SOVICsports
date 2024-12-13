@@ -56,7 +56,7 @@ query Query {
 `;
 
 export const QUERY_ALL_CFB_BOWL_PICKEM = gql`
-query allCfbBowlPickem {
+query AllCfbBowlPickem {
   allCfbBowlPickem {
     _id
     entryName
@@ -96,7 +96,14 @@ query allCfbBowlPickem {
     game32
     game33
     game34
-    game35
+    roundOne1
+    roundOne2
+    roundOne3
+    roundOne4
+    quarterfinals1
+    quarterfinals2
+    quarterfinals3
+    quarterfinals4
     semifinal1
     semifinal2
     champion

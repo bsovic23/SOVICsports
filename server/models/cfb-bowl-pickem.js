@@ -114,7 +114,28 @@ const cfbBowlPickemSchema = new Schema(
         game34: {
             type: String
         },
-        game35: {
+        roundOne1: {
+            type: String
+        },
+        roundOne2: {
+            type: String
+        },
+        roundOne3: {
+            type: String
+        },
+        roundOne4: {
+            type: String
+        },
+        quarterfinals1: {
+            type: String
+        },
+        quarterfinals2: {
+            type: String
+        },
+        quarterfinals3: {
+            type: String
+        },
+        quarterfinals4: {
             type: String
         },
         semifinal1: {
