@@ -10,6 +10,12 @@ const BowlChallengeEntry = () => {
 
     const entryOpen = true;
 
+    const [isVertical, setIsVertical] = useState(false); // State to track layout
+
+    const handleLayoutToggle = () => {
+        setIsVertical(prevState => !prevState); // Toggle the layout format
+    };
+
     const navbarChoices = [
         {text: "CHALLENGE INSTRUCTIONS", link: "/bowlChallenge"},
         {text: "CREATE ENTRY", link: "/bowlChallengeEntry"},
@@ -17,7 +23,7 @@ const BowlChallengeEntry = () => {
         {text: "STANDINGS", link: "/bowlChallengeStandings"},
     ];
 
-    const [matches, setMatches] = useState({
+    const initialMatches = {
         round1: [
           { team1: 'Tennessee', team2: 'Ohio State' },
           { team1: 'Texas', team2: 'Clemson' },
@@ -33,15 +39,20 @@ const BowlChallengeEntry = () => {
         round3: [{ team1: '', team2: '' }, { team1: '', team2: '' }],
         round4: [{ team1: '', team2: '' }],
         champion: { team1: '' },
-    });
+    };
     
 
     const [year, setYear] = useState('2024');
     const [entryName, setEntryName] = useState('');
+    const [matches, setMatches] = useState(initialMatches);
     const [selectedTeams, setTeam] = useState([]);
     const [titleTotalPoints, setTitleTotalPoints] = useState('');
 
     const [addCfbBowlPickem] = useMutation(MUTATION_CFB_BOWL_PICKEM);
+
+    const handleResetBracket = () => {
+        setMatches(initialMatches);
+    }
 
     const handleButtonClick = (event, winner, game) => {
         event.preventDefault();
@@ -207,8 +218,10 @@ const BowlChallengeEntry = () => {
                     </div>
                 ))}
                 <div className="bracket">
+                    <button type="button" onClick={handleResetBracket}>Restart Bracket</button>
+                    <button type="button" onClick={handleLayoutToggle}>Click if on iPhone</button>
                     <h2>Round 1</h2>
-                    <div className="round">
+                    <div className={`round ${isVertical ? 'vertical' : ''}`}>
                         {matches.round1.map((match, matchIndex) => (
                         <div key={matchIndex} className="matchup">
                             <button
@@ -228,7 +241,7 @@ const BowlChallengeEntry = () => {
                         ))}
                     </div>
                     <h2>Quarterfinals</h2>
-                    <div className="round">
+                    <div className={`round ${isVertical ? 'vertical' : ''}`}>
                         {matches.round2.map((match, matchIndex) => (
                         <div key={matchIndex} className="matchup">
                             <button
@@ -248,7 +261,7 @@ const BowlChallengeEntry = () => {
                         ))}
                     </div>
                     <h2>Semifinals</h2>
-                    <div className="round">
+                    <div className={`round ${isVertical ? 'vertical' : ''}`}>
                         {matches.round3.map((match, matchIndex) => (
                         <div key={matchIndex} className="matchup">
                             <button
@@ -268,7 +281,7 @@ const BowlChallengeEntry = () => {
                         ))}
                     </div>
                     <h2>Championship</h2>
-                    <div className="round">
+                    <div className={`round ${isVertical ? 'vertical' : ''}`}>
                         {matches.round4.map((match, matchIndex) => (
                         <div key={matchIndex} className="matchup">
                             <button
