@@ -20,11 +20,15 @@ const BowlChallengeStandings = () => {
     const { loading, data, refetch } = useQuery(QUERY_ALL_CFB_BOWL_PICKEM);
     const allBowlPickem = data?.allCfbBowlPickem || [];
 
-    const standingsCurrent = bowlChallengeStandings(allBowlPickem);
+    const filteredEntries = allBowlPickem.filter((entry) => {
+      return entry.year === "2024";
+  });
+
+    const standingsCurrent = bowlChallengeStandings(filteredEntries);
 
     useEffect(() => {
         const currentDate = new Date();
-        const gameStartDate = new Date('2024-12-17T00:00:00');
+        const gameStartDate = new Date('2024-12-18T00:00:00');
     
         if (currentDate > gameStartDate) {
           setShowStandings(true);
