@@ -9,7 +9,7 @@ import NavBar from '../../Navbar';
 
 function BowlChallengeEntries() {
 
-    const [dataShow, setDataShow] = useState(0);
+    const [dataShow, setDataShow] = useState(1);
 
     const navbarChoices = [
         {text: "CHALLENGE INSTRUCTIONS", link: "/bowlChallenge"},
@@ -85,7 +85,14 @@ function BowlChallengeEntries() {
                             <th>Game 32</th>
                             <th>Game 33</th>
                             <th>Game 34</th>
-                            <th>Game 35</th>
+                            <th>round1</th>
+                            <th>round2</th>
+                            <th>round3</th>
+                            <th>round4</th>
+                            <th>quarterfinals1</th>
+                            <th>quarterfinals2</th>
+                            <th>quarterfinals3</th>
+                            <th>quarterfinals4</th>
                             <th>Semifinal 1</th>
                             <th>Semifinal 2</th>
                             <th>Champion</th>
@@ -132,6 +139,17 @@ function BowlChallengeEntries() {
                                     <td>{entry.game32}</td>
                                     <td>{entry.game33}</td>
                                     <td>{entry.game34}</td>
+                                    <td>{entry.round1}</td>
+                                    <td>{entry.round2}</td>
+                                    <td>{entry.round3}</td>
+                                    <td>{entry.round4}</td>
+                                    <td>{entry.quarterfinals1}</td>
+                                    <td>{entry.quarterfinals2}</td>
+                                    <td>{entry.quarterfinals3}</td>
+                                    <td>{entry.quarterfinals4}</td>
+                                    <td>{entry.semifinal1}</td>
+                                    <td>{entry.semifinal2}</td>
+                                    <td>{entry.champion}</td>
                                     <td>{entry.titleTotalPoints}</td>
                             </>
                             )}

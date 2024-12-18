@@ -80,7 +80,7 @@ export const bowlChallengeStandings = (data) => {
             }
         }
 
-        standings.push({ entryPerson: entry.entryName, points: totalPoints, champion: entry.champion });
+        standings.push({ entryPerson: entry.entryName, points: totalPoints, semifinal1: entry.semifinal1, semifinal2: entry.semifinal2, champion: entry.champion });
     }
     
     standings.sort((a, b) => b.points - a.points);

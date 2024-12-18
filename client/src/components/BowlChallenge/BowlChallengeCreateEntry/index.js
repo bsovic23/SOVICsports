@@ -8,7 +8,7 @@ import { bowlPicks2024 } from '../../../data/BowlChallenge';
 
 const BowlChallengeEntry = () => {
 
-    const entryOpen = true;
+    const entryOpen = false;
 
     const navbarChoices = [
         {text: "CHALLENGE INSTRUCTIONS", link: "/bowlChallenge"},

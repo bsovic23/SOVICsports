@@ -20,7 +20,12 @@ const BowlChallengeStandings = () => {
     const { loading, data, refetch } = useQuery(QUERY_ALL_CFB_BOWL_PICKEM);
     const allBowlPickem = data?.allCfbBowlPickem || [];
 
-    const standingsCurrent = bowlChallengeStandings(allBowlPickem);
+    const filteredStandings = allBowlPickem.filter((entry) => {
+      return entry.year === "2024";
+    });
+
+    const standingsCurrent = bowlChallengeStandings(filteredStandings);
+    console.log(standingsCurrent);
 
     useEffect(() => {
         const currentDate = new Date();
@@ -52,6 +57,8 @@ const BowlChallengeStandings = () => {
                     <th>Place</th>
                     <th>Entry Name</th>
                     <th>Points</th>
+                    <th>Semifinal 1</th>
+                    <th>Semifinal 2</th>
                     <th>Champion Picked</th>
                   </tr>
                   {standingsCurrent &&
@@ -61,6 +68,8 @@ const BowlChallengeStandings = () => {
                         <td>{index + 1}</td>
                         <td>{entries.entryPerson}</td>
                         <td>{entries.points}</td>
+                        <td>{entries.semifinal1}</td>
+                        <td>{entries.semifinal2}</td>
                         <td>{entries.champion}</td>
                       </tr>
                     )
