@@ -25,7 +25,6 @@ const BowlChallengeStandings = () => {
     });
 
     const standingsCurrent = bowlChallengeStandings(filteredStandings);
-    console.log(standingsCurrent);
 
     useEffect(() => {
         const currentDate = new Date();
@@ -46,6 +45,7 @@ const BowlChallengeStandings = () => {
           <Navbar navElements={navbarChoices} />
         </div>
         <h1>College Football Bowl Challenge Standings</h1>
+        <p>Standings Updated: 12/21/2024 9:40 am</p>
         <div>
           {loading ? (
             <div>...loading</div>

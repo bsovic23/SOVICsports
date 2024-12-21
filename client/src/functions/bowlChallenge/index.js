@@ -4,9 +4,13 @@
 
 export const bowlChallengeStandings = (data) => {
     const winners = [
-        { winner1: "James Madison", points: 1},
-        { winner2: "UNLV", points: 1},
-        { winner17: "Memphis", points: 2},
+        { winner1: "James Madison", points: 1 },
+        { winner2: "UNLV", points: 1 },
+        { winner3: "Sam Houston", points: 1 },
+        { winner4: "Ohio", points: 1 },
+        { winner17: "Memphis", points: 2 },
+        { winner28: "Florida", points: 3 },
+        { winner37: "Notre Dame", points: 5 },
     ];
 
     let standings = [];
@@ -16,40 +20,53 @@ export const bowlChallengeStandings = (data) => {
 
         for (const winner of winners) {
             const gameNumber = parseInt(Object.keys(winner)[0].replace('winner', ''), 10);
-            
-            const pickChoice = entry[`game${gameNumber}`];
-            const actualWinner = winner[`winner${gameNumber}`];
 
-            if (gameNumber === 38) {
-                // Handling final (game38)
-                const finalKey = 'champion';
-                const pickChoiceFinal = entry[finalKey];
-                const actualWinnerSemifinal = winner[`winner${gameNumber}`];
-
-                if (pickChoiceFinal === actualWinnerSemifinal) {
-                    totalPoints += winner.points;
-                }
-            } else if (gameNumber >= 36) {
-                // Handling semifinals (game36 and game37)
-                const semifinalKey = `semifinal${gameNumber - 35}`;
-                const pickChoiceSemifinal = entry[semifinalKey];
-                const actualWinnerSemifinal = winner[`winner${gameNumber}`];
-
-                if (pickChoiceSemifinal === actualWinnerSemifinal) {
-                    totalPoints += winner.points;
-                }
-            } else {
-                // Regular games (game1 to game35)
+            if (gameNumber <= 34) {
+                // Handling regular games (game1 to game34)
+                const pickChoice = entry[`game${gameNumber}`];
+                const actualWinner = winner[`winner${gameNumber}`];
                 if (pickChoice === actualWinner) {
+                    totalPoints += winner.points;
+                }
+            } else if (gameNumber >= 35 && gameNumber <= 38) {
+                // Handling postseason games (roundOne, quarterfinals, semifinals, champion)
+                const roundMapping = {
+                    35: 'roundOne1',
+                    36: 'roundOne2',
+                    37: 'roundOne3',
+                    38: 'roundOne4',
+                };
+                const roundKey = roundMapping[gameNumber] || `semifinal${gameNumber - 38}`;
+                const pickChoiceRound = entry[roundKey];
+                const actualWinnerRound = winner[`winner${gameNumber}`];
+
+                if (pickChoiceRound === actualWinnerRound) {
+                    totalPoints += winner.points;
+                }
+            } else if (gameNumber === 39) {
+                // Handling champion (final game)
+                const pickChoiceChampion = entry['champion'];
+                const actualWinnerChampion = winner[`winner${gameNumber}`];
+                if (pickChoiceChampion === actualWinnerChampion) {
                     totalPoints += winner.points;
                 }
             }
         }
 
-        standings.push({ entryPerson: entry.entryName, points: totalPoints, semifinal1: entry.semifinal1, semifinal2: entry.semifinal2, champion: entry.champion });
+        standings.push({
+            entryPerson: entry.entryName,
+            points: totalPoints,
+            roundOne1: entry.roundOne1,
+            roundOne2: entry.roundOne2,
+            roundOne3: entry.roundOne3,
+            roundOne4: entry.roundOne4,
+            semifinal1: entry.semifinal1,
+            semifinal2: entry.semifinal2,
+            champion: entry.champion,
+        });
     }
-    
+
     standings.sort((a, b) => b.points - a.points);
-    
+
     return standings;
 };

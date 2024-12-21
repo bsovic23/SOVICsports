@@ -85,10 +85,10 @@ function BowlChallengeEntries() {
                             <th>Game 32</th>
                             <th>Game 33</th>
                             <th>Game 34</th>
-                            <th>round1</th>
-                            <th>round2</th>
-                            <th>round3</th>
-                            <th>round4</th>
+                            <th>round 1 - game 1</th>
+                            <th>round 1 - game 2</th>
+                            <th>round 3 - game 3</th>
+                            <th>round 4 - game 4</th>
                             <th>quarterfinals1</th>
                             <th>quarterfinals2</th>
                             <th>quarterfinals3</th>
@@ -139,10 +139,10 @@ function BowlChallengeEntries() {
                                     <td>{entry.game32}</td>
                                     <td>{entry.game33}</td>
                                     <td>{entry.game34}</td>
-                                    <td>{entry.round1}</td>
-                                    <td>{entry.round2}</td>
-                                    <td>{entry.round3}</td>
-                                    <td>{entry.round4}</td>
+                                    <td>{entry.roundOne1}</td>
+                                    <td>{entry.roundOne2}</td>
+                                    <td>{entry.roundOne3}</td>
+                                    <td>{entry.roundOne4}</td>
                                     <td>{entry.quarterfinals1}</td>
                                     <td>{entry.quarterfinals2}</td>
                                     <td>{entry.quarterfinals3}</td>
