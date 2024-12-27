@@ -1,6 +1,6 @@
 // College Football Bowl Challenge Standings Function
 
-// Updated up to 12/28 BC SMU game
+// Updated up to 12/27 BC SMU game
 
 export const bowlChallengeStandings = (data) => {
     const winners = [
@@ -8,6 +8,12 @@ export const bowlChallengeStandings = (data) => {
         { winner2: "UNLV", points: 1 },
         { winner3: "Sam Houston", points: 1 },
         { winner4: "Ohio", points: 1 },
+        { winner5: "UTSA", points: 1 },
+        { winner6: "Northern Illinois", points: 1 },
+        { winner7: "South Florida", points: 1 },
+        { winner8: "Toledo", points: 1 },
+        { winner9: "Kansas State", points: 1 },
+        { winner11: "Arkansas State", points: 1 },
         { winner17: "Memphis", points: 2 },
         { winner28: "Florida", points: 3 },
         { winner35: "Ohio State", points: 5 },
