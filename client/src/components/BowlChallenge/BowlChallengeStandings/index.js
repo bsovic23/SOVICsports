@@ -45,7 +45,7 @@ const BowlChallengeStandings = () => {
           <Navbar navElements={navbarChoices} />
         </div>
         <h1>College Football Bowl Challenge Standings</h1>
-        <p>Standings Updated: 12/28/2024 10:24 am</p>
+        <p>Standings Updated: 12/29/2024 11:03 am</p>
         <div>
           {loading ? (
             <div>...loading</div>
