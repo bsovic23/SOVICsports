@@ -27,7 +27,6 @@ const BowlChallenge = () => {
                     <li>Round 1: 5 points</li>
                     <li>Quarterfinals: 7 points</li>
                     <li>Semifinals: 9 points</li>
-                    <li>Championship: 11 points</li>
                     <li>Champion: 14 points</li>
                     <li>Tiebreaker #1 will be closest total points</li>
                     <li>Tiebreaker #2, if two or more people are equal points difference, will be most 1 point games correctly picked</li>

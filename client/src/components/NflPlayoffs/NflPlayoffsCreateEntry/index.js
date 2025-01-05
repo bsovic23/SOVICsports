@@ -23,7 +23,7 @@ const NflPlayoffsEntry = () => {
 
     // Entry Variables
     const [showModal, setShowModal] = useState(false);
-    const [year, setYear] = useState('2023');
+    const [year, setYear] = useState('2024');
     const [entryName, setEntryName] = useState('');
     const [players, setPlayers] = useState({
         qb: 'select QB',

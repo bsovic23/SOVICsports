@@ -13,7 +13,7 @@ export const bowlChallengeStandings = (data) => {
         { winner7: "South Florida", points: 1 },
         { winner8: "Toledo", points: 1 },
         { winner9: "Kansas State", points: 1 },
-        // 10
+        { winner10: "Buffalo", points: 1 },
         { winner11: "Arkansas State", points: 1 },
         { winner12: "East Carolina", points: 1 },
         { winner13: "Texas State", points: 1 },
@@ -46,6 +46,9 @@ export const bowlChallengeStandings = (data) => {
         { winner40: "Texas", points: 7 },
         { winner41: "Notre Dame", points: 7 },
         { winner42: "Penn State", points: 7 },
+        // winner 43 9 points
+        // winner 44 9 points
+        // winner 45 14 points
     ];  
 
     let standings = [];

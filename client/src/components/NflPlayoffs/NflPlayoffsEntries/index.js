@@ -13,7 +13,7 @@ import { useQuery } from '@apollo/client';
 const NflPlayoffsEntries = () => {
 
     // 0 = entryName only    1 = full entry details
-    const showEntries = 1;
+    const showEntries = 0;
 
     const navbarChoices = [
         {text: "CHALLENGE INSTRUCTIONS", link: "/nflPlayoffs"},
@@ -24,6 +24,9 @@ const NflPlayoffsEntries = () => {
 
     const { loading, data } = useQuery(QUERY_ALL_NFL_PLAYOFFS);
     const allNflPlayoffsEntries = data?.allNflPlayoffs || [];
+    console.log(allNflPlayoffsEntries);
+    const allNflPlayoffsEntries2024 = allNflPlayoffsEntries.filter((data) => data.year === '2024');
+
 
     return(
         <section class='page' id='nfl-playoffs-all-entries'>
@@ -53,7 +56,7 @@ const NflPlayoffsEntries = () => {
                             </>
                             )}
                         </tr>
-                        {allNflPlayoffsEntries && allNflPlayoffsEntries.map((entry, index) => (
+                        {allNflPlayoffsEntries2024 && allNflPlayoffsEntries2024.map((entry, index) => (
                         <tr key={index}>
                             <td>{entry.entryName}</td>
                         {showEntries === 1 && (
