@@ -4,813 +4,551 @@ export const NflPlayoffsPlayers = [
     "seed": 1,
     "conference": "NFC",
     "position": "qb",
-    "playerName": "Brock Purdy",
-    "team": "49ers",
-    "eliminated": "no",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "playerName": "Jared Goff",
+    "team": "Lions"
   },
   {
     "id": 2,
     "seed": 1,
     "conference": "NFC",
     "position": "rb",
-    "playerName": "Cristian McCaffrey",
-    "team": "49ers",
-    "eliminated": "no",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "playerName": "Jahmyr Gibbs",
+    "team": "Lions"
   },
   {
     "id": 3,
     "seed": 1,
     "conference": "NFC",
-    "position": "rb",
-    "playerName": "Elijah Mitchell",
-    "team": "49ers",
-    "eliminated": "no",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Amon-Ra St Brown",
+    "team": "Lions"
   },
   {
     "id": 4,
     "seed": 1,
     "conference": "NFC",
     "position": "wr",
-    "playerName": "Brandon Aiyuk",
-    "team": "49ers",
-    "eliminated": "no",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "playerName": "Jameson Williams",
+    "team": "Lions"
   },
   {
     "id": 5,
     "seed": 1,
     "conference": "NFC",
-    "position": "wr",
-    "playerName": "Deebo Samuel",
-    "team": "49ers",
-    "eliminated": "no",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "te",
+    "playerName": "Sam LaPorta",
+    "team": "Lions"
   },
   {
     "id": 6,
-    "seed": 1,
+    "seed": 2,
     "conference": "NFC",
-    "position": "te",
-    "playerName": "George Kittle",
-    "team": "49ers",
-    "eliminated": "no",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "qb",
+    "playerName": "Jalen Hurts",
+    "team": "Eagles"
   },
   {
     "id": 7,
     "seed": 2,
     "conference": "NFC",
-    "position": "qb",
-    "playerName": "Dak Prescott",
-    "team": "Cowboys",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "rb",
+    "playerName": "Saquon Barkley",
+    "team": "Eagles"
   },
   {
     "id": 8,
     "seed": 2,
     "conference": "NFC",
-    "position": "rb",
-    "playerName": "Tony Pollard",
-    "team": "Cowboys",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "AJ Brown",
+    "team": "Eagles"
   },
   {
     "id": 9,
     "seed": 2,
     "conference": "NFC",
     "position": "wr",
-    "playerName": "CeeDee Lamb",
-    "team": "Cowboys",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "playerName": "DeVonta Smith",
+    "team": "Eagles"
   },
   {
     "id": 10,
     "seed": 2,
     "conference": "NFC",
     "position": "te",
-    "playerName": "Jake Ferguson",
-    "team": "Cowboys",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "playerName": "Dallas Goedert",
+    "team": "Eagles"
   },
   {
     "id": 11,
     "seed": 3,
     "conference": "NFC",
     "position": "qb",
-    "playerName": "Jarred Goff",
-    "team": "Lions",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "playerName": "Baker Mayfield",
+    "team": "Bucs"
   },
   {
     "id": 12,
     "seed": 3,
     "conference": "NFC",
     "position": "rb",
-    "playerName": "David Montgomery",
-    "team": "Lions",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "playerName": "Bucky Irving",
+    "team": "Bucs"
   },
   {
     "id": 13,
     "seed": 3,
     "conference": "NFC",
-    "position": "rb",
-    "playerName": "Jahmyr Gibbs",
-    "team": "Lions",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Mike Evans",
+    "team": "Bucs"
   },
   {
     "id": 14,
     "seed": 3,
     "conference": "NFC",
-    "position": "wr",
-    "playerName": "Amon Ra St-Brown",
-    "team": "Lions",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "te",
+    "playerName": "Cade Otton",
+    "team": "Bucs"
   },
   {
     "id": 15,
-    "seed": 3,
+    "seed": 4,
     "conference": "NFC",
-    "position": "te",
-    "playerName": "Sam LaPorta",
-    "team": "Lions",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "qb",
+    "playerName": "Matthew Stafford",
+    "team": "Rams"
   },
   {
     "id": 16,
     "seed": 4,
     "conference": "NFC",
-    "position": "qb",
-    "playerName": "Baker Mayfield",
-    "team": "Bucs",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "rb",
+    "playerName": "Kyren Williams",
+    "team": "Rams"
   },
   {
     "id": 17,
     "seed": 4,
     "conference": "NFC",
-    "position": "rb",
-    "playerName": "Rachaard White",
-    "team": "Bucs",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Puka Nacua",
+    "team": "Rams"
   },
   {
     "id": 18,
     "seed": 4,
     "conference": "NFC",
     "position": "wr",
-    "playerName": "Mike Evans",
-    "team": "Bucs",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "playerName": "Cooper Kupp",
+    "team": "Rams"
   },
   {
     "id": 19,
     "seed": 4,
     "conference": "NFC",
-    "position": "wr",
-    "playerName": "Chris Godwin",
-    "team": "Bucs",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "te",
+    "playerName": "Colby Parkinson",
+    "team": "Rams"
   },
   {
     "id": 20,
-    "seed": 4,
+    "seed": 5,
     "conference": "NFC",
-    "position": "te",
-    "playerName": "Cade Otton",
-    "team": "Bucs",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "qb",
+    "playerName": "Sam Darnold",
+    "team": "Vikings"
   },
   {
     "id": 21,
     "seed": 5,
     "conference": "NFC",
-    "position": "qb",
-    "playerName": "Jalen Hurts",
-    "team": "Eagles",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "rb",
+    "playerName": "Aaron Jones",
+    "team": "Vikings"
   },
   {
     "id": 22,
     "seed": 5,
     "conference": "NFC",
-    "position": "rb",
-    "playerName": "D'Andre Swift",
-    "team": "Eagles",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Justin Jefferson",
+    "team": "Vikings"
   },
   {
     "id": 23,
     "seed": 5,
     "conference": "NFC",
     "position": "wr",
-    "playerName": "AJ Brown",
-    "team": "Eagles",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "playerName": "Jordan Addison",
+    "team": "Vikings"
   },
   {
     "id": 24,
     "seed": 5,
     "conference": "NFC",
-    "position": "wr",
-    "playerName": "DeVonta Smith",
-    "team": "Eagles",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "te",
+    "playerName": "TJ Hockenson",
+    "team": "Vikings"
   },
   {
     "id": 25,
-    "seed": 5,
+    "seed": 6,
     "conference": "NFC",
-    "position": "te",
-    "playerName": "Dallas Goedert",
-    "team": "Eagles",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "qb",
+    "playerName": "Jayden Daniels",
+    "team": "Commanders"
   },
   {
     "id": 26,
     "seed": 6,
     "conference": "NFC",
-    "position": "qb",
-    "playerName": "Matthew Stafford",
-    "team": "Rams",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "rb",
+    "playerName": "Brian Robinson",
+    "team": "Commanders"
   },
   {
     "id": 27,
     "seed": 6,
     "conference": "NFC",
-    "position": "rb",
-    "playerName": "Kyren Williams",
-    "team": "Rams",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Terry McLaurin",
+    "team": "Commanders"
   },
   {
     "id": 28,
     "seed": 6,
     "conference": "NFC",
-    "position": "wr",
-    "playerName": "Puka Nacua",
-    "team": "Rams",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "te",
+    "playerName": "Zach Ertz",
+    "team": "Commanders"
   },
   {
     "id": 29,
-    "seed": 6,
+    "seed": 7,
     "conference": "NFC",
-    "position": "wr",
-    "playerName": "Cooper Kupp",
-    "team": "Rams",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "qb",
+    "playerName": "Jordan Love",
+    "team": "Packers"
   },
   {
     "id": 30,
-    "seed": 6,
+    "seed": 7,
     "conference": "NFC",
-    "position": "te",
-    "playerName": "Tyler Higbee",
-    "team": "Rams",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "rb",
+    "playerName": "Josh Jacobs",
+    "team": "Packers"
   },
   {
     "id": 31,
     "seed": 7,
     "conference": "NFC",
-    "position": "qb",
-    "playerName": "Jordan Love",
-    "team": "Packers",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Jayden Reed",
+    "team": "Packers"
   },
   {
     "id": 32,
     "seed": 7,
     "conference": "NFC",
-    "position": "rb",
-    "playerName": "Aaron Jones",
-    "team": "Packers",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Romeo Doubs",
+    "team": "Packers"
   },
   {
     "id": 33,
     "seed": 7,
     "conference": "NFC",
-    "position": "wr",
-    "playerName": "Christian Watson",
-    "team": "Packers",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "te",
+    "playerName": "Tucker Kraft",
+    "team": "Packers"
   },
   {
     "id": 34,
-    "seed": 7,
-    "conference": "NFC",
-    "position": "wr",
-    "playerName": "Romeo Doubs",
-    "team": "Packers",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "seed": 1,
+    "conference": "AFC",
+    "position": "qb",
+    "playerName": "Patrick Mahomes",
+    "team": "Chiefs"
   },
   {
     "id": 35,
-    "seed": 7,
-    "conference": "NFC",
-    "position": "wr",
-    "playerName": "Jayden Reed",
-    "team": "Packers",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "seed": 1,
+    "conference": "AFC",
+    "position": "rb",
+    "playerName": "Isiah Pacheco",
+    "team": "Chiefs"
   },
   {
     "id": 36,
-    "seed": 7,
-    "conference": "NFC",
-    "position": "te",
-    "playerName": "Luke Musgrave",
-    "team": "Packers",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "seed": 1,
+    "conference": "AFC",
+    "position": "wr",
+    "playerName": "Xavier Worthy",
+    "team": "Chiefs"
   },
   {
     "id": 37,
-    "seed": 7,
-    "conference": "NFC",
-    "position": "te",
-    "playerName": "Tucker Kraft",
-    "team": "Packers",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "seed": 1,
+    "conference": "AFC",
+    "position": "wr",
+    "playerName": "Hollywood Brown",
+    "team": "Chiefs"
   },
   {
     "id": 38,
     "seed": 1,
     "conference": "AFC",
-    "position": "qb",
-    "playerName": "Lamar Jackson",
-    "team": "Ravens",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "DeAndre Hopkins",
+    "team": "Chiefs"
   },
   {
     "id": 39,
     "seed": 1,
     "conference": "AFC",
-    "position": "rb",
-    "playerName": "Gus Edwards",
-    "team": "Ravens",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "te",
+    "playerName": "Travis Kelce",
+    "team": "Chiefs"
   },
   {
     "id": 40,
-    "seed": 1,
+    "seed": 2,
     "conference": "AFC",
-    "position": "rb",
-    "playerName": "Justice Hill",
-    "team": "Ravens",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "qb",
+    "playerName": "Josh Allen",
+    "team": "Bills"
   },
   {
     "id": 41,
-    "seed": 1,
+    "seed": 2,
     "conference": "AFC",
-    "position": "wr",
-    "playerName": "Zay Flowers",
-    "team": "Ravens",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "rb",
+    "playerName": "James Cook",
+    "team": "Bills"
   },
   {
     "id": 42,
-    "seed": 1,
+    "seed": 2,
     "conference": "AFC",
-    "position": "te",
-    "playerName": "Isaiah Likely",
-    "team": "Ravens",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
-  },
-  {
-    "id": 100,
-    "seed": 1,
-    "conference": "AFC",
-    "position": "te",
-    "playerName": "Mark Andrews",
-    "team": "Ravens",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Amari Cooper",
+    "team": "Bills"
   },
   {
     "id": 43,
     "seed": 2,
     "conference": "AFC",
-    "position": "qb",
-    "playerName": "Josh Allen",
-    "team": "Bills",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Khalil Shaker",
+    "team": "Bills"
   },
   {
     "id": 44,
     "seed": 2,
     "conference": "AFC",
-    "position": "rb",
-    "playerName": "James Cook",
-    "team": "Bills",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "te",
+    "playerName": "Dalton Kincaid",
+    "team": "Bills"
   },
   {
     "id": 45,
-    "seed": 2,
+    "seed": 3,
     "conference": "AFC",
-    "position": "wr",
-    "playerName": "Stefon Diggs",
-    "team": "Bills",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "qb",
+    "playerName": "Lamar Jackson",
+    "team": "Ravens"
   },
   {
     "id": 46,
-    "seed": 2,
+    "seed": 3,
     "conference": "AFC",
-    "position": "wr",
-    "playerName": "Gabe Davis",
-    "team": "Bills",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "rb",
+    "playerName": "Derrick Henry",
+    "team": "Ravens"
   },
   {
     "id": 47,
-    "seed": 2,
+    "seed": 3,
     "conference": "AFC",
-    "position": "te",
-    "playerName": "Dalton Kincaid",
-    "team": "Bills",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Zay Flowers",
+    "team": "Ravens"
   },
   {
     "id": 48,
-    "seed": 2,
+    "seed": 3,
     "conference": "AFC",
-    "position": "te",
-    "playerName": "Dawson Knox",
-    "team": "Bills",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Rashod Bateman",
+    "team": "Ravens"
   },
   {
     "id": 49,
     "seed": 3,
     "conference": "AFC",
-    "position": "qb",
-    "playerName": "Patrick Mahomes",
-    "team": "Chiefs",
-    "eliminated": "no",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "te",
+    "playerName": "Mark Andrews",
+    "team": "Ravens"
   },
   {
     "id": 50,
     "seed": 3,
     "conference": "AFC",
-    "position": "rb",
-    "playerName": "Isiah Pacheco",
-    "team": "Chiefs",
-    "eliminated": "no",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "te",
+    "playerName": "Isaiah Likely",
+    "team": "Ravens"
   },
   {
     "id": 51,
-    "seed": 3,
+    "seed": 4,
     "conference": "AFC",
-    "position": "wr",
-    "playerName": "Rashee Rice",
-    "team": "Chiefs",
-    "eliminated": "no",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "qb",
+    "playerName": "CJ Stroud",
+    "team": "Texans"
   },
   {
     "id": 52,
-    "seed": 3,
+    "seed": 4,
     "conference": "AFC",
-    "position": "te",
-    "playerName": "Travis Kelce",
-    "team": "Chiefs",
-    "eliminated": "no",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "rb",
+    "playerName": "Joe Mixon",
+    "team": "Texans"
   },
   {
     "id": 53,
     "seed": 4,
     "conference": "AFC",
-    "position": "qb",
-    "playerName": "CJ Stroud",
-    "team": "Texans",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Nico Collins",
+    "team": "Texans"
   },
   {
     "id": 54,
     "seed": 4,
     "conference": "AFC",
-    "position": "rb",
-    "playerName": "Dameon Pierce",
-    "team": "Texans",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "te",
+    "playerName": "Dalton Schultz",
+    "team": "Texans"
   },
   {
     "id": 55,
-    "seed": 4,
+    "seed": 5,
     "conference": "AFC",
-    "position": "rb",
-    "playerName": "Devin Singletary",
-    "team": "Texans",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "qb",
+    "playerName": "Justin Herbert",
+    "team": "Chargers"
   },
   {
     "id": 56,
-    "seed": 4,
+    "seed": 5,
     "conference": "AFC",
-    "position": "wr",
-    "playerName": "Nico Collins",
-    "team": "Texans",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "rb",
+    "playerName": "JK Dobbins",
+    "team": "Chargers"
   },
   {
     "id": 57,
-    "seed": 4,
+    "seed": 5,
     "conference": "AFC",
-    "position": "te",
-    "playerName": "Dalton Schultz",
-    "team": "Texans",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Ladd McConkey",
+    "team": "Chargers"
   },
   {
     "id": 58,
     "seed": 5,
     "conference": "AFC",
-    "position": "qb",
-    "playerName": "Joe Flacco",
-    "team": "Browns",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Quentin Johnston",
+    "team": "Chargers"
   },
   {
     "id": 59,
     "seed": 5,
     "conference": "AFC",
-    "position": "rb",
-    "playerName": "Jerome Ford",
-    "team": "Browns",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "te",
+    "playerName": "Will Dissly",
+    "team": "Chargers"
   },
   {
     "id": 60,
-    "seed": 5,
+    "seed": 6,
     "conference": "AFC",
-    "position": "wr",
-    "playerName": "Amari Cooper",
-    "team": "Browns",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "qb",
+    "playerName": "Russell Wilson",
+    "team": "Steelers"
   },
   {
     "id": 61,
-    "seed": 5,
+    "seed": 6,
     "conference": "AFC",
-    "position": "te",
-    "playerName": "David Njoku",
-    "team": "Browns",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "rb",
+    "playerName": "Najee Harris",
+    "team": "Steelers"
   },
   {
     "id": 62,
     "seed": 6,
     "conference": "AFC",
-    "position": "qb",
-    "playerName": "Tua Tagovailoa",
-    "team": "Dolphins",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "rb",
+    "playerName": "Jaylen Warren",
+    "team": "Steelers"
   },
   {
     "id": 63,
     "seed": 6,
     "conference": "AFC",
-    "position": "rb",
-    "playerName": "Raheem Mostert",
-    "team": "Dolphins",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "George Pickens",
+    "team": "Steelers"
   },
   {
     "id": 64,
     "seed": 6,
     "conference": "AFC",
-    "position": "rb",
-    "playerName": "De'Von Achane",
-    "team": "Dolphins",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "te",
+    "playerName": "Pat Freiermuth",
+    "team": "Steelers"
   },
   {
     "id": 65,
-    "seed": 6,
+    "seed": 7,
     "conference": "AFC",
-    "position": "wr",
-    "playerName": "Tyreek Hill",
-    "team": "Dolphins",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "qb",
+    "playerName": "Bo Nix",
+    "team": "Broncos"
   },
   {
     "id": 66,
-    "seed": 6,
+    "seed": 7,
     "conference": "AFC",
-    "position": "wr",
-    "playerName": "Jaylen Waddle",
-    "team": "Dolphins",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "rb",
+    "playerName": "Jaleel McLaughlin",
+    "team": "Broncos"
   },
   {
     "id": 67,
-    "seed": 6,
+    "seed": 7,
     "conference": "AFC",
-    "position": "te",
-    "playerName": "Durham Smythe",
-    "team": "Dolphins",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Courtland Sutton",
+    "team": "Broncos"
   },
   {
     "id": 68,
     "seed": 7,
     "conference": "AFC",
-    "position": "qb",
-    "playerName": "Mason Rudolph",
-    "team": "Steelers",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "position": "wr",
+    "playerName": "Marvin Mims",
+    "team": "Broncos"
   },
   {
     "id": 69,
     "seed": 7,
     "conference": "AFC",
-    "position": "rb",
-    "playerName": "Najee Harris",
-    "team": "Steelers",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
-  },
-  {
-    "id": 70,
-    "seed": 7,
-    "conference": "AFC",
-    "position": "rb",
-    "playerName": "Jaylen Warren",
-    "team": "Steelers",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
-  },
-  {
-    "id": 71,
-    "seed": 7,
-    "conference": "AFC",
-    "position": "wr",
-    "playerName": "Dionte Johnson",
-    "team": "Steelers",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
-  },
-  {
-    "id": 72,
-    "seed": 7,
-    "conference": "AFC",
-    "position": "wr",
-    "playerName": "George Pickens",
-    "team": "Steelers",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
-  },
-  {
-    "id": 73,
-    "seed": 7,
-    "conference": "AFC",
     "position": "te",
-    "playerName": "Pat Freiermuth",
-    "team": "Steelers",
-    "eliminated": "yes",
-    "colorOne": "color",
-    "colorTwo": "color"
+    "playerName": "Lucas Krull",
+    "team": "Broncos"
   }
-]
+];
