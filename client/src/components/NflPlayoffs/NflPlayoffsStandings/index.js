@@ -16,7 +16,7 @@ import { NflPlayoffsPlayerPoints } from '../../../data/NflPlayoffsPlayerPoints';
 const NflPlayoffsStandings = () => {
 
     // 0 = entryName only    1 = full entry details
-    const showEntries = 0;
+    const showEntries = 1;
 
     const navbarChoices = [
         { text: "CHALLENGE INSTRUCTIONS", link: "/nflPlayoffs" },

@@ -12,7 +12,7 @@ import { MUTATION_NFL_PLAYOFFS } from '../../../utils/mutations';
 
 const NflPlayoffsEntry = () => {
 
-    const entryOpen = true;
+    const entryOpen = false;
 
     const navbarChoices = [
         {text: "CHALLENGE INSTRUCTIONS", link: "/nflPlayoffs"},

@@ -13,7 +13,7 @@ import { useQuery } from '@apollo/client';
 const NflPlayoffsEntries = () => {
 
     // 0 = entryName only    1 = full entry details
-    const showEntries = 0;
+    const showEntries = 1;
 
     const navbarChoices = [
         {text: "CHALLENGE INSTRUCTIONS", link: "/nflPlayoffs"},

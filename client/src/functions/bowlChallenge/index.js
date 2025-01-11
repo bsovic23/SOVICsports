@@ -46,8 +46,8 @@ export const bowlChallengeStandings = (data) => {
         { winner40: "Texas", points: 7 },
         { winner41: "Notre Dame", points: 7 },
         { winner42: "Penn State", points: 7 },
-        // winner 43 9 points
-        // winner 44 9 points
+        { winner43: "Ohio State", points: 9 },
+        { winner44: "Notre Dame", points: 9 },
         // winner 45 14 points
     ];  
 
