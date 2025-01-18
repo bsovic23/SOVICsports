@@ -24,7 +24,6 @@ const NflPlayoffsEntries = () => {
 
     const { loading, data } = useQuery(QUERY_ALL_NFL_PLAYOFFS);
     const allNflPlayoffsEntries = data?.allNflPlayoffs || [];
-    console.log(allNflPlayoffsEntries);
     const allNflPlayoffsEntries2024 = allNflPlayoffsEntries.filter((data) => data.year === '2024');
 
 
