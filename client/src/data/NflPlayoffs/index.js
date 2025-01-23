@@ -5,7 +5,8 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "qb",
     "playerName": "Jared Goff",
-    "team": "Lions"
+    "team": "Lions",
+    "eliminated": "yes"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "rb",
     "playerName": "Jahmyr Gibbs",
-    "team": "Lions"
+    "team": "Lions",
+    "eliminated": "yes"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "Amon-Ra St Brown",
-    "team": "Lions"
+    "team": "Lions",
+    "eliminated": "yes"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "Jameson Williams",
-    "team": "Lions"
+    "team": "Lions",
+    "eliminated": "yes"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "te",
     "playerName": "Sam LaPorta",
-    "team": "Lions"
+    "team": "Lions",
+    "eliminated": "yes"
   },
   {
     "id": 6,
@@ -121,7 +126,8 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "qb",
     "playerName": "Matthew Stafford",
-    "team": "Rams"
+    "team": "Rams",
+    "eliminated": "yes"
   },
   {
     "id": 16,
@@ -129,7 +135,8 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "rb",
     "playerName": "Kyren Williams",
-    "team": "Rams"
+    "team": "Rams",
+    "eliminated": "yes"
   },
   {
     "id": 17,
@@ -137,7 +144,8 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "Puka Nacua",
-    "team": "Rams"
+    "team": "Rams",
+    "eliminated": "yes"
   },
   {
     "id": 18,
@@ -145,7 +153,8 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "wr",
     "playerName": "Cooper Kupp",
-    "team": "Rams"
+    "team": "Rams",
+    "eliminated": "yes"
   },
   {
     "id": 19,
@@ -153,7 +162,8 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "te",
     "playerName": "Colby Parkinson",
-    "team": "Rams"
+    "team": "Rams",
+    "eliminated": "yes"
   },
   {
     "id": 20,
@@ -371,7 +381,8 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "qb",
     "playerName": "Lamar Jackson",
-    "team": "Ravens"
+    "team": "Ravens",
+    "eliminated": "yes"
   },
   {
     "id": 46,
@@ -379,7 +390,8 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "rb",
     "playerName": "Derrick Henry",
-    "team": "Ravens"
+    "team": "Ravens",
+    "eliminated": "yes"
   },
   {
     "id": 47,
@@ -387,7 +399,8 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "wr",
     "playerName": "Zay Flowers",
-    "team": "Ravens"
+    "team": "Ravens",
+    "eliminated": "yes"
   },
   {
     "id": 48,
@@ -395,7 +408,8 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "wr",
     "playerName": "Rashod Bateman",
-    "team": "Ravens"
+    "team": "Ravens",
+    "eliminated": "yes"
   },
   {
     "id": 49,
@@ -403,7 +417,8 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "te",
     "playerName": "Mark Andrews",
-    "team": "Ravens"
+    "team": "Ravens",
+    "eliminated": "yes"
   },
   {
     "id": 50,
@@ -411,7 +426,8 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "te",
     "playerName": "Isaiah Likely",
-    "team": "Ravens"
+    "team": "Ravens",
+    "eliminated": "yes"
   },
   {
     "id": 51,
@@ -419,7 +435,8 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "qb",
     "playerName": "CJ Stroud",
-    "team": "Texans"
+    "team": "Texans",
+    "eliminated": "yes"
   },
   {
     "id": 52,
@@ -427,7 +444,8 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "rb",
     "playerName": "Joe Mixon",
-    "team": "Texans"
+    "team": "Texans",
+    "eliminated": "yes"
   },
   {
     "id": 53,
@@ -435,7 +453,8 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "wr",
     "playerName": "Nico Collins",
-    "team": "Texans"
+    "team": "Texans",
+    "eliminated": "yes"
   },
   {
     "id": 54,
@@ -443,7 +462,8 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "te",
     "playerName": "Dalton Schultz",
-    "team": "Texans"
+    "team": "Texans",
+    "eliminated": "yes"
   },
   {
     "id": 55,
