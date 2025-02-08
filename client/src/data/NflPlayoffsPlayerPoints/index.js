@@ -17,15 +17,15 @@ export const NflPlayoffsPlayerPoints = [
   },
   {
     "playerName": "Saquon Barkley",
-    "points": 59.5
+    "points": 98.7
   },
   {
     "playerName": "AJ Brown",
-    "points": 5.4
+    "points": 32
   },
   {
     "playerName": "DeVonta Smith",
-    "points": 15.6
+    "points": 29.1
   },
   {
     "playerName": "Bucky Irving",
@@ -53,11 +53,11 @@ export const NflPlayoffsPlayerPoints = [
   },
   {
     "playerName": "Terry McLaurin",
-    "points": 40.599999999999994
+    "points": 54.699999999999996
   },
   {
     "playerName": "Zach Ertz",
-    "points": 18.1
+    "points": 45
   },
   {
     "playerName": "Josh Jacobs",
@@ -69,23 +69,23 @@ export const NflPlayoffsPlayerPoints = [
   },
   {
     "playerName": "Patrick Mahomes",
-    "points": 12.48
+    "points": 48.58
   },
   {
     "playerName": "DeAndre Hopkins",
-    "points": 0
+    "points": 7.1
   },
   {
     "playerName": "Travis Kelce",
-    "points": 27.7
+    "points": 36.599999999999994
   },
   {
     "playerName": "Josh Allen",
-    "points": 44.58
+    "points": 69.96
   },
   {
     "playerName": "James Cook",
-    "points": 32.2
+    "points": 60.6
   },
   {
     "playerName": "Lamar Jackson",

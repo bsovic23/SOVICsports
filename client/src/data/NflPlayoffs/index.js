@@ -216,7 +216,8 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "qb",
     "playerName": "Jayden Daniels",
-    "team": "Commanders"
+    "team": "Commanders",
+    "eliminated": "yes"
   },
   {
     "id": 26,
@@ -224,7 +225,8 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "rb",
     "playerName": "Brian Robinson",
-    "team": "Commanders"
+    "team": "Commanders",
+    "eliminated": "yes"
   },
   {
     "id": 27,
@@ -240,7 +242,8 @@ export const NflPlayoffsPlayers = [
     "conference": "NFC",
     "position": "te",
     "playerName": "Zach Ertz",
-    "team": "Commanders"
+    "team": "Commanders",
+    "eliminated": "yes"
   },
   {
     "id": 29,
@@ -341,7 +344,8 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "qb",
     "playerName": "Josh Allen",
-    "team": "Bills"
+    "team": "Bills",
+    "eliminated": "yes"
   },
   {
     "id": 41,
@@ -349,7 +353,8 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "rb",
     "playerName": "James Cook",
-    "team": "Bills"
+    "team": "Bills",
+    "eliminated": "yes"
   },
   {
     "id": 42,
@@ -357,7 +362,8 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "wr",
     "playerName": "Amari Cooper",
-    "team": "Bills"
+    "team": "Bills",
+    "eliminated": "yes"
   },
   {
     "id": 43,
@@ -365,7 +371,8 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "wr",
     "playerName": "Khalil Shaker",
-    "team": "Bills"
+    "team": "Bills",
+    "eliminated": "yes"
   },
   {
     "id": 44,
@@ -373,7 +380,8 @@ export const NflPlayoffsPlayers = [
     "conference": "AFC",
     "position": "te",
     "playerName": "Dalton Kincaid",
-    "team": "Bills"
+    "team": "Bills",
+    "eliminated": "yes"
   },
   {
     "id": 45,
@@ -382,7 +390,7 @@ export const NflPlayoffsPlayers = [
     "position": "qb",
     "playerName": "Lamar Jackson",
     "team": "Ravens",
-    "eliminated": "yes"
+    "eliminated": "yes",
   },
   {
     "id": 46,
