@@ -40,7 +40,7 @@ const NflPlayoffsStandings = () => {
                 <NavBar navElements={navbarChoices} />
             </div>
             <h1>NFL Playoffs Challenge Standings</h1>
-            <p>Updated: 2/08/2025 7:20 am</p>
+            <p>Updated: 2/10/2025 9:15 pm</p>
             <div>
                 {loading ? (
                     <div>...loading</div>
@@ -79,27 +79,7 @@ const NflPlayoffsStandings = () => {
                                 </tbody>
                             </table>
                         </div>
-                        <div>
-                            <h3>Player Points Leaders</h3>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Rank</th>
-                                        <th>Player Name</th>
-                                        <th>Player Points</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {playerPointsSorted.map((entry, index) => (
-                                        <tr key={index}>
-                                            <td>{index + 1}</td>
-                                            <td>{entry.playerName}</td>
-                                            <td>{entry.points}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
+
                     </div>
                 )}
             </div>
