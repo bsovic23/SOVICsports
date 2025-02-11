@@ -28,7 +28,7 @@ const NflPlayoffsStandings = () => {
     // Calculating Standings
     const { loading, data } = useQuery(QUERY_ALL_NFL_PLAYOFFS);
     const allNflPlayoffs = data?.allNflPlayoffs || [];
-    const nflPlayoffs2024 = allNflPlayoffs.filter((data) => data.year === '2024');
+    const nflPlayoffs2024 = allNflPlayoffs.filter((data) => data.year === '2025');
     const nflPlayoffsStandings = nflPlayoffsStandingsFx(nflPlayoffs2024);
 
     // Calculating Player Points Standings
@@ -41,6 +41,9 @@ const NflPlayoffsStandings = () => {
             </div>
             <h1>NFL Playoffs Challenge Standings</h1>
             <p>Updated: 2/10/2025 9:15 pm</p>
+            <div>
+                Congrats to Josh for 1st place and Rob for 2nd place. See yall in 2025!
+            </div>
             <div>
                 {loading ? (
                     <div>...loading</div>
